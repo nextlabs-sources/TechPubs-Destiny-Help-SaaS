@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Use cases &amp; integration patterns</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\IntegrationGuidesSAAS.fm" />
+ <link rel="stylesheet" href="IntegrationGuidesSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "4.1";
+</script>
+ <meta name="topic-breadcrumbs" content="ABAC Use Cases & Integration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <h1 dir="ltr">Use cases &amp; integration patterns</h1>
+ <p dir="ltr" class="FM_Body">This section describes the key concepts of ABAC (Attribute Based Access Control) and provides guidelines for ABAC implementation. These guidelines have been consistently applied in many organizations with considerable success. They do not, however, constitute a comprehensive guide for all authorization scenarios. </p>
+ <p dir="ltr" class="FM_Body">This section also provides high-level steps developers should consider taking before building an ABAC integration to enforce authorization decisions.</p>
+ <p dir="ltr" class="FM_Heading1PartSection"><a name="TOC_Business_need_for"></a><span style="font-family : 'Trebuchet MS'; font-weight : normal; font-size  : 10.0pt; color   : #0000ff; "></span><a name="XREF_97582_Business_need_for"></a>Business need for authorization</p>
+ <p dir="ltr" class="FM_Body">There are multiple scenarios where authorization is required in an application. For example:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Secure access to data in any application</span>: Application data can be structured or unstructured, and authorization is often required for data access. For example, a patient care system has patient health records that are protected by various laws and regulations. This system can be accessed from traditional browser-based interfaces or mobile interfaces. In both cases, data access requires the same authorization.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Secure business transactions</span>: In enterprise software systems such as CRM (Customer Rela&#173;tionship Management), ERP (Enterprise Resource Planning), or HCM (Human Capital Manage&#173;ment), there are different types of business transactions. Some of these transactions are sensitive and business rules define who can perform the transactions.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Secure services, APIs, and endpoints</span>: In complex enterprises, distributed systems must interact to achieve the desired results. For example, an e-commerce service application must interact with other services such as order management systems, customer management sys&#173;tems, inventory management systems, and payment management systems. Typically, interac&#173;tions within distributed systems are performed as a system user or an elevated privileges user. In some scenarios, legacy systems might not have built-in security features. In these cases, regardless of the backend services, the final e-commerce service or API still requires authori&#173;zation. That service or API must determine whether users can invoke the service, and whether data can be exposed users.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Secure information sharing</span>: In this connected world, information sharing is paramount for many day-to-day transactions. Much of the information being shared is unstructured and con&#173;tained in email, documents, and secure messages. This information is primarily secured during transportation using secure network protocols and encryption. However, additional measures are required to ensure that only authorized users receive the appropriate email, documents, and messages.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Other scenarios</span>: In government, military, and high-tech development sectors, data sensitivity depends on multiple parameters. These parameters include the location from which data is being accessed, the clearance level of users accessing the data, and national security advisory levels. In these scenarios, security policies must change dynamically and authorization deci&#173;sions need to be based on real-time information.</p>
+ <p dir="ltr" class="FM_Heading1Preface"><a name="TOC_Use_cases_addressed_by"></a><a name="XREF_24165_Use_cases"></a>Use cases addressed by ABAC</p>
+ <p dir="ltr" class="FM_Body">Within each of above scenarios there are various use cases where fine-grained or coarse-grained authorization is required. These use cases are described in <a href="#XREF_30347_Use_cases"><span class="FM_blue">Table&nbsp;4.1</span></a>.</p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 432.75pt;">Table 4.1: <a name="XREF_30347_Use_cases"></a>Use cases addressed by ABAC</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 162.000pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Business scenario</p>
+</th>
+  <th style="width : 270.750pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Authorization use cases</p>
+</th>
+</tr>
+  <tr style=" height : 48.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Secure access to data in any application</p>
+</td>
+  <td style="width : 270.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Restrict the rows of data users can access in an application</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Redact sensitive columns of data for unauthorized users</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Restrict the operations users can perform on specific data</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Protect structured and unstructured data</p>
+</td>
+</tr>
+  <tr style=" height : 48.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Secure business transactions</p>
+</td>
+  <td style="width : 270.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Control the operations users can perform in applications</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Control the UI widgets that are visible in web applications</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Control the display of menus and menu items in applications</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Display or hide buttons that submit forms in user interfaces</p>
+</td>
+</tr>
+  <tr style=" height : 45.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Secure services, APIs, and endpoints</p>
+</td>
+  <td style="width : 270.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Protect API gateways, micro services, web services, REST APIs, and SOA infrastructure</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Control the services users can invoke</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Protect legacy services</p>
+</td>
+</tr>
+  <tr style=" height : 26.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Secure information sharing</p>
+</td>
+  <td style="width : 270.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Restrict the recipients of email based on the content or attachment</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Control access to sensitive discussion forums</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Other scenarios</p>
+</td>
+  <td style="width : 270.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Perform authorization using geospatial data</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_Heading1Preface"><a name="TOC_Integration_patterns"></a><a name="XREF_82725_Integration"></a>Integration patterns with CloudAz</p>
+ <p dir="ltr" class="FM_Body">This section describes patterns of integration used with CloudAz.These patterns include:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_19412_Data_filtering_for">Data security: Data filtering for relational data</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_46392_Data_redaction">Data redaction</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_18070_Authorization_for">Authorization for content management and unstructured data</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_54053_Secure_business">Secure business transactions</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_77169_Portals_and_web">Portals and web applications</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_64218_Micro_services">Micro services, APIs, and endpoints</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_20184_Authorization">Authorization using geospatial data</a></p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Data_security_Data"></a><a name="XREF_19412_Data_filtering_for"></a>Data security: Data filtering for relational data</p>
+ <p dir="ltr" class="FM_Body">Consider the example of an HR (human resources) application that provides various features such as managing employee benefits, searching for other co-workers in the organization, and so on. For this application, the employee directory is stored as a relational database. The typical autho&#173;rization use case is:</p>
+ <p dir="ltr" class="FM_Body2">Allow managers to edit only information of employees reporting in their hierarchy</p>
+ <p dir="ltr" class="FM_Body">There are two methods of handling this authorization. The first is computationally intensive; the second is a better way to handle the authorization:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Query the database for all the records and then apply authorization checks for every single row before displaying the subset of data. This approach requires a significant amount of pre- and post-computation to display the results.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Use QueryRewrite with security filters and obligations in an ABAC policy that has these proper&#173;ties:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policy Effect</span>: Allow</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Subject</span>: Users who have the role attribute of Manager</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Resource</span>: Employee object</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Action</span>: Edit Employee object</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Obligation Name</span>: QueryRewrite </p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Obligation Value</span>: WHERE MANAGER = :CURRENT_USER</p>
+ <p dir="ltr" class="FM_Body2">When the HR application makes an authorization request:</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>This is example code only. For the required syntax, see <a href="../APIReferenceSAAS/REST_API_Reference.htm#XREF_63088_REST_API_service">REST API Reference</a>.</p>
+ <p dir="ltr" class="FM_Code2">PepAgent pepAgent = pepAgentFactory.getPepAgent();</p>
+ <p dir="ltr" class="FM_Code2">user.addattribute(&quot;role&quot;,&quot;Manager&quot;);</p>
+ <p dir="ltr" class="FM_Code2">user.addattribute(&quot;username&quot;,&quot;jdoe&quot;);</p>
+ <p dir="ltr" class="FM_Code2">Action action = new Action(&quot;EDIT EMPLOYEE&quot;);</p>
+ <p dir="ltr" class="FM_Code2">Resource resource = new Resource(&quot;Employee&quot;);</p>
+ <p dir="ltr" class="FM_Code2">pepResponse = pepAgent.decide(user, action, resource, application);</p>
+ <p dir="ltr" class="FM_Code2">String whereClause = pepResponse.getObligations(&quot;QueryRewrite&quot;);</p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Code2Comment">// use the whereClause in appending to the SQL clause before executing it</p>
+ <p dir="ltr" class="FM_Code2">String sqlQuery = &quot;Select emp_name, dob, salary, job_title from emp_table&quot;;</p>
+ <p dir="ltr" class="FM_Code2">sqlQuery.append (whereClause);</p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Code2Comment">//execute the query</p>
+ <p dir="ltr" class="FM_Code2">stmt = con.createStatement();</p>
+ <p dir="ltr" class="FM_Code2">ResultSet rs = stmt.executeQuery(query);</p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Body2">The results that are returned to the UI are prefiltered based on authorization checks. This also eliminates the tight coupling between security policies and business logic. If there is no security guidance, administrators can modify the policy and achieve the result shown in <a href="#XREF_29851_Authorization"><span class="FM_blue">Figure&nbsp;4-1</span></a>.</p>
+ <div align="center"><img alt="IntegrationPatterns.png" style=" width:100%; margin-left:3.750pt; margin-top:5.250pt; margin-right:6.000pt; margin-bottom:3.750pt; max-width:426.750pt;" id="image0" src="IntegrationPatterns.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 4-1: <a name="XREF_29851_Authorization"></a>Integration patterns</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Data_redaction"></a><a name="XREF_46392_Data_redaction"></a>Data redaction</p>
+ <p dir="ltr" class="FM_Body">Another common use case in data security is data redaction: masking or suppressing sensitive data such as personally identifiable information. For example, managers should be able to view employee records, but the employee date-of-birth column should be redacted.</p>
+ <p dir="ltr" class="FM_Body">To accomplish this, one or more obligations can be added to the policy shown in <a href="#XREF_19412_Data_filtering_for">Data security: Data filtering for relational data</a>:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policy Effect</span>: Allow</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Subject</span>: Users whose role attribute is Manager</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Resource</span>: Employee object</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Action</span>: Edit Employee object</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Obligation Name</span>: Query Rewrite </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Obligation Value</span>: MANAGER = :CURRENT_USER</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Obligation Name</span>: Redact Data</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Obligation Value</span>: Date of Birth</p>
+ <p dir="ltr" class="FM_Body">In the application, the developer handles the second obligation by modifying the SQL query by using the decode function and passing the masking characters.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Authorization_for"></a><a name="XREF_18070_Authorization_for"></a>Authorization for content management and unstructured data</p>
+ <p dir="ltr" class="FM_Body">In general, content management systems provide a great deal of flexibility for storing, categoriz&#173;ing, and managing documents and content. This flexibility, however, often leaves content vulner&#173;able to unauthorized access or requires sophisticated security schemes for access control. </p>
+ <p dir="ltr" class="FM_Body">The content itself is contained in a variety of formats such as documents, spreadsheets, and CAD drawings. </p>
+ <p dir="ltr" class="FM_Body">Typical authorization use cases for content management systems include:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Restrict access to folders that are created for a specific project</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Hide files in a folder if the classification of the file is greater than the classification of the user logged in</p>
+ <p dir="ltr" class="FM_Body">The pattern to solve these kind of use cases requires a deeper integration with the content man&#173;agement system. Developers must enforce ABAC policies by using the content management sys&#173;tem’s APIs to filter the files or hide the folders.</p>
+ <p dir="ltr" class="FM_Body">The following is a sample ABAC policy for content management systems:</p>
+ <p dir="ltr" class="FM_Code">Allow Users </p>
+ <p dir="ltr" class="FM_Code">TO view and edit documents </p>
+ <p dir="ltr" class="FM_Code">IF &#160;&#160;(user.secClearance &#160;&#160;&#160;&#160;&#160;=&gt; doc.sensitivity</p>
+ <p dir="ltr" class="FM_Code"> &#160;AND user.citizenship &#160;&#160;&#160;&#160;&#160;&#160;= &#160;doc.reqdCitizenship</p>
+ <p dir="ltr" class="FM_Code"> &#160;AND user.projectMembership = &#160;doc.project)</p>
+ <p dir="ltr" class="FM_Code">OR &#160;&#160;(doc.sensitivity &#160;&#160;&#160;&#160;&#160;&#160;&#160;= &#160;PUBLIC) &#160;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <div align="center"><img alt="SampleCMS.png" style=" width:100%; margin-left:3.000pt; margin-top:4.500pt; margin-right:3.750pt; margin-bottom:5.250pt; max-width:432.750pt;" id="image1" src="SampleCMS.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 4-2: A Sample rendering of a SharePoint content management system</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Secure_business"></a><a name="XREF_54053_Secure_business"></a>Secure business transactions</p>
+ <p dir="ltr" class="FM_Body">Consider an example of a supply chain management application. Multiple personas interact with the application and there are many different types of business transactions that require authori&#173;zation. Consider the following example:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Allow full-time employees to <span class="FM_Emphasis">Create </span>purchase orders for office supplies</p>
+ <p dir="ltr" class="FM_Body">In this example <span class="FM_Emphasis">Create</span>&#160;is a business transaction that can be represented by a button in the user interface. The authorization check determines when to hide or show that button.</p>
+ <p dir="ltr" class="FM_Body">A sample ABAC policy would be as follows:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policy Effect</span>: Allow</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Subject</span>: Users who are full-time employees (Employment Status = FT)</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Resource</span>: Purchase Order (PO.Type = Office supplies)</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Action</span>: Create</p>
+ <p dir="ltr" class="FM_Body"> A simple AngularJS implementation for the policy would be as follows:</p>
+ <p dir="ltr" class="FM_Code">$scope.decision = NextLabsPEPAgent.decide (mySubject, resource, action, application);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">//Bind the hide or show (ng-show) property of the button to the result</p>
+ <p dir="ltr" class="FM_Code">&lt;<span class="FM_brown">form</span>&#160;ng-show= <span class="FM_gray">&quot;decision&quot;</span> ng-<span class="FM_brown">submit</span>=<span class="FM_gray">&quot;addTodo()&quot;</span>&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&lt;input <span class="FM_blue">class</span>=<span class="FM_gray">&quot;btn-primary&quot;</span> type=<span class="FM_gray">&quot;submit&quot;</span> value=<span class="FM_gray">&quot;add&quot;</span>&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;/<span class="FM_brown">form</span>&gt;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Body">The <span class="FM_UIControl">Create</span> button would be shown only if the policy evaluation returned true.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Portals_and_web"></a><a name="XREF_77169_Portals_and_web"></a>Portals and web applications</p>
+ <p dir="ltr" class="FM_Body">A portal typically combines widgets and content from multiple sources. Developers can define fine-grained access control rules using ABAC to restrict access to different widgets. Similarly, many enterprise applications have navigation menus, submenus, regions, tables, and various other web components that should be displayed only to authorized users as shown in <a href="#XREF_96685_Authorization_rules"><span class="FM_blue">Figure&nbsp;4-3</span></a>.</p>
+ <p dir="ltr" class="FM_Body">In ABAC policies, developers can model all these artifacts as resources and define very fine-grained authorization rules and enforce the authorization. </p>
+ <div align="center"><img alt="AuthorizationRules.png" style=" width:100%; max-width:479.670pt;" id="image2" src="AuthorizationRules.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 4-3: <a name="XREF_96685_Authorization_rules"></a>Integration patterns for portals and web applications</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>1: <span class="FM_Bold">Sales links</span>: Displayed to Sales team only</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>2: <span class="FM_Bold">Tools links</span>: Displayed to appropriate users based on attributes</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Micro_services_APIs_and"></a><a name="XREF_64218_Micro_services"></a>Micro services, APIs, and endpoints</p>
+ <p dir="ltr" class="FM_Body">API gateways are powerful and modern tools to extend business functionality. They help to com&#173;bine multiple backend services (internal and external) and build a simple façade. In this hybrid system, authorization is the responsibility of the façade that is exposing all the backend services.</p>
+ <p dir="ltr" class="FM_Body">Other patterns with API gateways virtualize existing legacy systems to work with newer systems, such as mainframe legacy application services that are required for mobile applications. For example, a supplier management system might have two different services providing the data: a supplier service and an order management service. </p>
+ <p dir="ltr" class="FM_Body">Typical authorization requirements in this scenario include:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">API access</span>: <span class="FM_Bold">Only authorized users can invoke the API</span>: Users in the Finance and Marketing departments should be able to query supplier data and access the Supplier API. </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Data filtering and redaction</span>: <span class="FM_Bold">What data will the API expose to the user</span>: Users in the Market&#173;ing department can view suppliers in their own region only, but those users are not authorized to view bank account numbers.</p>
+ <p dir="ltr" class="FM_Body">A sample ABAC policy would be as follows:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policy Effect</span>: Allow</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Subject</span>: Finance department users (Department = Finance)</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Resource</span>: Suppliers in a given region; Data (<span class="FM_Code">Supplier.location = :logged_in_user.loc</span>)</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Action</span>: Query</p>
+ <p dir="ltr" class="FM_Body">The enforcement point for this request occurs before the response leaves the API gateway. The developer checks with the PDP to determine whether a particular row is authorized to be in the response. If it is not authorized, the row is removed. <a href="#XREF_82176_Enforcement_point"><span class="FM_blue">Figure&nbsp;4-4</span></a> shows an overview of the inte&#173;gration. In the sample architecture, CloudAz is working with a cloud-based API gateway.</p>
+ <div align="center"><img alt="IntegrationPatterns2.png" style=" width:100%; max-width:440.760pt;" id="image3" src="IntegrationPatterns2.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 4-4: <a name="XREF_82176_Enforcement_point"></a>Integration patterns for micro services APIs and endpoints</p>
+ <p dir="ltr" class="FM_Body">A simple JavaScript implementation of this would be as follows:</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>This is example code only. For the required syntax, see <a href="../SDKSAAS/Using_the_JavaScript_client_library.htm#XREF_89443_Using_the">Using the JavaScript client library</a>.</p>
+ <p dir="ltr" class="FM_CodeComment">//Build OpenAz request by gathering all user and resource attributes including action</p>
+ <p dir="ltr" class="FM_CodeComment">//supplier is a representation of a row supplier information</p>
+ <p dir="ltr" class="FM_CodeComment">//supplierinfo is array of all the object retrieved from backend<br /></p>
+ <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> supplierInfo = context.proxyResponse.content;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;<span class="FM_blue">for</span> (<span class="FM_blue">var</span>&#160;supplierName <span class="FM_blue">in</span> supplierInfo) {</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">if</span>(supplierInfo.<span class="FM_lavendar">hasOwnProperty</span>(supplierName)) <span class="FM_red">{</span></p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;<span class="FM_blue">var</span>&#160;supplier = supplierInfo[supplierName]; </p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;<span class="FM_blue">var</span> decision = NextLabsPepAgent.decide(mySubject,supplier,action,application);</p>
+ <p dir="ltr" class="FM_Code">&#160;<span class="FM_blue">if</span>&#160;(decision != <span class="FM_blue">true</span>){</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">//remove the supplier information into response payload</p>
+ <p dir="ltr" class="FM_Code"><span class="FM_blue">delete</span> supplierInfo[supplierName];</p>
+ <p dir="ltr" class="FM_Code">}</p>
+ <p dir="ltr" class="FM_Code" style="font-family : 'Trebuchet MS'; font-size  : 10.0pt; color   : #ff0000;"><span class="FM_red">}</span></p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Authorization_using"></a><a name="XREF_20184_Authorization"></a>Authorization using geospatial data</p>
+ <p dir="ltr" class="FM_Body">In organizations that deal with logistics, many access control decisions are based on the locations from which data is being accessed or the location of the resource itself. For example, in the ship&#173;ping industry, a cargo operator based in a port in Singapore should be able access all the cargo information of ships entering Singapore territorial waters. For other ships in the area, however, the operator should be able to access only the ship’s name and location. All other data should be redacted, as shown in <a href="#XREF_42183_Geospatial_data"><span class="FM_blue">Figure&nbsp;4-5</span></a>.</p>
+ <div align="center"><img alt="GeoSpatialData.png" style=" width:100%; margin-left:1.500pt; margin-top:3.000pt; margin-right:2.250pt; margin-bottom:3.750pt; max-width:435.000pt;" id="image4" src="GeoSpatialData.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 4-5: <a name="XREF_42183_Geospatial_data"></a>Geospatial data</p>
+ <p dir="ltr" class="FM_Body">In this scenario developers can use CloudAz ABAC policies to define geospatial data, such as the longitude and latitude of the protected area, as user attributes. These attributes can then be compared with the geolocation of ships to determine access control rights of the user. </p>
+ <p dir="ltr" class="FM_Body">There are many similar use cases where geographical information obtained from mobile devices could be used to determine the access control rights of users. For example, organizations with field service operations could restrict access to customer data based on the current location of their employees. </p>
+</body>
+</html>

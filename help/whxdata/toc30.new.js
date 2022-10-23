@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"About exporting and importing policies and other items","url":"CCUserGuideSaaS/ImportingExportingSaas/Exporting_and_importing_policies.htm#TOC_About_exporting_andbc-1"},{"type":"item","name":"Exporting and importing objects using the CloudAz console","url":"CCUserGuideSaaS/ImportingExportingSaas/Exporting_and_importing_objects_using_the_CloudAz_console.htm"},{"type":"item","name":"Using versions","url":"CCUserGuideSaaS/ImportingExportingSaas/Using_versions.htm"},{"type":"item","name":"About object states","url":"CCUserGuideSaaS/ImportingExportingSaas/About_object_states.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

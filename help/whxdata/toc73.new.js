@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"About policies","url":"CCUserGuideSaaS/NewUISaaS/Policy_and_Policy_Model_overview.htm#TOC_About_policiesbc-1"},{"type":"item","name":"Overview of policy implementation","url":"CCUserGuideSaaS/NewUISaaS/Overview_of_policy_implementation.htm#TOC_Overview_of_policy"},{"type":"book","name":"Managing Policy Model resource types","key":"toc74","url":"CCUserGuideSaaS/NewUISaaS/Managing_Policy_Model_resource_types.htm#TOC_Managing_Policy_Model"},{"type":"book","name":"Managing policy components","key":"toc75","url":"CCUserGuideSaaS/NewUISaaS/Managing_policy_components.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

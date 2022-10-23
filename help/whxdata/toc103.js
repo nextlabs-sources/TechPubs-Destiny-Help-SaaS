@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc102.js\"  name=\"About report log views\" url=\"CCUserGuideSaaS/CustomReportsSaaS/Report_log_views.htm#TOC_About_report_log_viewsbc-1\"><item name=\"Policy Log Views\" url=\"CCUserGuideSaaS/CustomReportsSaaS/Report_log_views.htm#TOC_Policy_Log_Viewsbc-2\" /></data>";

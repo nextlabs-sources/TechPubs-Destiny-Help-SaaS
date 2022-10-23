@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Exception handling</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\SDKSAAS.fm" />
+ <link rel="stylesheet" href="SDKSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "5.1.2_2";
+</script>
+ <meta name="topic-breadcrumbs" content="SDK & OpenAz Client Libraries > SDK and OpenAz Client Libraries" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_77509_Exception_handling"></a>Exception handling</p>
+ <p dir="ltr" class="FM_Body">Based on OpenAz specification, <span class="FM_Code">result.allowed() </span>supports only two responses: &#160;<span class="FM_Code">Allow</span>&#160;and <span class="FM_Code">Deny</span>. If the PDP evaluation does not match the request to any of the system policies, it raises a <span class="FM_Code">PepException</span>. The suggested behavior for handling this exception is for the PEP to <span class="FM_Code">Deny</span>&#160;the request. This ensures the application is secured by default if there is no policy explicitly allowing access.<span style="font-family : 'Times New Roman'; font-size  : 12.0pt; "></span></p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 436.50pt;">Table 5.1: Exception handling</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 61.500pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Language</span></p>
+</th>
+  <th style="width : 375.001pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Exception example</span></p>
+</th>
+</tr>
+  <tr style=" height : 36.00pt;">
+  <td style="width : 61.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Java</span></p>
+</td>
+  <td style="width : 375.001pt; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">catch</span><span class="FM_Code">(error) {</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code">&nbsp;&nbsp;&nbsp;&#160;effectValue = </span><span class="FM_gray">&quot;Deny&quot;</span><span class="FM_Code">;</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code">&nbsp; }</span></p>
+</td>
+</tr>
+  <tr style=" height : 146.00pt;">
+  <td style="width : 61.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">JavaScript</span></p>
+</td>
+  <td style="width : 375.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CodeComment">/*</p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>* pepResponse.allowed() returns a boolean value. If the</p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>* decision is <span class="FM_Emphasis">allowed</span> it returns true; otherwise it returns</p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>* false for <span class="FM_Emphasis">deny</span></p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>* </p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>* The above method call throws a PepException for all other</p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>* indeterminate states</p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>*/</p>
+  <p dir="ltr" class="FM_Code">String effectValue = <span class="FM_gray">&quot;&quot;</span>;</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">try</span> {</p>
+  <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>effectValue = pepResponse.allowed() ? <span class="FM_gray">&quot;Allow&quot;</span>&#160;: <span class="FM_gray">&quot;Deny&quot;</span>;</p>
+  <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>} <span class="FM_blue">catch</span> (PepException ex) {</p>
+  <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>effectValue = <span class="FM_gray">&quot;Indeterminate&quot;</span>;</p>
+  <p dir="ltr" class="FM_Code">}</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_Body"><span style="font-family : 'Times New Roman'; font-size  : 12.0pt; "></span></p>
+ </body>
+</html>

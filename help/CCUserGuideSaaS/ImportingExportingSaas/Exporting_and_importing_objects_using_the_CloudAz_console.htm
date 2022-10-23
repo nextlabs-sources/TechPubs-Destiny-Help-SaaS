@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Exporting and importing objects using the CloudAz console</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\PolicyStudio\ImportingExportingSaas.fm" />
+ <link rel="stylesheet" href="ImportingExportingSaas.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.1.3.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Working with Policies > Exporting and importing policies" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="IX_exporting_2"></a><a name="IX_exporting_1"></a><a name="IX_exporting"></a><a name="IX_exporting_policies_and"></a><a name="XREF_43891_Importing_Objects"></a>Exporting and importing objects using the CloudAz console</p>
+
+ <p dir="ltr" class="FM_Body">Policies and their related components can be exported and imported using the CloudAz console.</p>
+
+ <p dir="ltr" class="FM_HeadingPrerequisite">Before you begin</p>
+
+ <p dir="ltr" class="FM_Body">To avoid creating inconsistent policy sets, follow these guidelines:</p>
+
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Perform exports or imports at a time when you are certain no one is using policy instances.</p>
+
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Request that all policy analysts log out of the CloudAz console when any policies are being imported.</p>
+
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Publish the list of policies and components to be imported, and ask all policy analysts to refrain from editing any object in that list until the procedure is complete.</p>
+
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>On the left navigation bar, click <span class="FM_UIControl">Policies</span>.</p>
+
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>On the Policy Management page, do any of the following:</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Select the export button in the upper right to export all policy objects.</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Select the import button in the upper right to import policy objects.</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Select the policy objects you want to export from the list, then click the export button above the list.</p>
+
+ <div align="center"><img alt="ExportImport8.0UI.PNG" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:6.000pt; margin-bottom:6.000pt; max-width:375.750pt;" id="image0" src="ExportImport8.0UI.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 1.3-1: Export and import controls</p>
+ <p dir="ltr" class="FM_NumBodyCont">When policies are exported, all subpolicies, components, and associated policy model com&#173;ponents, such as resource types, are exported to a file with the extension BIN.</p>
+ <p dir="ltr" class="FM_NumBodyCont">When policies are imported:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>All subpolicies, components, and associated policy model components, such as resource types, are imported.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>With the exception of the User subject type, all policies or components whose compo&#173;nent names or short names match those being imported are overwritten. For example, if the imported file contains a resource type named <span class="FM_Code">Support_Ticket </span>and a resource type with the same short name already exists in the environment, the existing resource type is overwritten with the imported version.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>When the User subject type is imported, all new attributes are added, but the existing User subject type attributes are not overwritten or removed.</p>
+ </body>
+</html>

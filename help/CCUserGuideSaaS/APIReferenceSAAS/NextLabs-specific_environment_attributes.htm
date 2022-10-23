@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>NextLabs-specific environment attributes</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\APIReferenceSAAS.fm" />
+ <link rel="stylesheet" href="APIReferenceSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "6.1.2_1";
+</script>
+ <meta name="topic-breadcrumbs" content="REST API > REST API Reference" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1">NextLabs-specific environment attributes</p>
+
+ <p dir="ltr" class="FM_Body">NextLabs specific-environment attributes can be used to specify what happens when authoriza&#173;tion requests do not match deployed policies or when error conditions occur. There are two ways to use these environment attributes:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Including attributes in authorization requests sent by the PEP</span>: Environment attributes included in authorization requests are applied only to the current request.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Setting attributes as system properties of the PDP</span>. Environment attributes that are config&#173;ured in the PDP properties are applied to every request processed by the PDP.</p>
+ <p dir="ltr" class="FM_Body">There are two NextLabs-specific environment attributes: </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_42743_dont_care">dont-care-acceptable </a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_60350_error_result">error-result-acceptable</a></p>
+ <p dir="ltr" class="FM_Heading3"><span class="FM_Bold"><a name="XREF_42743_dont_care"></a>dont-care-acceptable</span>&#160;</p>
+ <p dir="ltr" class="FM_Body">Used to specify what happens when authorization requests do not match deployed policies. When this attribute is set to yes or true, the PDP returns <span class="FM_Bold">Indeterminate</span>&#160;when the request does not match any of the deployed policies. </p>
+ <p dir="ltr" class="FM_Body">To use <span class="FM_Code">dont-care-acceptable </span>in an authorization request, pass the attribute with the value <span class="FM_Code">yes</span>.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example of the attribute sent in a request</span></p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Code2">{</p>
+ <p dir="ltr" class="FM_Code2">&quot;CategoryId&quot;: &quot;urn:oasis:names:tc:xacml:3.0:attribute-category:environment&quot;,</p>
+ <p dir="ltr" class="FM_Code2">&quot;Attribute&quot;: [</p>
+ <p dir="ltr" class="FM_Code2">{ &quot;DataType&quot;: &quot;http://www.w3.org/2001/XMLSchema#string&quot;, &quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:environment:dont-care-acceptable&quot;, &quot;Value&quot;: &quot;yes&quot;, &quot;IncludeInResult&quot;: &quot;false&quot; }</p>
+ <p dir="ltr" class="FM_Code2">]</p>
+ <p dir="ltr" class="FM_Code2">}</p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+
+ <p dir="ltr" class="FM_Body">To use <span class="FM_Code">dont-care-acceptable</span>&#160;as a system variable, include the attribute with the value <span class="FM_Code">true</span>&#160;as a JVM system variable to be applied at PDP startup. The PDP returns indeterminate for every request that does not match a policy.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example of the attribute as a system variable</span></p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Code2">-Dnextlabs.dont.care.acceptable=true</p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading3"><a name="XREF_60350_error_result"></a>error-result-acceptable</p>
+ <p dir="ltr" class="FM_Body">Used to specify what happens when errors are encountered. If this attribute is set to yes or true, the PDP returns <span class="FM_Code">Error</span> if it encounters an error while processing the request.</p>
+ <p dir="ltr" class="FM_Body">To use <span class="FM_Code">error-result-acceptable</span>&#160;in a request, pass attribute with the value <span class="FM_Code">yes</span>.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example of the attribute set in a request</span></p>
+ <p dir="ltr" class="FM_Code2">{</p>
+ <p dir="ltr" class="FM_Code2">&quot;CategoryId&quot;: &quot;urn:oasis:names:tc:xacml:3.0:attribute-category:environment&quot;,</p>
+ <p dir="ltr" class="FM_Code2">&quot;Attribute&quot;: [</p>
+ <p dir="ltr" class="FM_Code2">{ &quot;DataType&quot;: &quot;http://www.w3.org/2001/XMLSchema#string&quot;, &quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:environment:error-result-acceptable&quot;, &quot;Value&quot;: &quot;yes&quot;, &quot;IncludeInResult&quot;: &quot;false&quot; }</p>
+ <p dir="ltr" class="FM_Code2">]</p>
+ <p dir="ltr" class="FM_Code2">}</p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+
+ <p dir="ltr" class="FM_Body">To use <span class="FM_Code">error-result-acceptable</span>&#160;as a PDP environment variable, include the attribute with the value <span class="FM_Code">true</span>&#160;as a Java system variable during the PDP startup. The attribute is applied globally, and the PDP returns <span class="FM_Code">Error</span> whenever it encounters an error while processing any request.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example of the attribute as a system variable</span></p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Code2">-Dnextlabs.error.result.acceptable=true </p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+</body>
+</html>

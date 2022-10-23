@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Event Details reports","url":"CCUserGuideSaaS/ExamplesSaaS/Sample_reports.htm#TOC_Event_Details_reportsbc-1"},{"type":"item","name":"Group By Policy reports","url":"CCUserGuideSaaS/ExamplesSaaS/Group_By_Policy_reports.htm"},{"type":"item","name":"Group By User reports","url":"CCUserGuideSaaS/ExamplesSaaS/Group_By_User_reports.htm"},{"type":"item","name":"Group By Resource reports","url":"CCUserGuideSaaS/ExamplesSaaS/Group_By_Resource_reports.htm"},{"type":"item","name":"Group By Time reports","url":"CCUserGuideSaaS/ExamplesSaaS/Group_By_Time_reports.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

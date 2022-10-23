@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Report log views</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\DeveloperGuide\CustomReportsSaaS.fm" />
+ <link rel="stylesheet" href="CustomReportsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.7";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <h1 dir="ltr"><a name="XREF_23275_A_Report_Log_Views"></a>Report log views</h1>
+ <p dir="ltr" class="FM_Body">This section explains how to design custom reports, or log views, in Reporter. Reporter is the con&#173;sole used to monitor and report on policy compliance, gather statistics about document usage, and investigate any suspected incidents of information mishandling. Reporter is used by adminis&#173;trators, IT staff, managers, executives, auditors, and other authorized personnel.</p>
+
+ <div align="center"><img alt="databaseschema.gif" style=" width:100%; margin-left:5.250pt; margin-top:3.000pt; margin-right:5.250pt; margin-bottom:3.000pt; max-width:324.000pt;" id="image0" src="databaseschema.gif" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2-7-1: <a name="XREF_40041_Overview_of_Report"></a>Overview of report log views</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Policy_Log_Views"></a><a name="XREF_82389_Policy_Log_Views"></a>Policy Log Views</p>
+ <p dir="ltr" class="FM_Body">The main Policy Log view is <span class="FM_Bold" style="font-size  : 9.0pt; ">policy_log_v1</span>. This base view contains data related to policy enforce&#173;ment, for example, the time of policy enforcement, impacted resources, actions, the policy name, the policy decision, and so on. </p>
+ <p dir="ltr" class="FM_Body">Two other views are associated with policy_log_v1: <span class="FM_Bold" style="font-size  : 9.0pt; ">policy_obligation_log_v1</span>&#160;and <span class="FM_Bold" style="font-size  : 9.0pt; ">policy_custom_at&#173;tribute_v1</span>. The policy obligation log view contains information about custom obligations associ&#173;ated with a policy event. The attributes that are collected are dependent on each custom obligation (for example, for a system encryption custom obligation, this could be the path or file&#173;name of the encrypted file). The policy custom attribute log reflects resource attributes that are associated with the policy event, for example, file tags/classifications associated with resources, or attributes associated with subjects (such as citizenship for users).</p>
+ </body>
+</html>

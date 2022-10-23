@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Viewing report output</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\ReportsSaaS.fm" />
+ <link rel="stylesheet" href="ReportsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.3.2";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports > Working with reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="IX_viewing"></a><a name="XREF_49423_Viewing_the_report"></a>Viewing report output<span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></p>
+ <p dir="ltr" class="FM_Body"><a name="IX_drilling_down"></a>When viewing the report output, you can drill down for additional information. A table shows all the policy enforcement events that meet the criteria specified in the report query. You can click the date value in any row to get details for an event. The details appear in a Log Details Report on a separate page, as shown in <a href="#XREF_66569_Selecting_a_row_to"><span class="FM_blue">Figure&nbsp;2.3-9</span></a>.</p>
+ <div align="center"><img alt="ReportsSaaS00005.jpg" style=" width:100%; max-width:496.740pt;" id="image9" src="ReportsSaaS00005.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-9: <a name="XREF_66569_Selecting_a_row_to"></a>Selecting a row to obtain event details</p>
+ <p dir="ltr" class="FM_Body">Unlike a table, a chart does not show each policy enforcement event. Rather, a chart aggregates policy enforcement events by the grouping option you specify. For example, a chart can group events by user. In this case, each slice of a pie chart or bar in a bar chart represents a user and the total number of events triggered by the user. You can click a chart slice or bar to see all the events triggered by a particular user.</p>
+ <p dir="ltr" class="FM_Body"><a href="#XREF_68751_Clicking_a_bar_in"><span class="FM_blue">Figure&nbsp;2.3-10</span></a> shows the list of events that appear when a bar in a bar chart is clicked. The num&#173;ber, 5.00, on top of the bar indicates the number of events for a particular user, and, correspond&#173;ingly, the table lists the five events. Drill down for details about each event by clicking a date value in a row in the table.</p>
+ <div align="center"><img alt="ReportsSaaS00008.jpg" style=" width:100%; max-width:488.676pt;" id="image10" src="ReportsSaaS00008.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-10: <a name="XREF_68751_Clicking_a_bar_in"></a>Clicking a bar in a chart to obtain a list of events</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Non_Latin_characters"></a><a name="IX_for_non_Latin_characters"></a><a name="IX_column_collations"></a><a name="IX_character_sets"></a><a name="IX_with_non_Latin_characters"></a><a name="IX_non_Latin_characters"></a>Non-Latin characters</p>
+ <p dir="ltr" class="FM_Body">If you are using Microsoft SQL and your database includes columns with content in languages that use character sets other than standard Latin, reports based on them might not display properly. For example, they might show question marks instead of the proper characters.</p>
+ <p dir="ltr" class="FM_Body">If you encounter this problem in reports, you can solve it by having your database administrator change the collation value for the columns in question, to match the language of the content of that column. Note that only non case-specific collations should be used, whatever the character set. Once you do this, the reports should generate properly.</p>
+ <p dir="ltr" class="FM_Body">This should be done on a column-by-column basis, and applies only to Microsoft SQL databases.</p>
+ </body>
+</html>

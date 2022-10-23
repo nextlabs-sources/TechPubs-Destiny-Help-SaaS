@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Sample reports</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\ExamplesSaaS.fm" />
+ <link rel="stylesheet" href="ExamplesSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.6";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <h1 dir="ltr"><a name="XREF_96101_3_Using_Reports"></a>Sample reports</h1>
+ <p dir="ltr" class="FM_Body">This section presents examples of the available report formats, all representing a simple set of event data returned by the same report query. The query requests all events by all users on all resources. By comparing the examples carefully, you can get a better understanding of the way the different formats can be used to highlight different aspects of the same data.</p>
+ <p dir="ltr" class="FM_Heading1PartSection"><a name="TOC_Event_Details_reports"></a><span style="font-family : 'Trebuchet MS'; font-weight : normal; font-size  : 10.0pt; color   : #0000ff; "></span><a name="XREF_36489_DetailsReports"></a>Event Details&nbsp;reports</p>
+ <p dir="ltr" class="FM_Body"><a href="#XREF_18947_Event_Details"><span class="FM_blue">Figure&nbsp;2.6-1</span></a> shows the Event Details report on a small set of policy activity data.</p>
+ <div align="center"><img alt="SmplDetailsReport.jpg" style=" width:100%; max-width:485.136pt;" id="image0" src="SmplDetailsReport.jpg" />
+ </div>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.6-1: <a name="XREF_18947_Event_Details"></a>Event Details Report</p>
+ <p dir="ltr" class="FM_Body">The Event Details report reflects the following:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Four instances of policy enforcement were logged—that is why there are four rows in the table.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>As the Date column shows, all four instances occurred on the same day.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Each was triggered by a different user, as shown by the four different values in the User col&#173;umn.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Each represents a different policy, as shown by the four different values in the Policy column.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Only three resources were involved. The first two rows show enforcement to two different policies by two different users, but both were connected to the same RTF document. This means that document is covered by (at least) two policies concurrently—not an unusual situa&#173;tion.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The enforcements were triggered by three different user actions, as shown by the values in the Action column. The third and last instances were caused by different users doing the same thing—trying to change a document’s attributes.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In all four cases, the enforcement result was Allow, as shown in the last column.</p>
+ <p dir="ltr" class="FM_Body">Bear these details in mind as you analyze the Group by Details reports below.</p>
+ </body>
+</html>

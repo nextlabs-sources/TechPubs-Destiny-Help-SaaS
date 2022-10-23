@@ -1,0 +1,50 @@
+<project name="Help" default="build">
+
+	<!-- Initialization tasks -->
+	<tstamp />
+
+	<!-- Properties -->
+	<property file="${nlbuildroot}/scripts/build.properties" />
+	<property file="${nlbuildroot}/src/build-scripts/etc/build.properties" />
+
+	<property name="src.etc"					value="${basedir}/etc"/>
+	<property name="src.genhelpfiles"	value="${nlbuildroot}/Help"/>
+	<property name="src.helpvideos"		value="${nlgitexternaldir}/TechPubs-Destiny-Help/Videos"/>
+	<property name="build.webapp"			value="${build.root.dir}/server/apps/help"/>
+	<property name="build.webinf"			value="${build.webapp}/WEB-INF"/>
+
+	<echoproperties/>
+
+	<target name="setup-webapp" >
+		<mkdir dir="${build.webinf}"/>
+
+		<!-- Copy configuration files -->
+		<copy file="${src.etc}/web.xml" todir="${build.webinf}" failonerror="true"/>
+
+		<!-- Copy generated help files -->
+		<copy todir="${build.webapp}" failonerror="true">
+			<fileset dir="${src.genhelpfiles}" >
+				<include name="**/*" />
+			</fileset>
+		</copy>
+
+		<!-- Copy movies from Perforce git_external folder -->
+		<mkdir dir="${build.webapp}/LandingPage/video"/>
+		<copy file="${src.helpvideos}/SaaS/ControlCenterIntro.mp4" todir="${build.webapp}/LandingPage/video" failonerror="true" verbose="true" />
+		<copy file="${src.helpvideos}/DelegatedAdministration.mp4" todir="${build.webapp}/LandingPage/video" failonerror="true" verbose="true" />
+		<copy file="${src.helpvideos}/PolicyModel.mp4" todir="${build.webapp}/LandingPage/video" failonerror="true" verbose="true" />
+		<copy file="${src.helpvideos}/PolicyTester.mp4" todir="${build.webapp}/LandingPage/video" failonerror="true" verbose="true" />
+	</target>
+
+	<target name="setup-war" depends="setup-webapp">
+		<war destfile="${build.webapp}/help.war" basedir="${build.webapp}" webxml="${build.webinf}/web.xml" excludes="help.war"/>
+	</target>
+
+	<target name="deploy">
+		<mkdir dir="${war.dir}"/>
+		<copy file="${build.webapp}/help.war" todir="${war.dir}"/>
+	</target>
+
+	<target name="build" depends="setup-war, deploy">
+	</target>
+</project>

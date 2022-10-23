@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Using the JavaScript client library</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\SDKSAAS.fm" />
+ <link rel="stylesheet" href="SDKSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "5.1.2";
+</script>
+ <meta name="topic-breadcrumbs" content="SDK & OpenAz Client Libraries > SDK and OpenAz Client Libraries" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_89443_Using_the"></a>Using the JavaScript client library</p>
+ <p dir="ltr" class="FM_Body">This section explains how to use NextLabs OpenAz PEP JavaScript client to construct and send an authorization request to the NextLabs REST API and how to process its response.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Setting_up_the"></a><a name="XREF_90512_Setting_up_the"></a>Setting up the JavaScript SDK</p>
+ <p dir="ltr" class="FM_Body">To use the JavaScript client library, you must set up the JavaScript SDK and configure NextLabs OpenAz as a dependency in <span class="FM_Filename">package.json</span>.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Set up the JavaScript SDK. For instructions, go to <span class="FM_Hyperlink"><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Verify that the JavaScript node version is 4.5 or higher, and the npm version is 3.10.6 or higher. To check version numbers, use these commands: </p>
+ <p dir="ltr" class="FM_Code2" style="font-size  : 10.0pt;"><span class="FM_Filename">node --version </span></p>
+ <p dir="ltr" class="FM_Code2" style="font-size  : 10.0pt;"><span class="FM_Filename">npm --version</span></p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Download the sample JavaScript application from <span class="FM_Hyperlink"><a href="https://s3-us-west-2.amazonaws.com/nxtlbsrelease/Platform_SAAS/openAZ-pep/Nextlabs-OpenAZ-PEP.zip">https://s3-us-west-2.amazonaws.com/nxtlbsrelease/Platform_SAAS/openAZ-pep/Nextlabs-OpenAZ-PEP.zip</a></span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Extract the files from the package.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Open the extracted folder and go to the <span class="FM_Filename">js</span>&#160;folder, which contains the required files and samples for the NodeJS API.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>Files are extracted with the <span class="FM_Emphasis">Read-only </span>attribute set in their properties<span class="FM_Emphasis">. </span>To view or change file properties in Windows, right-click the file, then select <span class="FM_Emphasis">Proper&#173;ties</span>.<span class="FM_Emphasis">&#160;</span></p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Clone the project, then specify NextLabs OpenAz as a dependency in <span class="FM_Code">package.json</span>&#160;using a local path:</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_gray">&quot;dependencies&quot;</span>: {</p>
+ <p dir="ltr" class="FM_Code2">&#160;&#160;&#160;&#160;<span class="FM_gray">&quot;nextlabs-openaz&quot;</span>:<span class="FM_gray">&quot;path/to/project&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2"> &#160;&#160;&#160;...other dependencies...</p>
+ <p dir="ltr" class="FM_Code2">}</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>7<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Install the module using the following command:</p>
+ <p dir="ltr" class="FM_Code2">npm install</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>8<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>To use the module:</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> nextlabsopenaz = require(<span class="FM_gray">&quot;nextlabs-openaz&quot;</span>);</p>
+ <p dir="ltr" class="FM_HeadingNextSteps">Next steps</p>
+ <p dir="ltr" class="FM_Body">Load required properties. See <a href="#XREF_20872_Required_properties">Required properties</a>&#160;and <a href="#XREF_87488_An_example_of_how">Making authorization requests using JavaScript</a>.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Required_properties"></a><a name="XREF_20872_Required_properties"></a>Required properties</p>
+ <p dir="ltr" class="FM_Body">Properties can be loaded through <span class="FM_Code">openAz-pep.json</span>&#160;or as a JavaScript object. The following properties are required to connect to the REST API:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.host</span>: The host name of the server where the NextLabs Policy Decision Point is located. For example, <span class="FM_Code">jpc.localdomain.</span></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.port</span>: The port used by Tomcat or JBoss for REST API connections. For example, <span class="FM_Code">58080</span>. </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.https</span>: The protocol used for REST API connections. For HTTPS use <span class="FM_Code">false</span>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.auth_type</span>: The authorization method for connecting to the REST API. For example, <span class="FM_Code">OAUTH2</span>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.oauth2.grant_type</span>: The authentication grant type for REST API connec&#173;tions. For example, <span class="FM_Code">client_credentials</span>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.oauth2.client_id</span>: The <span class="FM_Code">client_id</span> credential required for authentica&#173;tion with the application. This is the username of the account created for the connection. See <a href="Configuring_user_authentication_for_the_REST_API.htm#XREF_58341_Setting_up_the">Configuring user authentication for the REST API</a>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.oauth2.client_secret</span>: The <span class="FM_Code">client_secret</span>&#160;credential required for authentication with the application. This is the password of the account created for the con&#173;nection. See <a href="Configuring_user_authentication_for_the_REST_API.htm#XREF_58341_Setting_up_the">Configuring user authentication for the REST API</a>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.ignore_https_certificate</span>: Whether to ignore the HTTPS certificate warnings (<span class="FM_Code">true</span>) or not (<span class="FM_Code">false</span>). If you are using a self-signed SSL certificate, use the value <span class="FM_Code">true</span>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.oauth2.server</span>: The hostname of the server where the Control Center is installed. For example, <span class="FM_Code">&lt;Control_Center_host&gt;.</span></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.oauth2.port</span>: The port to use for REST API connections. For HTTPS, use <span class="FM_Code">443</span>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.oauth2.https</span>: The HTTPS connection for the REST API. For HTTPS, use <span class="FM_Code">true</span>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">nextlabs.cloudaz.oauth2.token_endpoint_path</span>: The Control Center host name or IP address and the authentication token. For example, <span class="FM_Code">&lt;Control_Center_host&gt;/cas/token</span>.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example </span></p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">{</span></p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.host&quot;</span>:<span class="FM_gray"> &quot;&lt;Java PC host&gt; e.g.: jpc.localdomain&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.port&quot;</span>:<span class="FM_gray"> &quot;58080&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.https&quot;</span>:<span class="FM_gray">&#160;</span><span class="FM_blue">false</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.auth_type&quot;</span>:<span class="FM_gray"> &quot;OAUTH2&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.oauth2.grant_type&quot;</span>:<span class="FM_gray"> &quot;client_credentials&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.oauth2.client_id&quot;</span>:<span class="FM_gray"> &quot;&lt;CLIENT_ID&gt;&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.oauth2.client_secret&quot;</span>:<span class="FM_gray"> &quot;&lt;CLIENT_SECRET&gt;&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.ignore_https_certificate&quot;</span>:<span class="FM_gray">&#160;</span><span class="FM_blue">true</span><span class="FM_gray">,</span></p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.oauth2.server&quot;</span>:<span class="FM_gray"> &quot;&lt;Control_Center_Host&gt;&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.oauth2.port&quot;</span>:<span class="FM_gray"> &quot;443&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.oauth2.https&quot;</span>:<span class="FM_gray">&#160;</span><span class="FM_blue">true</span>,</p>
+ <p dir="ltr" class="FM_Code2" style="color   : #415558;"><span class="FM_gray">&quot;nextlabs.cloudaz.oauth2.token_endpoint_path&quot;</span>:<span class="FM_gray"> &quot;/cas/token&quot;</span></p>
+ <p dir="ltr" class="FM_Code2">};</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Making_authorization1"></a><a name="XREF_87488_An_example_of_how"></a>Making authorization requests using JavaScript</p>
+ <p dir="ltr" class="FM_Body">PEPs (policy enforcement points) send authorization requests to PDPs (policy decision points) and receive authorization decisions in response. To make an authorization request using JavaScript, you need to load properties, build the request, and send the request to the PDP from the Next&#173;Labs PEPAgent, an instance of which is created with the <span class="FM_Code">new</span>&#160;operator. For more information, see <a href="#XREF_20872_Required_properties">Required properties</a>. </p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Load the required properties using a JavaScript object or a JSON file:</p>
+ <p dir="ltr" class="FM_NumBodyCont">To load properties using a JavaScript object:</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> pepAgent = new NextLabsPEPAgent(openazProperties);</p>
+ <p dir="ltr" class="FM_NumBodyCont">To load properties using a JSON file and establish a secure connection:</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> openazProperties = require (&quot;./config/openaz-pep.json&quot;);</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Initialize the PEPAgent and establish the PEPAgent secured connection with the PDP:</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> nextlabsopenaz = require(<span class="FM_gray">&quot;nextlabs-openaz&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> NextLabsPEPAgent = nextlabsopenaz.NextLabsPEPAgent;</p>
+ <p dir="ltr" class="FM_Code2">&nbsp;</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> openazProperties = require(<span class="FM_gray">&quot;./config/openaz-pep.json&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span>&#160;pepAgent = &#160;<span class="FM_blue">new</span> NextLabsPEPAgent(openazProperties);</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Build the request:</p>
+ <p dir="ltr" class="FM_NumBodySub1">a<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Required)</span>&#160;Build the Subject object with a unique ID. Typically this is a SID (Windows security identifier or UNIX ID) or an email address. Additional attributes can be populated using <span class="FM_Code">addAttribute</span>:</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span> Subject = nextlabsopenaz.Subject;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span> user = new Subject(&quot;<span class="FM_gray">chris.webber@hdesk.com</span>&quot;);</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;user.addAttribute(<span class="FM_gray">&quot;user_id&quot;</span>, <span class="FM_gray">&quot;chris.webber&quot;</span>);</p>
+ <p dir="ltr" class="FM_NumBodySub">b<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Required) </span>Build the Action object using the Action short name. The short name must match that of the Action resource type:</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> Action = nextlabsopenaz.Action;</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> action = new Action(<span class="FM_gray">&quot;VIEW_TKTS&quot;</span>);</p>
+ <p dir="ltr" class="FM_NumBodySub">c<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Required) </span>Build a Resource object with a resource ID, which is typically the name of the resource, and populate all the available resource attributes. <span class="FM_Code">ID_RESOURCE_RESOURCE_TYPE</span>&#160;is a required attribute. The value of this attribute must match the short name of the resource type:</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span> Resource = nextlabsopenaz.Resource;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span> resource = new Resource(<span class="FM_gray">&quot;Ticket:1103&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;resource.addAttribute(NextLabsXACML.ID_RESOURCE_RESOURCE_TYPE, <span class="FM_gray">&quot;support_tickets&quot;</span>)</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;resource.addAttribute(<span class="FM_gray">&quot;ticket_id&quot;</span>, <span class="FM_gray">&quot;1103&quot;</span>);</p>
+ <p dir="ltr" class="FM_NumBodySub">d<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Required) </span>Build the Application object and its attributes:</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> Application = nextlabsopenaz.Application;</p>
+ <p dir="ltr" class="FM_Code2"><span class="FM_blue">var</span> application = new Application(<span class="FM_gray">&quot;HelpDeskApp&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code2">application.addAttribute(<span class="FM_gray">&quot;version&quot;, &quot;1.0&quot;</span>);</p>
+ <p dir="ltr" class="FM_NumBodySub">e<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Optional) </span>Build an Environment object and its attributes:</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;<span class="FM_blue">var</span> Environment = nextlabsopenaz.Environment;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;<span class="FM_blue">var</span> environment = new Environment();</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;environment.addAttribute(<span class="FM_gray">&quot;authentication_type&quot;</span>, <span class="FM_gray">&quot;multifactor&quot;</span>);</p>
+ <p dir="ltr" class="FM_NumBodySub">f<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Optional) </span>Specify the host or the machine that processes authorization requests. To cre&#173;ate an instance of Host, pass an integer as an IP address or a string as a hostname, which&#173;ever is most convenient. No additional attributes are supported:</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// default localhost</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue" style="font-family : 'Trebuchet MS'; font-weight : bold; ">var</span>&#160;host = <span class="FM_blue">new</span> Host();</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// using host name</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span>&#160;host1 = <span class="FM_blue">new</span> Host(<span class="FM_gray">&quot;some_host&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// using inet address</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span>&#160;host2 = <span class="FM_blue">new</span> Host(<span class="FM_brown">0x7f000001</span>);</p>
+ <p dir="ltr" class="FM_NumBodySub">g<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Optional) </span>If you are enforcing policies on an application that sends email, such as Micro&#173;soft Outlook, build the Recipient object.The Recipient object can include a single email address or a list of email addresses. However, attributes can be associated with a single recipient only. If your policies depend on attributes, and you need to specify multiple recipients, each recipient must be placed in a separate request:</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// single recipient with id and email</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span>&#160;recipient = <span class="FM_blue">new</span> Recipient(<span class="FM_gray">&quot;abc@gmail.com&quot;</span>, <span class="FM_gray">&quot;abc&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// multiple recipients with email addresses</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span>&#160;recipient2 = <span class="FM_blue">new</span> Recipient(<span class="FM_gray">&quot;abc@gmail.com&quot;</span>, <span class="FM_gray">&quot;def@gmail.com&quot;</span>);</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Send the authorization request from the PEPAgent using the <span class="FM_Code">decide()</span> method:</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;// Include the details required for the decide method: subject, action,</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;// resource, application</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;// Include optional details as needed: environment, host, recipient</p>
+ <p dir="ltr" class="FM_CodeComment">&#160;&#160;&#160;// pepAgent.decide(String subject, String action, String resource, </p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;// String environment, String application, String recipient)</p>
+ <p dir="ltr" class="FM_CodeComment">&nbsp;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;pepAgent.decide(<span class="FM_gray">subject</span>, <span class="FM_gray">action</span>, <span class="FM_gray">resource</span>, <span class="FM_gray">application</span>,<span class="FM_gray"> environment</span>,<span class="FM_gray"> host</span>, <span class="FM_gray">recipient</span>,).then(<span class="FM_blue">function</span>(pepResponse) {</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;assert(pepResponse <span class="FM_blue">instanceof</span> PEPResponse);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code"> &#160;});</p>
+
+ </body>
+</html>

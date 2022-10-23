@@ -1,0 +1,1029 @@
+﻿<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="QuickStart Guide">
+    <param name="Local" value="CCUserGuideSaaS/Part1QuickStart/QuickStart_Guide.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Using the QuickStart Guide">
+      <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="QuickStart objectives">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_QuickStart_objectives">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Before you begin">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_Before_you_begin">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Import the sample ABAC policies">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_Import_the_sample_ABAC">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Run the application and send an authorization request">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_Run_the_application_and">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Run the sample Java application and send an authorization request">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_Run_the_sample_Java">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Run the sample JavaScript application and send an authorization request">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_Run_the_sample">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About the sample application">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_About_the_sample">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="High-level flow and terminology">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_High_level_flow_and">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Runtime execution: Attributes, request, and response">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_Runtime_execution">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About sample authorization policies">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_About_sample">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About sample authorization requests and decisions">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_About_sample1">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Take it for a spin">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_Take_it_for_a_spin">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About the Policy Model">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_About_the_Policy_Model">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Creating components and policies">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Using_the_QuickStart_Guide.htm#TOC_Creating_components_and">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Go wild!">
+        <param name="Local" value="CCUserGuideSaaS/QuickstartSAAS/Go_wild.htm">
+      </object>
+      </ul>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="ABAC Concepts">
+    <param name="Local" value="CCUserGuideSaaS/Part2ABACConcepts/ABAC_Concepts.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Overview of ABAC">
+      <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Introduction to ABAC">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_Introduction_to_ABAC">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="How ABAC policies are evaluated and maintained">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_How_ABAC_policies_are">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Basic ABAC architecture">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_Basic_ABAC_architecture">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Comparing ABAC, RBAC, and ACL models">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_Comparing_ABAC_RBAC_and">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About RBAC models">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_About_RBAC_models">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About ACL models">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_About_ACL_models">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Comparing ABAC, RBAC, and ACL implementations">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_Comparing_ABAC_RBAC_and1">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Business rule">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_Business_rule">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="ABAC implementation">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_ABAC_implementation">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="RBAC implementation">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_RBAC_implementation">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="ACL implementation">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_ACL_implementation">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="ABAC benefits">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_ABAC_benefits">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Additional resources">
+        <param name="Local" value="CCUserGuideSaaS/ABACConceptsSAAS/Overview_of_ABAC.htm#TOC_Additional_resources">
+      </object>
+      </ul>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="CloudAz Concepts">
+    <param name="Local" value="CCUserGuideSaaS/Part3WhatIsCloudAZ/CloudAz_Concepts.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Overview of CloudAz">
+      <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="CloudAz platform">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_CloudAz_platform">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="CloudAz features">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_CloudAz_features">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="CloudAz functional components">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_CloudAz_functional">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="CloudAz server">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_CloudAz_server">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Cloud PDP">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_Cloud_PDP">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Reports">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_Reports">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About the Policy Model">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_About_the_Policy_Model">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About the CloudAz console">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_About_the_CloudAz_console">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About the Dashboard">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_About_the_Dashboard">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Understanding Dashboard data">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_Understanding_Dashboard">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Configuring CloudAz">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_Configuring_CloudAz">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Delegated administration">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm#TOC_Delegated_administration">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Building PEPs and integrating them with CloudAz">
+        <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Building_PEPs_and_integrating_them_with_CloudAz.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Analyze and understand the authorization needs and environment">
+          <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Building_PEPs_and_integrating_them_with_CloudAz.htm#TOC_Analyze_and_understand">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Build a runtime integration by invoking the API">
+          <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Building_PEPs_and_integrating_them_with_CloudAz.htm#TOC_Build_a_runtime">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Define the metadata required to create ABAC policies">
+          <param name="Local" value="CCUserGuideSaaS/WhatIsCloudAZSAAS/Building_PEPs_and_integrating_them_with_CloudAz.htm#TOC_Define_the_metadata">
+        </object>
+        </ul>
+      </ul>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="ABAC Use Cases &amp; Integration">
+    <param name="Local" value="CCUserGuideSaaS/Part4IntegrationGuides/ABAC_Use_Cases_Integration.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Use cases &amp; integration patterns">
+      <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Business need for authorization">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Business_need_for">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Use cases addressed by ABAC">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Use_cases_addressed_by">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Integration patterns with CloudAz">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Integration_patterns">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Data security: Data filtering for relational data">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Data_security_Data">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Data redaction">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Data_redaction">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Authorization for content management and unstructured data">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Authorization_for">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Secure business transactions">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Secure_business">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Portals and web applications">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Portals_and_web">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Micro services, APIs, and endpoints">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Micro_services_APIs_and">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Authorization using geospatial data">
+        <param name="Local" value="CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#TOC_Authorization_using">
+      </object>
+      </ul>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="SDK &amp; OpenAz Client Libraries">
+    <param name="Local" value="CCUserGuideSaaS/Part5SDK/SDK_OpenAz_Client_Libraries.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="SDK and OpenAz Client Libraries">
+      <param name="Local" value="CCUserGuideSaaS/SDKSAAS/SDK_and_OpenAz_Client_Libraries.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About the OpenAz PEP client SDK">
+        <param name="Local" value="CCUserGuideSaaS/SDKSAAS/SDK_and_OpenAz_Client_Libraries.htm#TOC_About_the_OpenAz_PEP">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Using the Java client library">
+        <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Setting up the Java SDK">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Setting_up_the_Java_SDK">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Invoking the PDP">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Invoking_the_PDP">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Making authorization requests using Java">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Making_authorization">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Request category classes">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Request_category_classes">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Creating instances of category classes">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Creating_instances_of">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Adding attributes to category objects">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Adding_attributes_to">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Categories used in requests">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Categories_used_in">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Methods used in authorization requests">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Methods_used_in">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="PepResponse">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_PepResponse">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Exception handling">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm#TOC_Exception_handling">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Using the JavaScript client library">
+        <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Setting up the JavaScript SDK">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm#TOC_Setting_up_the">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Required properties">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm#TOC_Required_properties">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Making authorization requests using JavaScript">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm#TOC_Making_authorization1">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Required categories">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm#TOC_Required_categories">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Request categories">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm#TOC_Request_categories">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Methods used in authorization requests">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm#TOC_Methods_used_in1">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="PEPResponse">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm#TOC_PEPResponse1">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Configuring user authentication for the REST API">
+        <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Configuring_user_authentication_for_the_REST_API.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Exception handling">
+        <param name="Local" value="CCUserGuideSaaS/SDKSAAS/Exception_handling.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="SDK quick reference">
+        <param name="Local" value="CCUserGuideSaaS/SDKSAAS/SDK_quick_reference.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Methods">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/SDK_quick_reference.htm#TOC_Methods">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Request category classes">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/SDK_quick_reference.htm#TOC_Request_category_classes1">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="PEPResponse">
+          <param name="Local" value="CCUserGuideSaaS/SDKSAAS/SDK_quick_reference.htm#TOC_PEPResponse2">
+        </object>
+        </ul>
+      </ul>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="REST API">
+    <param name="Local" value="CCUserGuideSaaS/Part6APIReference/REST_API.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="REST API Reference">
+      <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/REST_API_Reference.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="About the CloudAz REST API">
+        <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/REST_API_Reference.htm#TOC_About_the_CloudAz_REST">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="How to access the REST API">
+        <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/How_to_access_the_REST_API.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Using OAuth 2.0 to access Cloud PDP REST APIs">
+        <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Using_OAuth_2_0_to_access_Cloud_PDP_REST_APIs.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Obtaining an access token">
+          <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Using_OAuth_2_0_to_access_Cloud_PDP_REST_APIs.htm#TOC_Obtaining_an_access_token">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About authorization grant types, requests, and responses">
+          <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Using_OAuth_2_0_to_access_Cloud_PDP_REST_APIs.htm#TOC_About_authorization">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Request format">
+        <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Request_format.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Types of requests">
+        <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Types of requests and examples of request data">
+        <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Single-query request (JSON): Example 1">
+          <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm#TOC_Single_query_request">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Single-query request (XML): Example 2">
+          <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm#TOC_Single_query_request_XML">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Multi-query request (XML): Example 3">
+          <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm#TOC_Multi_query_request_XML">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="SAML request: Example 4">
+          <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm#TOC_SAML_request_Example_4">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="NextLabs-specific environment attributes">
+        <param name="Local" value="CCUserGuideSaaS/APIReferenceSAAS/NextLabs-specific_environment_attributes.htm">
+      </object>
+      </ul>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Product Guide">
+    <param name="Local" value="CCUserGuideSaaS/Part7ProductGuide/Product_Guide.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Working with Policies">
+      <param name="Local" value="CCUserGuideSaaS/Part1WorkingWithPoliciesSaaS/Working_with_Policies.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Policy and Policy Model overview">
+        <param name="Local" value="CCUserGuideSaaS/NewUISaaS/Policy_and_Policy_Model_overview.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About policies">
+          <param name="Local" value="CCUserGuideSaaS/NewUISaaS/Policy_and_Policy_Model_overview.htm#TOC_About_policies">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Overview of policy implementation">
+          <param name="Local" value="CCUserGuideSaaS/NewUISaaS/Overview_of_policy_implementation.htm#TOC_Overview_of_policy">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Managing Policy Model resource types">
+          <param name="Local" value="CCUserGuideSaaS/NewUISaaS/Managing_Policy_Model_resource_types.htm#TOC_Managing_Policy_Model">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Adding and editing resource types">
+            <param name="Local" value="CCUserGuideSaaS/NewUISaaS/Managing_Policy_Model_resource_types.htm#TOC_Adding_and_editing">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Managing policy components">
+          <param name="Local" value="CCUserGuideSaaS/NewUISaaS/Managing_policy_components.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="About component types">
+            <param name="Local" value="CCUserGuideSaaS/NewUISaaS/Managing_policy_components.htm#TOC_About_component_types">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Adding and editing policy components">
+            <param name="Local" value="CCUserGuideSaaS/NewUISaaS/Managing_policy_components.htm#TOC_Adding_and_editing1">
+          </object>
+          </ul>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Constructing and testing policies">
+        <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Constructing_and_testing_policies.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About constructing policies">
+          <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Constructing_and_testing_policies.htm#TOC_About_constructing">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Adding policies">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Constructing_and_testing_policies.htm#TOC_Adding_policies">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Using Advanced Conditions">
+          <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Using_Advanced_Conditions.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Using wildcards in Advanced Conditions">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Using_Advanced_Conditions.htm#TOC_Using_wildcards_in">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Example condition for equal and multi-value equal">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Using_Advanced_Conditions.htm#TOC_Example_condition_for">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Example condition for multi-value equals_unordered operators">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Using_Advanced_Conditions.htm#TOC_Example_condition_for1">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Example condition for the includes operator">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Using_Advanced_Conditions.htm#TOC_Example_condition_for2">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Example condition for greater than/less than">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Using_Advanced_Conditions.htm#TOC_Example_condition_for3">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Managing subpolicies">
+          <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Managing_subpolicies.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Examples of subpolicies">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Managing_subpolicies.htm#TOC_Examples_of_subpolicies">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Adding subpolicies">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Managing_subpolicies.htm#TOC_Adding_subpolicies">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Viewing and editing policy and component information">
+          <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Viewing_and_editing_policy_and_component_information.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Viewing policy and component hierarchy">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Viewing_and_editing_policy_and_component_information.htm#TOC_Viewing_policy_and">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Viewing policy and component version history">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Viewing_and_editing_policy_and_component_information.htm#TOC_Viewing_policy_and1">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Viewing and editing policy and component properties">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Viewing_and_editing_policy_and_component_information.htm#TOC_Viewing_and_editing1">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Cloning policies and components">
+          <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Cloning_policies_and_components.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Cloning policies">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Cloning_policies_and_components.htm#TOC_Cloning_policies">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Cloning components">
+            <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Cloning_policies_and_components.htm#TOC_Cloning_components">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Constructing Delegated Administration policies">
+          <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Constructing_Delegated_Administration_policies.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Testing policies">
+          <param name="Local" value="CCUserGuideSaaS/PoliciesSAAS/Testing_policies.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Exporting and importing policies">
+        <param name="Local" value="CCUserGuideSaaS/ImportingExportingSaas/Exporting_and_importing_policies.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About exporting and importing policies and other items">
+          <param name="Local" value="CCUserGuideSaaS/ImportingExportingSaas/Exporting_and_importing_policies.htm#TOC_About_exporting_and">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Exporting and importing objects using the CloudAz console">
+          <param name="Local" value="CCUserGuideSaaS/ImportingExportingSaas/Exporting_and_importing_objects_using_the_CloudAz_console.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Using versions">
+          <param name="Local" value="CCUserGuideSaaS/ImportingExportingSaas/Using_versions.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About object states">
+          <param name="Local" value="CCUserGuideSaaS/ImportingExportingSaas/About_object_states.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Deploying and managing objects">
+        <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Deploying_and_managing_objects.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About deploying and managing objects">
+          <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Deploying_and_managing_objects.htm#TOC_About_deploying_and">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Deploying components">
+          <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Deploying_components.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Deploying policies">
+          <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Deploying_policies.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Managing policies and components">
+          <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Managing_policies_and_components.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Searching and filtering policy and component lists">
+            <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Managing_policies_and_components.htm#TOC_Searching_and_filtering">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Viewing policy version information">
+            <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Managing_policies_and_components.htm#TOC_Viewing_policy_version">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Modifying policies and components">
+            <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Managing_policies_and_components.htm#TOC_Modifying_policies_and">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Changing user access to components">
+            <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Managing_policies_and_components.htm#TOC_Changing_user_access_to">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="De-activating policies and components">
+            <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Managing_policies_and_components.htm#TOC_De_activating_policies">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Deleting objects">
+            <param name="Local" value="CCUserGuideSaaS/Deploying_SaaS/Managing_policies_and_components.htm#TOC_Deleting_objects">
+          </object>
+          </ul>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Delegated administration policies">
+        <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Delegated_administration_policies.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About delegated administration policies">
+          <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Delegated_administration_policies.htm#TOC_About_delegated">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Adding and editing delegation policies">
+          <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Adding_and_editing_delegation_policies.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Deleting delegation policies">
+          <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Deleting_delegation_policies.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Managing user accounts">
+          <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Managing_user_accounts.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Adding or editing user accounts">
+            <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Managing_user_accounts.htm#TOC_Adding_or_editing_user">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Deleting user accounts">
+            <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Managing_user_accounts.htm#TOC_Deleting_user_accounts">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Unlocking a user account">
+            <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Managing_user_accounts.htm#TOC_Unlocking_a_user_account">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Changing the superuser password">
+          <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Changing_the_superuser_password.htm">
+        </object>
+        </ul>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Managing Reports">
+      <param name="Local" value="CCUserGuideSaaS/Part3ManagingReportsSaaS/Managing_Reports.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Introducing Reporter">
+        <param name="Local" value="CCUserGuideSaaS/IntroSaaS/Introducing_Reporter.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About Reporter">
+          <param name="Local" value="CCUserGuideSaaS/IntroSaaS/Introducing_Reporter.htm#TOC_About_Reporter">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Accessing the Reporter console">
+          <param name="Local" value="CCUserGuideSaaS/IntroSaaS/Accessing_the_Reporter_console.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About the Reporter console">
+          <param name="Local" value="CCUserGuideSaaS/IntroSaaS/About_the_Reporter_console.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Dashboard tab">
+            <param name="Local" value="CCUserGuideSaaS/IntroSaaS/About_the_Reporter_console.htm#TOC_Dashboard_tab">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Reports tab">
+            <param name="Local" value="CCUserGuideSaaS/IntroSaaS/About_the_Reporter_console.htm#TOC_Reports_tab">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Monitoring tab">
+            <param name="Local" value="CCUserGuideSaaS/IntroSaaS/About_the_Reporter_console.htm#TOC_Monitoring_tab">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Banner">
+            <param name="Local" value="CCUserGuideSaaS/IntroSaaS/About_the_Reporter_console.htm#TOC_Banner">
+          </object>
+          </ul>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Using the Reporter Dashboard">
+        <param name="Local" value="CCUserGuideSaaS/DashboardSaaS/Using_the_Reporter_Dashboard.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Introducing the Reporter Dashboard">
+          <param name="Local" value="CCUserGuideSaaS/DashboardSaaS/Using_the_Reporter_Dashboard.htm#TOC_Introducing_the_Reporter">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About Reporter Dashboard data">
+          <param name="Local" value="CCUserGuideSaaS/DashboardSaaS/About_Reporter_Dashboard_data.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Working with reports">
+        <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Working_with_reports.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Reporting functionality and permissions">
+          <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Working_with_reports.htm#TOC_Reporting_functionality">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Creating a report">
+          <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Creating_a_report.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Specifying a report period">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Creating_a_report.htm#TOC_Specifying_a_report">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Filtering by user, resource, and policy">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Creating_a_report.htm#TOC_Filtering_by_user">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Filtering by action">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Creating_a_report.htm#TOC_Filtering_by_action">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Running a report">
+          <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Running_a_report.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Viewing report output">
+          <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Viewing_report_output.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Non-Latin characters">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Viewing_report_output.htm#TOC_Non_Latin_characters">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Saving reports">
+          <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Saving_reports.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Sample reports">
+          <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Table">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Table">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Group by policy chart">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Group_by_policy_chart">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Group by user chart">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Group_by_user_chart">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Group by resource chart">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Group_by_resource_chart">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Group by time chart">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Group_by_time_chart">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Report anomalies">
+          <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Report_anomalies.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Implied actions">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Report_anomalies.htm#TOC_Implied_actions">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Preview activity">
+            <param name="Local" value="CCUserGuideSaaS/ReportsSaaS/Report_anomalies.htm#TOC_Preview_activity">
+          </object>
+          </ul>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Working with monitors and alerts">
+        <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Working_with_monitors_and_alerts.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Monitoring functionality and permissions">
+          <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Working_with_monitors_and_alerts.htm#TOC_Monitoring_functionality">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Creating a monitor">
+          <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Creating_a_monitor.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Specifying the Duration">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Creating_a_monitor.htm#TOC_Specifying_the_Duration">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Specifying the file size or records criteria">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Creating_a_monitor.htm#TOC_Specifying_the_file_size">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Defining a tag">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Creating_a_monitor.htm#TOC_Defining_a_tag">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Deactivating and deleting monitors">
+          <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Deactivating_and_deleting_monitors.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Viewing alerts">
+          <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Viewing_alerts.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Sorting alerts">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Viewing_alerts.htm#TOC_Sorting_alerts">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Filtering alerts">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Viewing_alerts.htm#TOC_Filtering_alerts">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Displaying alert details">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Viewing_alerts.htm#TOC_Displaying_alert_details">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Deleting and dismissing alerts">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Viewing_alerts.htm#TOC_Deleting_and_dismissing">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Analyzing alerts">
+          <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Analyzing_alerts.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Alerts by monitor tag">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Analyzing_alerts.htm#TOC_Alerts_by_monitor_tag">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Alerts by monitors">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Analyzing_alerts.htm#TOC_Alerts_by_monitors">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Alerts by time">
+            <param name="Local" value="CCUserGuideSaaS/MonitorsSaaS/Analyzing_alerts.htm#TOC_Alerts_by_time">
+          </object>
+          </ul>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Using audit logs">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About audit logs">
+          <param name="Local" value="AuditLogs/Using_Audit_Logs.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Viewing audit logs">
+          <param name="Local" value="AuditLogs/Viewing_Audit_Logs.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Sample reports">
+        <param name="Local" value="CCUserGuideSaaS/ExamplesSaaS/Sample_reports.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Event Details reports">
+          <param name="Local" value="CCUserGuideSaaS/ExamplesSaaS/Sample_reports.htm#TOC_Event_Details_reports">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Group By Policy reports">
+          <param name="Local" value="CCUserGuideSaaS/ExamplesSaaS/Group_By_Policy_reports.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Group By User reports">
+          <param name="Local" value="CCUserGuideSaaS/ExamplesSaaS/Group_By_User_reports.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Group By Resource reports">
+          <param name="Local" value="CCUserGuideSaaS/ExamplesSaaS/Group_By_Resource_reports.htm">
+        </object>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Group By Time reports">
+          <param name="Local" value="CCUserGuideSaaS/ExamplesSaaS/Group_By_Time_reports.htm">
+        </object>
+        </ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Report log views">
+        <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/Report_log_views.htm">
+      </object>
+      <ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="About report log views">
+          <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/Report_log_views.htm#TOC_About_report_log_views">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Policy Log Views">
+            <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/Report_log_views.htm#TOC_Policy_Log_Views">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="View Details">
+          <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/View_Details.htm">
+        </object>
+        <ul>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Policy Log View">
+            <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/View_Details.htm#TOC_Policy_Log_View">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Policy Obligation Log View">
+            <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/View_Details.htm#TOC_Policy_Obligation_Log">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Policy Custom Attribute view">
+            <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/View_Details.htm#TOC_Policy_Custom_Attribute">
+          </object>
+          <li><object type="text/sitemap">
+            <param name="Name" value="Actions">
+            <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/View_Details.htm#TOC_Actions">
+          </object>
+          </ul>
+        <li><object type="text/sitemap">
+          <param name="Name" value="Reports in NextLabs Reporter">
+          <param name="Local" value="CCUserGuideSaaS/CustomReportsSaaS/Reports_in_NextLabs_Reporter.htm">
+        </object>
+        </ul>
+      </ul>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="FAQs and troubleshooting">
+    <param name="Local" value="CCUserGuideSaaS/HowDoI_saas/HowDoI_saas.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Glossary">
+    <param name="Local" value="CCUserGuideSaaS/MasterGlossarySaaS/Glossary.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Printed documentation">
+    <param name="Local" value="Printed_documentation.htm">
+  </object>
+</ul>
+</html>

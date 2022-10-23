@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Creating a report</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\ReportsSaaS.fm" />
+ <link rel="stylesheet" href="ReportsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.3.1";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports > Working with reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="IX_reports"></a><a name="XREF_75237_Defining_Reports"></a>Creating a report</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_defining"></a>A report is a formatted view of a particular set of information extracted from the Activity Jour&#173;nal, a set of database tables where policy activity data is logged. You create a report by defining a query—criteria, or filters, for the policy activity data you want to include in the report—and specifying the display options that determine how the data is presented.</p>
+ <p dir="ltr" class="FM_Body">Just as policies can be designed to control information access and usage by types of users, actions, resources, applications, and computers, you can design report queries that filter policy activity data by attributes of those components. The greater the number of filters, the fewer the number of records returned. For example, compare the following queries: </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Retrieve data for deny enforcements of any policy (in other words, all policies), covering any action by any user on any resource, for one week. </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Retrieve data for deny enforcements by communication policies that cover only the email action on only documents classified as Confidential, for one week. </p>
+ <p dir="ltr" class="FM_Body">The first query specifies fewer conditions and retrieves more data than the second.</p>
+ <p dir="ltr" class="FM_NoteImportant"><span class="FM_ImportantEmphasis">Important:<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span> </span>If you don’t specify any filters or change any of the default settings, the report retrieves all policy activity data categorized as user-level events, for the cur&#173;rent day.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>In the CloudAz console, click <span class="FM_UIControl">Reports</span>&#160;on the left navigation bar.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Click the <span class="FM_Bold" style="font-size  : 9.0pt; ">Reports</span>&#160;tab, if it is not already open. </p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>If the query of an existing report is currently displayed in the <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Details</span>&#160;pane, click <span class="FM_Bold" style="font-size  : 9.0pt; ">New</span>&#160;at the bottom of the <span class="FM_Bold" style="font-size  : 9.0pt; ">Saved Reports</span> pane.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Define the report query and display options. Many of the fields are optional. Required fields are populated with default values. </p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 416.25pt;">Table 2.3.1: Report query and display fields</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 106.500pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Query field</p>
+</th>
+  <th style="width : 309.750pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+  <tr style=" height : 39.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_To_Field"></a>From and To</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The start date and time, and end date and time, respectively, of the time period the report covers. Click in the field to choose a date and time from the calendar. When specifying a report period, consider the time zone of the system and the time period of data stored in the Activity Journal. See <a href="#XREF_20974_Specifying_a">Specifying a report period</a>.</p>
+</td>
+</tr>
+  <tr style=" height : 75.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Event Level</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The level of event verbosity the report contains:</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>User Events (default)</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Application Events (application and user-level events)</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>All System Events (system, application, and user-level events)</p>
+  <p dir="ltr" class="FM_CellBody">As a rule, you should leave this setting at <span class="FM_UIControl">User Events</span>. This setting significantly reduces the amount of system noise. Application- or system-level events are generally not useful in monitoring policy or user activities.</p>
+</td>
+</tr>
+  <tr style=" height : 88.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Policy_Decision_field"></a>Policy Decision</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; ">
+  <p dir="ltr" class="FM_CellBody">The type of enforcement effect to include in the report:</p>
+
+  <p dir="ltr" class="FM_CellBodyBullet"><a name="IX_filtering_by"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span style="font-weight : bold; ">Allow</span>: Instances when the policy permitted the user to perform the action cov&#173;ered by the policy. Report results are determined by the information that is logged. For example, if the policy contains no On Allow logging obligations, the report returns no On Allow data regardless of whether you select this option.</p>
+  <p dir="ltr" class="FM_CellBodyBullet"><a name="IX_filtering_by_1"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span style="font-weight : bold; ">Deny</span>: Instances when the policy did not allow the user to perform the action. Deny decisions are always logged.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span style="font-weight : bold; ">Both:</span>&#160;All instances when the policy was enforced, with either Allow or Deny effect.</p>
+</td>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Resource_Type_field"></a>Resource Type</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The resource type to include in the report. Resource types are the templates that include information about attributes, actions, and obligations available to components and policies.</p>
+</td>
+</tr>
+  <tr style=" height : 50.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Action_field"></a>&#160;Action</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The user action or actions to include in the report. The list shows all currently defined actions for the resource type. To select multiple actions, press <span class="FM_UIControl">Ctrl</span>&#160;and click each action. If no actions are selected, all actions are included in the report. </p>
+  <p dir="ltr" class="FM_CellBody"><a name="IX_limited_obligation"></a>Policies involving Paste actions do not support logging obligations, therefore, instances of their enforcement are not included in reports.</p>
+</td>
+</tr>
+  <tr style=" height : 53.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_User_field"></a><a name="IX_by_users_1"></a><a name="IX_by_users"></a>&#160;User</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody"><a name="IX_Lookup_tool"></a><a name="IX_Users_Search_Window"></a>One or more users on which to filter the activity data, or leave this field blank to include all users. To browse for users in your directory, click the magnifying glass icon to use the <span class="FM_Bold" style="font-size  : 9.0pt; ">User Lookup</span>&#160;window. <span style="font-size  : 10.0pt; "></span></p>
+</td>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_User_Criteria_field"></a>User Criteria</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Conditions used to specify additional user criteria. Each condition consists of a user attribute, an operator, and a value. You must click the + button to add a condition to the query. See <a href="#XREF_51905_Filtering_by">Filtering by criteria</a>.</p>
+</td>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Resource_Criteria_field"></a>&#160;Resource Criteria</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Conditions used to specify additional resource criteria. Each condition consists of a resource attribute, an operator, and a value. You must click the + button to add a condition to the query. See <a href="#XREF_51905_Filtering_by">Filtering by criteria</a>.</p>
+</td>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Policy_Name_field"></a>&#160;Policy Full Name</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">One or more policies on which to filter, or leave this field blank to include all policies. Use the Policy Lookup window to browse through and select the policies.</p>
+</td>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Policy_Criteria_field"></a>&#160;Policy Criteria</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Conditions used to specify additional policy criteria. Each condition consists of a policy attribute, an operator, and a value. You must click the + button to add a condition to the query. See <a href="#XREF_51905_Filtering_by">Filtering by criteria</a>.</p>
+</td>
+</tr>
+  <tr style=" height : 39.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Other_Criteria_field"></a>&#160;Other Criteria</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Conditions used to specify additional criteria. Each condition consists of a general attribute (for example, hostname, host IP, and application name), an operator, and a value. You must click the + button to add a condition to the query.See <a href="#XREF_51905_Filtering_by">Filtering by criteria</a>.</p>
+</td>
+</tr>
+  <tr style=" height : 161.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Report_Type_field"></a><span style="font-size  : 10.0pt; ">&#160;</span>Report Type</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The output format in which to display the data: Table, Bar Chart, Horizontal Bar Chart, or Pie Chart. Use a table to display policy activity details in a row-and-column format. Use a chart to display a summary of policy activities. For examples of reports in different formats, see <a href="Sample_reports.htm#XREF_62752_Sample_Reports">Sample reports</a>.</p>
+  <p dir="ltr" class="FM_CellBody">For chart report types, select grouping options (grouping is not available to table type reports):</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Group by User: The chart shows the number of enforcement events for each user covered by the report.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Group by Resource: The chart shows the number of enforcement events for each resource covered by the report.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Group by Policy: The chart shows the number of enforcement events for each policy covered by the report.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Group by Month: The chart shows the number of enforcement events for each month covered by the report. Select this option only if the time period you spec&#173;ified spans more than one month.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Group by Day: The chart shows the number of enforcement events for each day covered by the report.</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Show_field"></a>Show</p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The display options for the report type (not available for Table type reports).</p>
+</td>
+</tr>
+  <tr style=" height : 47.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Sort_By_field"></a><span style="font-size  : 10.0pt; ">&#160;</span><span style="font-size  : 9.0pt; ">Sort By</span></p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The field on which to sort the data, and select <span class="FM_Bold">Asc</span>&#160;to sort in ascending order or <span class="FM_Bold">Desc</span>&#160;to sort in descending order. If the report type is a table, you can sort the data by any attribute. If the report type is a chart, you can sort either by the grouping item (user, resource, policy, month, or day) or by Result Count (the number of enforcement events for each user, resource, policy, month, or day).</p>
+</td>
+</tr>
+  <tr style=" height : 55.00pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Max_Results_field"></a><span style="font-size  : 10.0pt; ">&#160;</span><span style="font-size  : 9.0pt; ">Max Results</span></p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The maximum number of results to display in the table or chart. For charts, this number represents the maximum number of bars in a bar chart, or slices in a pie chart. For readability reasons, charts should display a limited number of bars or slices. For a table, the number represents the maximum number of rows (each row represents an event). Tables that show a large number of rows present the data on multiple pages.</p>
+</td>
+</tr>
+  <tr style=" height : 41.97pt;">
+  <td style="width : 106.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold"><a name="IX_Display_Columns_field"></a><span style="font-size  : 10.0pt; ">&#160;</span><span style="font-size  : 9.0pt; ">Display Columns</span></p>
+</td>
+  <td style="width : 309.750pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The columns to display in a table. This setting applies to a table only. USER_NAME, POLICY_FULLNAME, POLICY_DECISION, HOST_NAME, and APPLICATION_NAME are selected by default. To remove any of those columns or to add other columns, click <img alt="SelectColumnsIcon.png" style=" width:100%; margin-bottom:-2.500pt; max-width:10.800pt;" id="image2" src="SelectColumnsIcon.png" /> and use the arrow icons to move columns out of, or into, the Selected pane.</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Click <span class="FM_Bold" style="font-size  : 9.0pt; ">Run</span> to generate the report.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>If you want to run report at a future time, save it by clicking <span class="FM_Bold" style="font-size  : 9.0pt; ">Options</span>&#160;&gt; <span class="FM_Bold" style="font-size  : 9.0pt; ">Save</span>. See <a href="Saving_reports.htm#XREF_90564_Saving_a_Report">Saving reports</a>.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Specifying_a_report"></a><a name="XREF_20974_Specifying_a"></a>Specifying a report period</p>
+
+ <p dir="ltr" class="FM_Body"><a name="IX_specifying_1"></a>When specifying the report start date and time and the end date and time, be sure to consider the time zone of the system and the length of time that data is stored in the Activity Journal.</p>
+
+ <p dir="ltr" class="FM_Heading3">Time zone considerations</p>
+
+ <p dir="ltr" class="FM_Body"><a name="IX_and_time_zones_1"></a><a name="IX_time_zones_1"></a>The report period is determined using the time zone of the CloudAz system, not the time zone where you are running the Reporter console&#160;or the time zone where the events you are querying on occurred. CloudAz uses the time zone of the region specified for the subscription. Trial sub&#173;scriptions use Pacific time.</p>
+
+ <p dir="ltr" class="FM_Body">To generate reports for specified periods, you might need to add hours to the beginning or end of your time period, depending on the time difference between the CloudAz time zone and the location where the events of interest occurred.</p>
+
+ <p dir="ltr" class="FM_Body">For example, if your CloudAz system uses the Eastern time zone, and you want to query on events in the Pacific time zone, be aware that there is a three hour difference between the time&#173;zones. If you specify date-time values that start and end at midnight, your query returns three hours of data from the night before the first date in your time period (Pacific time), and does not include the last three hours of data on the final day of the time period.</p>
+ <p dir="ltr" class="FM_Heading3"><a name="IX_and_Activity_Journal"></a><a name="XREF_65163_Activity_Journal"></a>Activity Journal archive considerations</p>
+ <p dir="ltr" class="FM_Body">By default, the Activity Journal stores data for 90 days before archiving it, but this setting can be changed by the database administrator. Depending on the archive setting, data for the period you specify might be unavailable. If a query uses all default values, except for the report period, and it returns no data, try changing the <span class="FM_Bold" style="font-size  : 9.0pt; ">From</span>&#160;and <span class="FM_Bold" style="font-size  : 9.0pt; ">To</span>&#160;values to later dates. </p>
+ <p dir="ltr" class="FM_Body">To create a report that uses data that is already archived, ask your database administrator to restore the data to the Activity Journal.</p>
+
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Filtering_by_user"></a><a name="IX_by_policy_2"></a><a name="IX_by_policy_1"></a><a name="IX_by_policy"></a><a name="IX_by_users_4"></a><a name="IX_by_users_3"></a><a name="IX_by_users_2"></a><a name="XREF_44634_Filtering_by_User"></a>Filtering by user, resource, and <span style="font-size  : 11.0pt; "></span>policy</p>
+ <p dir="ltr" class="FM_Body">When filtering policy activity data by user, resource, or policy, you can use either, or both, of the following methods:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Filter by one or more usernames, resource paths, or policy names</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Filter by user, resource, or policy criteria</p>
+ <p dir="ltr" class="FM_Heading3">Filtering by name</p>
+ <p dir="ltr" class="FM_Body">To filter by one or more usernames, resource paths, or policy names, you specify values in the <span class="FM_Bold" style="font-size  : 9.0pt; ">User</span>, <span class="FM_Bold" style="font-size  : 9.0pt; ">Resource Path</span>, and <span class="FM_Bold" style="font-size  : 9.0pt; ">Policy Name</span> fields.</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_Lookup_tool_1"></a><a name="IX_Policy_Name_field_1"></a><a name="IX_User_field_1"></a>For <span class="FM_Bold" style="font-size  : 9.0pt; ">User</span>&#160;and <span class="FM_Bold" style="font-size  : 9.0pt; ">Policy Name</span>, use the Lookup tool to browse for and select the names. <a href="#XREF_14408_User_Lookup_window"><span class="FM_blue">Figure&nbsp;2.3-3</span></a>&#160;shows the User Lookup window. The Policy Lookup tool is similar.</p>
+ <div align="center"><img alt="UserLookup2.png" style=" width:100%; max-width:367.458pt;" id="image3" src="UserLookup2.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-3: <a name="XREF_14408_User_Lookup_window"></a>User Lookup window</p>
+ <p dir="ltr" class="FM_Body">There is no lookup tool for <span class="FM_Bold" style="font-size  : 9.0pt; ">Resource Path</span>. You must type the resource path value. Make sure you enter the correct information. If you specify a path that does not exist, the filter essentially has no effect. Observe the following guidelines when typing values:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>For multiple values, separate each value with a comma. </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Include the full folder path in each value.</p>
+ <p dir="ltr" class="FM_Bulleted"><a name="IX_in_report_filtering"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Use upper- or lowercase characters as needed. Queries are not case sensitive.</p>
+ <p dir="ltr" class="FM_Bulleted"><a name="IX_wildcard_character"></a><a name="IX_asterisk"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Use an asterisk (*) as a &#160;wildcard character. For example, you can type the following string to specify all content—subfolders and files—in the <span class="FM_Code">Finance</span> folder:</p>
+ <p dir="ltr" class="FM_OnScreen">c:\Finance\* </p>
+ <p dir="ltr" class="FM_Heading3"><a name="XREF_51905_Filtering_by"></a>Filtering by criteria</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_Policy_Criteria_field_1"></a><a name="IX_Resource_Criteria_field_1"></a><a name="IX_User_Criteria_field_1"></a>To filter by user, resource, or policy criteria, use conditions in the <span class="FM_Bold" style="font-size  : 9.0pt; ">User Criteria</span>, <span class="FM_Bold" style="font-size  : 9.0pt; ">Resource Criteria</span>, or <span class="FM_Bold" style="font-size  : 9.0pt; ">Policy Criteria</span>&#160;fields. Each condition consists of an attribute, an operator, and a value. You can create multiple conditions for each filter type. For example, you can filter resources by the Mod&#173;ified By and Keywords attributes to find documents modified by a particular author <span style="font-style : italic; ">and</span> that con&#173;tain a specified keyword. Both conditions must be true for the filter to return any results.</p>
+ <p dir="ltr" class="FM_Body">You can create a condition for <span class="FM_Bold" style="font-size  : 9.0pt; ">User Criteria</span>, <span class="FM_Bold" style="font-size  : 9.0pt; ">Resource Criteria</span>, or <span class="FM_Bold" style="font-size  : 9.0pt; ">Policy Criteria</span>.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>In the CloudAz console, click <span class="FM_UIControl">Reports</span>&#160;on the left navigation bar.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Click the <span class="FM_Bold" style="font-size  : 9.0pt; ">Reports</span> tab, if it is not already open.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>On the Report Query form, select an attribute from the Resource Criteria drop-down list. The list displays the attributes that have been defined. The policy attributes list also includes the tags, if any, defined for policies.</p>
+ <p dir="ltr" class="FM_NumBodyCont"><a href="#XREF_75033_Example_of"><span class="FM_blue">Figure&nbsp;2.3-4</span></a>&#160;shows an example of a list of resource attributes. </p>
+ <div align="center"><img alt="ResourceAttributes.png" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:4.500pt; margin-bottom:4.500pt; max-width:337.500pt;" id="image4" src="ResourceAttributes.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-4: <a name="XREF_75033_Example_of"></a>Resource attributes list</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Select a comparison operator from the second drop-down list.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Equals_operator"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold" style="font-size  : 9.0pt; ">Equals</span>: Attribute value matches a specified value. </p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Not_Equals_operator"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold" style="font-size  : 9.0pt; ">Not Equals</span>: Attribute value does not match a specified value. Use this operator to exclude the specified value from the result set.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Like_operator"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold" style="font-size  : 9.0pt; ">Like</span>: Attribute value is similar to the specified characters. This operator is similar to the SQL LIKE keyword. Use it to match a specific pattern, or when you do not know the entire value.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_In_operator"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold" style="font-size  : 9.0pt; ">In</span>: Attribute value matches any one of a specified set of values. This operator is similar to the SQL IN keyword. Use it to create an OR condition, that is, when you want to match multiple values.</p>
+ <p dir="ltr" class="FM_NumBodyCont">For all the operators, searches are case-insensitive. For example, <span class="FM_Emphasis">Patrick Marleau</span>&#160;is the same as <span class="FM_Emphasis">patrick marleau</span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Type a value in the third field. </p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>If you selected the Equals operator, the specified value must be an exact match (aside from case); otherwise, the filter does not find any matches and the report does not return any results.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>If you selected the Not Equals operator, the specified value you do <span class="FM_Emphasis">not</span>&#160;want to match must also be an exact match to an attribute value (aside from case); otherwise, the fil&#173;ter does not exclude any values, and you get more results than you expect.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>If you selected the Like operator, you can use the following wildcard characters:</p>
+ <p dir="ltr" class="FM_Bulleted2"><a name="IX_wildcard_character_1"></a><a name="IX_percent_symbol"></a>- <span style="padding-left: 4pt;" class="FMAutoNumber_1"></span>%: matches one or more characters.</p>
+ <p dir="ltr" class="FM_Bulleted2"><a name="IX_wildcard_character_2"></a><a name="IX_underscore"></a>- <span style="padding-left: 4pt;" class="FMAutoNumber_1"></span>_: matches any single character. You can use more than one underscore consecu&#173;tively; for example, to match any two consecutive characters, use two underscores.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>If you selected the In operator to specify a set of values, separate each value with a comma.</p>
+ <p dir="ltr" class="FM_NumBodyCont">For examples of conditions that use these different operators, see <a href="#XREF_39707_Filter_Examples">Filter examples</a>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Click the <span class="FM_Bold" style="font-size  : 9.0pt; ">+</span> button to add the condition to the report query.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>7<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Repeat the previous steps to add conditions as needed. <a href="#XREF_19192_Two_conditions_in"><span class="FM_blue">Figure&nbsp;2.3-5</span></a>&#160;shows an example of a query where two conditions have been created for <span class="FM_Bold" style="font-size  : 9.0pt; ">Resource Criteria</span>. To remove a condition, click the [—] button.</p>
+ <div align="center"><img alt="ResourceCriteria3.png" style=" width:100%; margin-left:36.750pt; margin-top:2.250pt; margin-right:54.750pt; margin-bottom:1.500pt; max-width:313.500pt;" id="image5" src="ResourceCriteria3.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-5: <a name="XREF_19192_Two_conditions_in"></a>Two conditions in Resource Criteria</p>
+ <p dir="ltr" class="FM_Heading3"><a name="IX_filter_examples"></a><a name="XREF_39707_Filter_Examples"></a>Filter examples</p>
+ <p dir="ltr" class="FM_Body">The following condition searches for resources that contain the keyword Confidential (the search is not case sensitive):</p>
+ <p dir="ltr" class="FM_Code"><a name="IX_Equals_operator_1"></a><span class="FM_onscreen">Keywords Equals Confidential</span></p>
+ <p dir="ltr" class="FM_Body">The following condition searches for users who are not US citizens:</p>
+ <p dir="ltr" class="FM_Code"><a name="IX_Not_Equals_operator_1"></a><span class="FM_onscreen">ISO Country Code Not Equals US</span></p>
+ <p dir="ltr" class="FM_Body">The following condition searches for users whose email addresses end with acme.com:</p>
+ <p dir="ltr" class="FM_Code"><span class="FM_onscreen">Email Address Like %acme.com</span></p>
+ <p dir="ltr" class="FM_Body">The following condition searches for machine names that start with NL, followed by any two characters (represented by two underscores), the letters CC, and other characters, for example, NL03CC-Win64:</p>
+ <p dir="ltr" class="FM_Code"><a name="IX_Like_operator_1"></a><span class="FM_onscreen">HOST_NAME Like NL__CC%</span></p>
+ <p dir="ltr" class="FM_Body">The following condition searches for users who are in the Accounting or Finance departments:</p>
+ <p dir="ltr" class="FM_Code"><a name="IX_In_operator_1"></a><span class="FM_onscreen">Department In Accounting, Finance</span></p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Filtering_by_action"></a><a name="IX_by_action"></a><a name="IX_by_actions_1"></a><a name="IX_by_actions"></a><a name="XREF_92418_Filtering_by_Action"></a>Filtering by <span style="font-family : 'Trebuchet MS'; font-weight : normal; font-size  : 10.0pt; "></span>action</p>
+ <p dir="ltr" class="FM_Body">You can filter the policy activity data by user actions, such as create, run, or rename. The Action list displays all the actions that have been defined. You can select more than one action from the list, for example, for a report on all instances of users moving, renaming, or deleting certain files and those actions triggering policy enforcement.</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ </body>
+</html>

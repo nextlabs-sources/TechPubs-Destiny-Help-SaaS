@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc.js\"  name=\"ABAC Use Cases &amp; Integration\" url=\"CCUserGuideSaaS/Part4IntegrationGuides/ABAC_Use_Cases_Integration.htm\"><book name=\"Use cases &amp; integration patterns\" url=\"CCUserGuideSaaS/IntegrationGuidesSAAS/Use_cases_integration_patterns.htm\" src=\"toc61.js\" /></data>";

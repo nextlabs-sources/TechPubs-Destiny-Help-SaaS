@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc.js\"  name=\"SDK &amp; OpenAz Client Libraries\" url=\"CCUserGuideSaaS/Part5SDK/SDK_OpenAz_Client_Libraries.htm\"><book name=\"SDK and OpenAz Client Libraries\" url=\"CCUserGuideSaaS/SDKSAAS/SDK_and_OpenAz_Client_Libraries.htm\" src=\"toc11.js\" /></data>";

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Single-query request (JSON): Example 1","url":"CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm#TOC_Single_query_requestbc-1"},{"type":"item","name":"Single-query request (XML): Example 2","url":"CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm#TOC_Single_query_request_XMLbc-2"},{"type":"item","name":"Multi-query request (XML): Example 3","url":"CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm#TOC_Multi_query_request_XMLbc-3"},{"type":"item","name":"SAML request: Example 4","url":"CCUserGuideSaaS/APIReferenceSAAS/Types_of_requests_and_examples_of_request_data.htm#TOC_SAML_request_Example_4bc-4"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

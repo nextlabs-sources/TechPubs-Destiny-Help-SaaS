@@ -1,0 +1,846 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Originator" content="ImportMif" />
+<meta name="OriginalFile" content="\\sg-fsrv02\data\techpubs\productdocs\ControlCenter\CC_8_6_4_1\Source\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\DelegatedAdministrationSaaS.fm" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Adding and editing delegation policies</title>
+<link rel="stylesheet" href="DelegatedAdministrationSaaS.css" type="text/css" />
+<link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.1.5.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Working with Policies > Delegated administration policies" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<p dir="ltr" class="FM_Heading1"><a name="XREF_59679_Adding_and_editing"></a>Adding 
+ and editing delegation policies</p>
+<p dir="ltr" class="FM_Body">Creating and editing delegation policies is 
+ similar to creating and editing the policies that govern access to resources. 
+ Administrators specify the required attributes, conditions, tags, and 
+ obliga­tions for each delegation policy. Once created, delegation policies 
+ are used to determine Clou­dAz console access for users who have CloudAz 
+ user accounts.</p>
+<p dir="ltr" class="FM_HeadingPrerequisite">Before you begin</p>
+<p dir="ltr" class="FM_Bulleted">•<span class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Decide 
+ what kind of policy you want to create, and whether to base the policy 
+ on user attri­butes such as locations or usernames.</p>
+<p dir="ltr" class="FM_Bulleted">•<span class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Know 
+ the attributes or usernames you want to use in the policy.</p>
+<p dir="ltr" class="FM_Bulleted">•<span class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Know 
+ the relevant tags applied to policy components.</p>
+
+<p dir="ltr" class="FM_HeadingProcedure" style="margin-top: 12.000pt; margin-bottom: 3.000pt; 
+	 font-family: 'Trebuchet MS'; font-weight: normal; font-size: 10.0pt;">Procedure</p>
+<p dir="ltr" class="FM_NumBody1"><span class="FMAutoNumber_1" style="padding-left: 5pt;"></span>1 
+ <span class="FMAutoNumber_2" style="padding-left: 13pt;"></span>Log 
+ in to CloudAz with an account that has permission to manage delegation 
+ policies, such as the superuser Administrator account.</p>
+<p dir="ltr" class="FM_NumBody"><span class="FMAutoNumber_1" style="padding-left: 5pt;"></span>2<span 
+	 class="FMAutoNumber_2" style="padding-left: 16pt;"></span>In 
+ the CloudAz console, select <span class="FM_UIControl">Administration 
+ &gt; Delegation Policies</span>&#160;on the left navigation bar.</p>
+<p dir="ltr" class="FM_NumBody"><span class="FMAutoNumber_1" style="padding-left: 5pt;"></span>3<span 
+	 class="FMAutoNumber_2" style="padding-left: 16pt;"></span>Perform 
+ one of the following steps:</p>
+<p dir="ltr" class="FM_Bulleted1">•<span class="FMAutoNumber_1" style="padding-left: 7pt;"></span>To 
+ add a new delegation policy, click <span class="FM_UIControl">ADD DELEGATION 
+ POLICY</span> in the upper right.</p>
+<p dir="ltr" class="FM_Bulleted1">•<span class="FMAutoNumber_1" style="padding-left: 7pt;"></span>To 
+ edit an existing delegation policy, click the name of an existing policy.</p>
+<p dir="ltr" class="FM_NumBody"><span class="FMAutoNumber_1" style="padding-left: 5pt;"></span>4<span 
+	 class="FMAutoNumber_2" style="padding-left: 16pt;"></span>Add 
+ or edit the policy properties described in <a href="#XREF_88696_Rule_properties"><span 
+	 class="FM_blue">Table&#160;1.5.1</span></a>.</p>
+<table dir="ltr" style="padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; 
+		 padding-bottom: 3.00pt; margin-bottom: 24.00pt;" cellspacing="0" 
+		 align="center" width="90%">
+	<caption dir="ltr" class="FM_TableTitle" style="width: 386.25pt;">Table 
+	 1.5.1: <a name="XREF_88696_Rule_properties"></a>Delegation policy 
+	 properties</caption>
+	<tr style="height: 16.00pt;" bgcolor="#FFFFFF">
+		<th style="border-top: solid 1px #bfbfbf; border-right: solid 1px #bfbfbf; 
+			 border-bottom: solid 1px #bfbfbf; vertical-align: top; padding-left: 6.00pt; 
+			 padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;" 
+			 bgcolor="#FFFFFF" width="186"><p dir="ltr" class="FM_CellHeading">Option</p></th>
+		<th style="border-top: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" bgcolor="#FFFFFF" 
+			 width="329"><p dir="ltr" class="FM_CellHeading">Description</p></th>
+	</tr>
+	<tr style="height: 23.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody"><span class="FM_Bold">BASIC 
+		 INFORMATION</span></p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">The 
+		 name and description of the policy. The name appears on the Delegation 
+		 Policies list.</p></td>
+	</tr>
+	<tr style="height: 35.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody" style="text-indent: 16.500pt;">Name</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">The 
+		 item display name. Multibyte characters, such as those used in 
+		 Asian languages, are allowed, but names cannot exceed 128 characters 
+		 and cannot include: ~ / * $ &amp; &#160;\ &#160;? </p>
+		<p dir="ltr" class="FM_AnchorTextInset">&#160;</p></td>
+	</tr>
+	<tr style="height: 43.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody" style="text-indent: 15.000pt;">Description</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">A 
+		 description of the item. This field is useful for explaining how 
+		 the item is used and for documenting changes to the item. Descriptions 
+		 can include multibyte characters, such as those used by Asian 
+		 languages.</p>
+		<p dir="ltr" class="FM_AnchorTextInset">&#160;</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody">EFFECT &amp; CONDITIONS</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">The 
+		 policy actions and attributes that identify users.</p></td>
+	</tr>
+	<tr style="height: 103.57pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody"><span class="FM_Bold">&#160;&#160;&#160;&#160;&#160;Allow 
+		 or Deny</span></p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_Body" 
+													 style="font-size: 8.0pt;">The 
+		 action taken when conditions in the policy are met.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Allow</span>: Permit the listed Subjects to perform 
+		 the task specified in the policy. Allowing a set of Subjects to 
+		 perform a task does not mean that others are blocked from performing 
+		 that action. Allow policies can never result in Deny responses. 
+		 Allow poli­cies can only result in Allow or Not Applicable responses.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Deny</span>: Do not permit the listed Subjects 
+		 to perform the task specified in the policy, but allow all others 
+		 to do so. Deny poli­cies can result in Deny, Allow, or Not Applicable 
+		 responses.</p>
+		<p dir="ltr" class="FM_Body" style="font-size: 8.0pt;">&#160;</p></td>
+	</tr>
+	<tr style="height: 66.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody" style="font-weight: bold;">&#160;&#160;&#160;&#160;&#160;Conditions</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">User 
+		 attributes used in the policy definition. User attributes include 
+		 location, AD (Active Directory) Group, and Department. Select 
+		 the appropriate operator (is, to include users that have the specified 
+		 attribute, or is not to exclude users with the specified attribute). 
+		 Then specify the attribute definition, such as USA for the Location 
+		 attribute. Click<span class="FM_Bold"> Add condition</span> to 
+		 add an attribute.</p>
+		<p dir="ltr" class="FM_CellBody">&#160;</p></td>
+	</tr>
+	<tr style="height: 85.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody"><span class="FM_Bold">MODULES</span></p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">The 
+		 CloudAz&#160;modules where users perform tasks.</p>
+		<p dir="ltr" class="FM_CellBody">Use tags and conditional settings 
+		 to further refine access to tasks. If no tags or conditions are 
+		 specified, users are able to access all items. </p>
+		<p dir="ltr" class="FM_CellBody">When you select an action check 
+		 box, all required and optional action check boxes are automatically 
+		 selected across modules. <a href="#XREF_96607_Required_and"><span 
+		 class="FM_blue">Table&#160;1.5.2</span></a>&#160;lists the actions 
+		 and the corresponding required and optional actions. You can review 
+		 each module and choose to clear any action check box that is optional.</p></td>
+	</tr>
+	<tr style="height: 126.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody" style="text-indent: 16.416pt;">Policy</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">Controls 
+		 access to policy-management tasks such as: </p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Create Policy</span>: Set up new policies.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Deploy Policy</span>: Make policies available 
+		 to policy enforcers in the system. Use this action to deploy and 
+		 deactivate policies.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Delete Policy</span>: Remove policies from record. 
+		 </p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Policy</span>: View policy details.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Edit Policy</span>: Change the properties of existing 
+		 policies.</p></td>
+	</tr>
+	<tr style="height: 110.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody" style="text-indent: 19.800pt;">Component</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">Controls 
+		 access to policy-component-related tasks, such as:</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Create Component</span>: Set up new policy components.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Deploy Component</span>: Make policy components 
+		 available for use in policies.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Component</span>: View the properties of 
+		 existing policy com­ponents.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Delete Component</span>: Remove policy components 
+		 from the sys­tem. </p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Edit Component</span>: Change the properties of 
+		 existing policy com­ponents.</p></td>
+	</tr>
+	<tr style="height: 91.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody" style="text-indent: 20.550pt;">Policy 
+		 Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">Controls 
+		 access to policy-model-related tasks, such as:</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Create Policy Model</span>: Set up new Policy 
+		 Models.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Delete Policy Model</span>: Remove Policy Models 
+		 from the system. </p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Policy Model</span>: View the properties 
+		 of existing Policy Mod­els.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">Edit Policy Model</span>: Change the properties 
+		 of existing Policy Models.</p></td>
+	</tr>
+	<tr style="height: 139.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #000000; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="186"><p 
+			 dir="ltr" class="FM_CellBody" style="text-indent: 20.916pt;">Others</p></td>
+		<td style="border-bottom: solid 1px #000000; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="329"><p dir="ltr" class="FM_CellBody">Controls 
+		 access to administrative tasks, such as:</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 style="font-weight: bold;">Delegated Administration</span>: Manage 
+		 delegated policies and users. Tasks related to managing policies 
+		 that govern user access to CloudAz 
+		 consoles. Users access these tasks by clicking 
+		 <span class="FM_UIControl">Administration &gt; Delegation Policies</span>&#160;in 
+		 the CloudAz 
+		 left navigation bar.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 style="font-weight: bold;">Reports</span>: Manage and view reports. 
+		 Report-related tasks per­formed in the Reporter section of the 
+		 CloudAz&#160;interface. 
+		 Users with permission to create, delete, view, or edit reporter 
+		 actions access these tasks by clicking <span class="FM_UIControl">Reports</span>&#160;in 
+		 the CloudAz&#160;left 
+		 navigation bar.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 style="font-weight: bold;">Tag Management</span>: Create Policy, 
+		 Policy Model, and Component tags.</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 style="font-weight: bold;">Tools</span>: Test policies within 
+		 the CloudAz console using Policy Tes­ter.</p></td>
+	</tr>
+</table>
+
+<table dir="ltr" style="padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; 
+		 padding-bottom: 3.00pt; margin-bottom: 24.00pt; margin-left: 28.80pt;" 
+		 cellspacing="0" width="90%">
+	<caption dir="ltr" class="FM_TableTitle" style="width: 405.94pt;">Table 
+	 1.5.2: <a name="XREF_96607_Required_and"></a>Required and optional 
+	 actions</caption>
+	<tr style="height: 16.00pt;" bgcolor="#FFFFFF">
+		<th style="border-top: solid 1px #bfbfbf; border-right: solid 1px #bfbfbf; 
+			 border-bottom: solid 1px #bfbfbf; vertical-align: top; padding-left: 6.00pt; 
+			 padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;" 
+			 bgcolor="#FFFFFF" width="180"><p dir="ltr" class="FM_CellHeading">Action</p></th>
+		<th style="border-top: solid 1px #bfbfbf; border-right: solid 1px #bfbfbf; 
+			 border-bottom: solid 1px #bfbfbf; vertical-align: top; padding-left: 6.00pt; 
+			 padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;" 
+			 bgcolor="#FFFFFF" width="180"><p dir="ltr" class="FM_CellHeading">Required 
+		 actions</p></th>
+		<th style="border-top: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" bgcolor="#FFFFFF" 
+			 width="180"><p dir="ltr" class="FM_CellHeading">Optional actions</p></th>
+	</tr>
+	<tr style="height: 37.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Create Policy</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Policy</span></p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBodyBullet">•<span 
+		 class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Edit 
+		 Policy</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Create 
+		 Policy Tags</p></td>
+	</tr>
+	<tr style="height: 37.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Delete Policy</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 37.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Deploy Policy</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBodyBullet">•<span 
+		 class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Deploy 
+		 Component</p></td>
+	</tr>
+	<tr style="height: 37.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Edit Policy</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBodyBullet">•<span 
+		 class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Create 
+		 Policy Tags</p></td>
+	</tr>
+	<tr style="height: 26.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">View Policy</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Component</span></p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_Body" 
+													 style="font-size: 8.0pt;">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 26.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Create Component</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Component</span></p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBodyBullet">•<span 
+		 class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Edit 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Create 
+		 Component Tags</p></td>
+	</tr>
+	<tr style="height: 26.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Delete Component</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Component</span></p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBodyBullet">•<span 
+		 class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Deploy 
+		 Policy</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Edit 
+		 Policy</p></td>
+	</tr>
+	<tr style="height: 26.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Deploy Component</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Component</span></p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 26.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Edit Component</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span><span 
+		 class="FM_Bold">View Component</span></p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBodyBullet">•<span 
+		 class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Create 
+		 Component Tags</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">View Component</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 26.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Create Policy Model</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBodyBullet">•<span 
+		 class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Edit 
+		 Policy Model</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Create 
+		 Policy Model Tags</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Delete Policy Model</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Not applicable</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Edit Policy Model</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBodyBullet">•<span 
+		 class="FMAutoNumber_1" style="padding-left: 7pt;"></span>Create 
+		 Policy Model Tags</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">View Policy Model</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Not applicable</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Manage Delegation Policies</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Manage Users</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Not applicable</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Manage Reports</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Reports</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">View Reports</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Not applicable</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 15.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Manage System Settings</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Not applicable</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 67.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Create Component Tags</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>At 
+		 least one of the following actions:</p>
+		<p dir="ltr" class="FM_CellBodyBullet2">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Create 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet2">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Edit 
+		 Component</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 56.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Create Policy Model Tags</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>At 
+		 least one of the following actions:</p>
+		<p dir="ltr" class="FM_CellBodyBullet2">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Create 
+		 Policy Model</p>
+		<p dir="ltr" class="FM_CellBodyBullet2">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Edit 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 78.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Create Policy Tags</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #bfbfbf; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>At 
+		 least one of the following actions:</p>
+		<p dir="ltr" class="FM_CellBodyBullet2">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Create 
+		 Policy</p>
+		<p dir="ltr" class="FM_CellBodyBullet2">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>Edit 
+		 Policy</p></td>
+		<td style="border-bottom: solid 1px #bfbfbf; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+	<tr style="height: 37.00pt;">
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #000000; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBody">Policy Tester</p></td>
+		<td style="border-right: solid 1px #bfbfbf; border-bottom: solid 1px #000000; 
+			 vertical-align: top; padding-left: 6.00pt; padding-top: 3.00pt; 
+			 padding-right: 6.00pt; padding-bottom: 3.00pt;" width="180"><p 
+			 dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Component</p>
+		<p dir="ltr" class="FM_CellBodyBullet">•<span class="FMAutoNumber_1" 
+														 style="padding-left: 7pt;"></span>View 
+		 Policy Model</p></td>
+		<td style="border-bottom: solid 1px #000000; vertical-align: top; 
+			 padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; 
+			 padding-bottom: 3.00pt;" width="180"><p dir="ltr" class="FM_CellBody">Not 
+		 applicable</p></td>
+	</tr>
+</table>
+
+<p dir="ltr" class="FM_NumBody"><span class="FMAutoNumber_1" style="padding-left: 5pt;"></span>5<span 
+	 class="FMAutoNumber_2" style="padding-left: 16pt;"></span>Click 
+ <span class="FM_UIControl">Save </span><span class="FM_Body">in the upper 
+ right. The policy is used to determine console access for users who have 
+ CloudAz user accounts.</span></p>
+<p dir="ltr" class="FM_HeadingNextSteps">Next steps</p>
+<p dir="ltr" class="FM_Body">Add accounts for the users to be governed 
+ by the policy. See <a href="Managing_user_accounts.htm#XREF_63952_Managing_Control">Managing 
+ user accounts</a>.</p>
+
+</body>
+</html>

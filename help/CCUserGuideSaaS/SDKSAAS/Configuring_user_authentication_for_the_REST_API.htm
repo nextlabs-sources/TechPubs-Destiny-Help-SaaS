@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Configuring user authentication for the REST API</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\SDKSAAS.fm" />
+ <link rel="stylesheet" href="SDKSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "5.1.2_1";
+</script>
+ <meta name="topic-breadcrumbs" content="SDK & OpenAz Client Libraries > SDK and OpenAz Client Libraries" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_58341_Setting_up_the"></a>Configuring user authentication for the REST API</p>
+ <p dir="ltr" class="FM_Body">The CloudAz REST API uses OAuth 2.0 for authentication. To help you get started quickly, the CloudAz instance comes preconfigured with <span class="FM_Code">client_id</span>&#160;and <span class="FM_Code">client_secret</span>&#160;credentials. You can add additional credentials to your instance and change authentication settings as described in this section.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Set authentication properties:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>For the Java PEP SDK, specify the following properties in the <span class="FM_Code">openaz-pep.properties</span>&#160;file:</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.host=&lt;JPC's host&gt;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"># JPC's REST Port</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.port=58080</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"># JPC is not using HTTPS</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.https=false</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"># Auth type is same as CloudAz</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.auth_type=OAUTH2</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"># Need to specify client_id and client_secret, as for CloudAz</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.grant_type=client_credentials</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.client_id=&lt;CLIENT_ID&gt;</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.client_secret=&lt;CLIENT_SECRET&gt;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"># Ignore HTTPS self-signed certificates error</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.ignore_https_certificate=true</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"># The OAuth2 server is Control Center</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.server=&lt;Control Center Host&gt;</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.port=443</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.https=true</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment"># The endpoint must be specified explicitly and it's different from CloudAz's </p>
+ <p dir="ltr" class="FM_CodeComment"># endpoint which is /oauth/token</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.token_endpoint_path=/cas/token</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>For the JavaScript PEP SDK, specify the following properties in the <span class="FM_Code">openaz-pep.json</span>&#160;file:</p>
+ <p dir="ltr" class="FM_Code">{</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.host&quot;: &quot;&lt;Java PC host&gt; eg: jpc.localdomain&quot;,</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.port&quot;: &quot;58080&quot;,</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&quot;nextlabs.cloudaz.https&quot;: <span class="FM_blue">false</span>,</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.auth_type&quot;: &quot;OAUTH2&quot;,</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.oauth2.grant_type&quot;: &quot;client_credentials&quot;,</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.oauth2.client_id&quot;: &quot;&lt;CLIENT_ID&gt;&quot;,</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.oauth2.client_secret&quot;: &quot;&lt;CLIENT_SECRET&gt;&quot;,</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&quot;nextlabs.cloudaz.ignore_https_certificate&quot;: <span class="FM_blue">true</span>,</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.oauth2.server&quot;: &quot;&lt;Control Center Host&gt;&quot;,</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.oauth2.port&quot;: &quot;443&quot;,</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&quot;nextlabs.cloudaz.oauth2.https&quot;: <span class="FM_blue">true</span>,</p>
+ <p dir="ltr" class="FM_Code"> &#160;&quot;nextlabs.cloudaz.oauth2.token_endpoint_path&quot;: &quot;/cas/token&quot;</p>
+ <p dir="ltr" class="FM_Code">}</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>In the CloudAz console, create a user account for the PEP client with the following settings:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Username = The <span class="FM_Code">client_id</span> specified in the properties file.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Password = The <span class="FM_Code">client_secret</span> specified in the properties file.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Add the user attribute <span class="FM_Code">jwt_passphrase</span>. The value of this attribute can be anything except for the password (client_secret).</p>
+ <p dir="ltr" class="FM_NumBodyCont">For information about creating user accounts, see <a href="../DelegatedAdministrationSaaS/Managing_user_accounts.htm#XREF_63952_Managing_Control">Managing user accounts</a>.</p>
+ <p dir="ltr" class="FM_NumBodyCont">For information about how <span class="FM_Code">client_id</span>&#160;and <span class="FM_Code">client_secret</span>&#160;values are used in properties files, see <a href="Using_the_Java_client_library.htm#XREF_60199_Setting_up_the">Setting up the Java SDK</a> and<a href="Using_the_JavaScript_client_library.htm#XREF_90512_Setting_up_the">Setting up the JavaScript SDK</a>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>After the account has been created, log in to the CloudAz console using the account and supply the appropriate <span class="FM_Code">client_secret</span>&#160;password. This is the password specified in the properties file. For security, all users must set their passwords when they log in to their CloudAz console accounts for the first time.</p>
+ </body>
+</html>

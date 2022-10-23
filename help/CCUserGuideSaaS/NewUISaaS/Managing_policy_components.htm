@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Managing policy components</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\PolicyStudio\NewUISaaS.fm" />
+ <link rel="stylesheet" href="NewUISaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.1.1.2";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Working with Policies > Policy and Policy Model overview" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_51774_Managing_policy"></a>Managing policy components</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_abstraction"></a>Policy components are the abstract building blocks or raw material of information control poli&#173;cies. They represent categories and classes, either of physical entities that play a role in infor&#173;mation control policies, or of actions that involve those entities. Because components are categories and classes rather than physical entities, they provide a layer of abstraction that insu&#173;lates an organization’s information control policies from changes to the physical entities in the environment.</p>
+ <p dir="ltr" class="FM_Body">For example, employees might join or leave the organization, documents might be created and deleted, computers are purchased and retired, and SharePoint sites or pages change on a daily basis. Despite these changes, you can write policies without needing to know specifically about the underlying users, documents, or servers. The policies remain in effect, covering all appropri&#173;ate network entities, even as those entities change.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_About_component_types"></a><a name="XREF_95774_About_component"></a>About component types</p>
+ <p dir="ltr" class="FM_Body">CloudAz supports the following categories of components:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Resource</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Action</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Subject</p>
+ <p dir="ltr" class="FM_Body">You create components by specifying a component type and defining the component’s properties. After you save and deploy components, you can use them to construct policies that govern not some <span style="font-style : italic; ">specific</span>&#160;user in your organization, but <span style="font-style : italic; ">any</span> user belonging to the category that the compo&#173;nent describes.</p>
+ <p dir="ltr" class="FM_Body">For example, rather than listing every IT department user in your organization by name, you could create a user-type component that represents the category, “all users in the IT depart&#173;ment.” Then you could use that component as a building block to construct policies that control whether users can access and use the specified information. This means that whoever designs policies using policy components does not need any direct knowledge of who the IT department users are, or of who joins or leaves the IT department in the future. They simply need to know how, as a class, IT department users should be allowed to access and use information.</p>
+ <p dir="ltr" class="FM_Body">Action components are a combination of one or more of the available basic actions defined in the resource type policy model. Action components are generated automatically when they are added from within the resource type. </p>
+ <p dir="ltr" class="FM_Body">For example, in the Support Tickets Policy Model, there are three basic actions: </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>EDIT_TKTS</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>ASSIGN_TKTS</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>VIEW_TKTS</p>
+ <p dir="ltr" class="FM_Body">An action component can be created by combining one, two, or three of these actions. Typically, if you want to create a policy for EDIT_TKTS, you would want to grant VIEW_TKTS as well. So instead of creating two policies, you could create one action component that includes both. You can only use action components for policy creation, so even if you are using one basic action, you need to create a component. So to minimize that step, NextLabs pre-creates a component with only one basic action during policy model creation. Administrators can modify, add basic actions, and bundle actions as required.</p>
+ <p dir="ltr" class="FM_Body">You can use components in various combinations to construct the policies you need for managing information access and use. For example, you might define a user component “Contractors,” and an action component “Copy, Move, Print, or Send via Email or IM.” You could then combine these to implement an “eyes-only” rule: “All independent contractors may read company documents but may not transmit them in any way.” When this rule is distributed to all CloudAz enforcement clients in your network, it is enforced regardless of the individual contractor or document involved.</p>
+ <p dir="ltr" class="FM_Body">The process of defining components involves constructing a model of component categories that is comprehensive enough to represent all the actual entities in your organization that need to be covered by policies. You can either make a component model based on your knowledge of the network entities, regardless of how they may need to be used in policies; or based on the requirements of a set of logical policies that have already been designed. </p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>You might find it expedient to construct a set of policies first, and then define the components you need for those policies. See <a href="../PoliciesSAAS/Constructing_and_testing_policies.htm#XREF_44690_Constructing">About constructing policies</a>. </p>
+
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Adding_and_editing1"></a><a name="XREF_55096_Adding_policy"></a>Adding and editing policy components</p>
+ <p dir="ltr" class="FM_Body">You can add policy components to define resources, actions, and subjects in your environment any time as needed. After policy components are defined, they become available to policy designers for use in policies.</p>
+ <p dir="ltr" class="FM_HeadingPrerequisite">Before you begin</p>
+ <p dir="ltr" class="FM_Body">Set up the Policy Model by creating resource types for use in components. See <a href="Managing_Policy_Model_resource_types.htm#XREF_88549_Adding_resource">Adding and editing resource types</a>.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Log in to CloudAz with an account that has permission to add components.</p>
+
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>On the left navigation bar, in the <span class="FM_Emphasis">Components</span> section, select a component type:</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Subject</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Resource</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Action</p>
+
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Do one of the following:</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Click <span class="FM_UIControl">Add Component</span>.</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Click the name of an existing component to edit it.</p>
+
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>If you are adding a resource or action component, select the resource type to use as the template for this component. The list is empty if no resource types have been added. See <a href="Managing_Policy_Model_resource_types.htm#XREF_88549_Adding_resource">Adding and editing resource types</a>.</p>
+
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Provide the component information. This information is displayed on the <span class="FM_Emphasis">Components</span>&#160;page and used to identify the component in the system:</p>
+
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 397.50pt;">Table 1.1.3: Component information</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 162.000pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Option</p>
+</th>
+  <th style="width : 235.500pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+  <tr style=" height : 49.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Display Name</p>
+</td>
+  <td style="width : 235.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody"><span style="font-size  : 6.0pt; "></span>The item display name. Multibyte characters, such as those used in Asian languages, are allowed, but names cannot exceed 128 characters and cannot include: ~ / * $ &amp; &#160;\ &#160;? </p>
+  <p dir="ltr" class="FM_AnchorFrame">&#160;</p>
+</td>
+</tr>
+  <tr style=" height : 57.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Description</p>
+</td>
+  <td style="width : 235.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody"><span style="font-size  : 6.0pt; "></span>A description of the item. This field is useful for explaining how the item is used and for documenting changes to the item. Descriptions can include multibyte characters, such as those used by Asian languages.</p>
+  <p dir="ltr" class="FM_AnchorFrame">&#160;</p>
+</td>
+</tr>
+  <tr style=" height : 395.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Tags</p>
+</td>
+  <td style="width : 235.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody"><span style="font-size  : 6.0pt; "></span>Labels that identify or classify or group items according to business needs. You can apply tags to items such as policies, components, and resource types.This classification has these main benefits:</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>It simplifies search operations.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>It simplifies the management of policies (delegated adminis&#173;tration).</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>It enables you to create reports based on tags in the Reporter console.</p>
+  <p dir="ltr" class="FM_CellBody">For example, to allow only citizens of the USA to manage ABAC policies related to export control, you could add a tag to each policy that enforces export controls such as ITAR. You could then define a delegation policy that allows access to administrators whose citizenship is USA. Each item can have any number of tags. For example, if a policy restricts access to data in classified information, the following tags might be useful:</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Top Seccret</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Secret</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Confidential</p>
+  <p dir="ltr" class="FM_CellBody">Although there are many other attributes associated with policies—such as user name, resource attributes, action, and policy name—on which you can filter in Reporter, tags are often the most useful because you can add your own key words and values that make the items easier to identify and find.</p>
+  <p dir="ltr" class="FM_CellBody"><span class="FM_Bold">Important</span>: Before creating tags for policies, define the reporting requirements, and then identify the tags needed to support those requirements. Use a consistent naming convention and apply tags uniformly to ensure that policy activity reports that are filtered by tags return the results you expect. For example, if some policies governing export control data contain the tag, Export Control = ITAR, while some export control policies contain the tag, Classification = ITAR, and others do not contain any tags, filtering on one tag does not capture all the export control policy activity data. Similarly, define the delegation requirements, and then identify the tags needed to support those requirements. Use a consistent naming convention, and apply tags uniformly to ensure that data are filtered by tags to return the results you expect.</p>
+  <p dir="ltr" class="FM_CellBody"><span class="FM_Bold">Note</span>: Tags used in components are available only to components; component tags are not available to policies, and policy tags are not available to components. </p>
+  <p dir="ltr" class="FM_CellBody">Tags cannot include these characters: ~ / * $ &#160;&amp; &#160;\ &#160;? &#160;{ &#160;} </p>
+  <p dir="ltr" class="FM_CellBody">&#160;</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Do any of the following:</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Select the conditions to be used with the component. Conditions appear only if they have been added to the selected resource type.</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Select the Actions to be available with the component. Actions appear only if they have been added to the selected resource type.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Select or create subcomponents to include in the component. Subcomponents are com&#173;ponents that are included in the parent component’s hierarchy. For example, you could have a component called <span class="FM_Emphasis">Residents of the USA</span>, and include subcomponents such as <span class="FM_Emphasis">Res&#173;idents of California</span>, <span class="FM_Emphasis">Residents of Virginia</span>, and so on. </p>
+ <p dir="ltr" class="FM_NumBodySubCont">To create subcomponent, type a name in the <span class="FM_Emphasis">Include Subcomponents</span> field, add condi&#173;tions for the new subcomponent, then click <span class="FM_Bold">Apply</span>.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>You can specify as many subcomponents as you need for each component. The conditions in multiple subcomponents are evaluated with <span class="FM_Code">OR</span> operators.</p>
+
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>7<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Do one of the following:</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Click <span class="FM_UIControl">Save</span>&#160;to save the component in the <span class="FM_Emphasis">Draft</span> state.</p>
+
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Click <span class="FM_UIControl">Save &amp; Deploy </span>to make the component available for deployment with policies. </p>
+ <p dir="ltr" class="FM_HeadingNextSteps">Next steps</p>
+ <p dir="ltr" class="FM_Body">Create additional components or subcomponents, or construct policies that use the components. See <a href="../PoliciesSAAS/Constructing_and_testing_policies.htm#XREF_44690_Constructing">About constructing policies</a>.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>If you chose <span class="FM_Emphasis">Save</span>, you must deploy the component before policies that use it can be enforced. See <a href="../Deploying_SaaS/Deploying_components.htm#XREF_41135_Deploying">Deploying components</a>.</p>
+</body>
+</html>

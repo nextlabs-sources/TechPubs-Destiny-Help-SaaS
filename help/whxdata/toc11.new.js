@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"About the OpenAz PEP client SDK","url":"CCUserGuideSaaS/SDKSAAS/SDK_and_OpenAz_Client_Libraries.htm#TOC_About_the_OpenAz_PEPbc-1"},{"type":"book","name":"Using the Java client library","key":"toc12","url":"CCUserGuideSaaS/SDKSAAS/Using_the_Java_client_library.htm"},{"type":"book","name":"Using the JavaScript client library","key":"toc13","url":"CCUserGuideSaaS/SDKSAAS/Using_the_JavaScript_client_library.htm"},{"type":"item","name":"Configuring user authentication for the REST API","url":"CCUserGuideSaaS/SDKSAAS/Configuring_user_authentication_for_the_REST_API.htm"},{"type":"item","name":"Exception handling","url":"CCUserGuideSaaS/SDKSAAS/Exception_handling.htm"},{"type":"book","name":"SDK quick reference","key":"toc14","url":"CCUserGuideSaaS/SDKSAAS/SDK_quick_reference.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

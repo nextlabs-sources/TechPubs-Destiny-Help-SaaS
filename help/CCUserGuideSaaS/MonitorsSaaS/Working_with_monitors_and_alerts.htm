@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Working with monitors and alerts</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\MonitorsSaaS.fm" />
+ <link rel="stylesheet" href="MonitorsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.4";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <h1 dir="ltr"><a name="XREF_56677_4_Working_with"></a>Working with monitors and alerts</h1>
+ <p dir="ltr" class="FM_Body">This section describes how to use Reporter to create policy monitors to obtain notifications of policy enforcement activities that meet predefined criteria. Reporter is the console used to mon&#173;itor and report on policy compliance, gather statistics about document usage, and investigate any suspected incidents of information mishandling. Reporter is used by administrators, IT staff, managers, executives, auditors, and other authorized personnel.</p>
+ <p dir="ltr" class="FM_Heading1PartSection"><a name="TOC_Monitoring_functionality"></a><a name="IX_permissions"></a><span style="font-family : 'Trebuchet MS'; font-weight : normal; font-size  : 10.0pt; color   : #0000ff; "></span><a name="XREF_29820_Overview"></a><a name="XREF_20245_Monitoring"></a>Monitoring functionality and permissions</p>
+ <p dir="ltr" class="FM_Body">Monitors and alerts can provide continuous coverage of key policy enforcements in an enterprise, as well as a notification system that warns administrators when action is required. In Reporter, you use the <span class="FM_Emphasis">Monitoring</span> tab to create policy monitors and to view alerts triggered by those moni&#173;tors.</p>
+ <p dir="ltr" class="FM_Body">The functionality available to you depends on the rules established in the <span class="FM_Emphasis">Delegated Administration</span> section the console.</p>
+
+ <p dir="ltr" class="FM_Body">When you click the <span class="FM_Emphasis">Monitoring</span>&#160;tab, the <span class="FM_Emphasis">Alerts Overview</span> page appears. It displays a list of alerts, if any, in the order they were raised, with the latest on top.</p>
+ <p dir="ltr" class="FM_Body">If there are alerts, you can take the following actions:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Filter alerts by specified criteria, including time period, monitor, and tag name and value</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>View alerts aggregated by tag, monitor, or time, and presented in chart format</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Dismiss any alert from the list</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Delete any alert from the list</p>
+ <p dir="ltr" class="FM_Body">Two subtabs appear below Monitoring: <span class="FM_Emphasis">Alerts</span>&#160;and <span class="FM_Emphasis">Monitors</span>. Click <span class="FM_Bold" style="font-size  : 9.0pt; ">Monitors</span>&#160;to view the list of defined monitors, if any, and to create a monitor.</p>
+ <div align="center"><img alt="MonitorsMonitors.PNG" style=" width:100%; margin-top:5.250pt; margin-right:2.250pt; margin-bottom:3.750pt; max-width:480.750pt;" id="image0" src="MonitorsMonitors.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.4-1: Monitoring tab and subtabs</p>
+ <div align="center"><img alt="FilteringAlerts.PNG" style=" width:100%; margin-left:18.000pt; margin-top:3.000pt; margin-right:19.500pt; margin-bottom:3.000pt; max-width:487.500pt;" id="image1" src="FilteringAlerts.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.4-2: <a name="XREF_14125_Alerts_Overview"></a>Alerts Overview page</p>
+ <p dir="ltr" class="FM_Body">As <a href="#XREF_14125_Alerts_Overview"><span class="FM_blue">Figure&nbsp;2.4-2</span></a>&#160;shows, two subtabs appear below Monitoring: <span class="FM_Bold" style="font-size  : 9.0pt; ">Alerts</span>&#160;and <span class="FM_Bold" style="font-size  : 9.0pt; ">Monitors</span>. Click <span class="FM_Bold" style="font-size  : 9.0pt; ">Monitors</span>&#160;to view the list of defined monitors, if any, and to create a new monitor.</p>
+ </body>
+</html>

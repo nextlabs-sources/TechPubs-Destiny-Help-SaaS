@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Table","url":"CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Tablebc-1"},{"type":"item","name":"Group by policy chart","url":"CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Group_by_policy_chartbc-2"},{"type":"item","name":"Group by user chart","url":"CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Group_by_user_chartbc-3"},{"type":"item","name":"Group by resource chart","url":"CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Group_by_resource_chartbc-4"},{"type":"item","name":"Group by time chart","url":"CCUserGuideSaaS/ReportsSaaS/Sample_reports.htm#TOC_Group_by_time_chartbc-5"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

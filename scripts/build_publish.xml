@@ -1,0 +1,126 @@
+<!-- build_publish.xml
+
+Description:
+	This ANT script publishes installers and build artifacts to s:/build.
+	
+	To use this script, you must update properties is <project root>/scripts/build.properties or overide 
+	them from commandline (using -D option). For example:
+		
+		set PATH=C:\depot\external\apache-ant\apache-ant-1.8.4\bin;%PATH%
+		ant -XX:MaxPermSize=512m -Dexternal.dir=c:/depot/external -Dbuild_number=10001 -f scripts/build_publish.xml
+		
+	or
+		
+		set PATH=C:\depot\external\apache-ant\apache-ant-1.8.4\bin;%PATH%
+		set ANT_OPTS=-XX:MaxPermSize=512m -Dexternal.dir=%NLEXTERNALDIR2% -Dbuild_number=10001 
+		ant -f scripts/build_publish.xml -v	
+-->
+
+<project name="build_publish" default="all" basedir="..">
+
+	<!-- Initialization tasks -->
+	<tstamp />
+
+	<!-- Properties -->
+	<property file="${nlbuildroot}/scripts/build.properties" />
+	<property file="${nlbuildroot}/src/build-scripts/etc/build.properties" />
+	<property environment="env" />
+	
+	<!-- Global properties -->
+	<property name="publish_BODA_techpubs_help_artifact_dir" location="${repository_root}/artifacts/Destiny-Techpubs-Help-SaaS/${version_str}/${version_build_short}" />
+
+	<property name="zip_file_name_prefix" value="destiny-techpubs-help-saas-${version_str}-${version_build_short}-${build_date_long}" />
+	<property name="zip_file_build" value="${zip_file_name_prefix}-build.zip" />
+	<property name="build_manifest_file" value="${nlbuildroot}/build.manifest" />
+
+	<!-- Dump properties -->
+	<echoproperties />
+
+	<echo message="INFO: Dump properties completed" />
+
+	<!-- Sanity checks -->
+	<fail message="version_str is not set" unless="version_str" />
+	<fail message="version_str is empty">
+		<condition>
+			<equals arg1="${version_str}" arg2="" trim="true" />
+		</condition>
+	</fail>
+
+	<fail message="build_number is not set" unless="build_number" />
+	<fail message="build_number is empty">
+		<condition>
+			<equals arg1="${build_number}" arg2="" trim="true" />
+		</condition>
+	</fail>
+
+	<fail message="version_build_short is not set" unless="version_build_short" />
+	<fail message="version_build_short is empty">
+		<condition>
+			<equals arg1="${version_build_short}" arg2="" trim="true" />
+		</condition>
+	</fail>
+
+	<fail message="build_date_long is not set" unless="build_date_long" />
+	<fail message="build_date_long is empty">
+		<condition>
+			<equals arg1="${build_date_long}" arg2="" trim="true" />
+		</condition>
+	</fail>
+
+	<fail message="repository_root is not set" unless="repository_root" />
+	<fail message="repository_root is empty">
+		<condition>
+			<equals arg1="${repository_root}" arg2="" trim="true" />
+		</condition>
+	</fail>
+	<available file="${repository_root}" type="dir" property="local.repository_root_exists" />
+	<fail message="repository_root directory does not exist - ${repository_root}" unless="local.repository_root_exists" />
+
+	<!-- Targets -->
+	<target name="all" depends="help" />
+
+	<target name="help">
+		<fileset id="techpubs_help_war_file" dir="${war.dir}">
+			<include name="help.war" />
+		</fileset>
+		<!-- Check for errors -->
+		<fail message="ERROR: Cannot locate help.war to copy... Aborting!">
+			<condition>
+				<resourcecount count="0" when="equal">
+					<fileset refid="techpubs_help_war_file" />
+				</resourcecount>
+			</condition>
+		</fail>
+
+		<zip destfile="${nlbuildroot}\build\${zip_file_build}" encoding="UTF-8">
+			<fileset refid="techpubs_help_war_file" />
+		</zip>
+
+		<!-- Copy files -->
+		<mkdir dir="${publish_BODA_techpubs_help_artifact_dir}" />
+		<copy file="${nlbuildroot}\build\${zip_file_build}" todir="${publish_BODA_techpubs_help_artifact_dir}" />
+		<fileset id="Published_techpubs_help_war_zip" dir="${publish_BODA_techpubs_help_artifact_dir}">
+			<include name="*.*" />
+		</fileset>
+
+		<!-- Write information to build.manifest file -->
+		<echo message="[BUILD MANIFEST]   Product Name       : Destiny Console Techpubs Help Content for SaaS Offering" />
+		<echo message="[BUILD MANIFEST]   Installer Location : ${publish_BODA_techpubs_help_artifact_dir}" />
+		<!-- Format path -->
+		<pathconvert pathsep="${line.separator}[BUILD MANIFEST]   Archive  : "             
+			property="echo.Published_techpubs_help_war_zip"             
+			refid="Published_techpubs_help_war_zip">
+		</pathconvert>
+		<echo message="[BUILD MANIFEST]   ${echo.Published_techpubs_help_war_zip}"/>
+	</target>
+
+	<target name="manifest">
+		<!-- Check for errors -->
+		<available file="${build_manifest_file}" type="file" property="local.manifest_exists" />
+		<fail message="ERROR: Missing manifest file: ${build_manifest_file}" unless="local.manifest_exists" />
+
+		<!-- Copy file -->
+		<mkdir dir="${publish_BODA_techpubs_help_artifact_dir}" />
+		<copy file="${build_manifest_file}" todir="${publish_BODA_techpubs_help_artifact_dir}" preservelastmodified="true" overwrite="true" verbose="true" />
+	</target>
+</project>

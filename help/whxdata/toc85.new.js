@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"About delegated administration policies","url":"CCUserGuideSaaS/DelegatedAdministrationSaaS/Delegated_administration_policies.htm#TOC_About_delegatedbc-1"},{"type":"item","name":"Adding and editing delegation policies","url":"CCUserGuideSaaS/DelegatedAdministrationSaaS/Adding_and_editing_delegation_policies.htm"},{"type":"item","name":"Deleting delegation policies","url":"CCUserGuideSaaS/DelegatedAdministrationSaaS/Deleting_delegation_policies.htm"},{"type":"book","name":"Managing user accounts","key":"toc86","url":"CCUserGuideSaaS/DelegatedAdministrationSaaS/Managing_user_accounts.htm"},{"type":"item","name":"Changing the superuser password","url":"CCUserGuideSaaS/DelegatedAdministrationSaaS/Changing_the_superuser_password.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

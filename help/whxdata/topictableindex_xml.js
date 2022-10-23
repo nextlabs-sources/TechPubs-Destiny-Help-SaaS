@@ -1,0 +1,1 @@
+gXMLBuffer="<?xml version=\"1.0\" encoding=\"UTF-8\"?><cki><ck fm=\"About Audit Logs\" to=\"About the Reporter console\" num=\"37\"/><ck fm=\"Accessing the Reporter console\" to=\"SDK quick reference\" num=\"41\"/><ck fm=\"Using the Java client library\" to=\"CC_CloudAzHelp_8.6.4.1.pdf\" num=\"7\"/></cki>";

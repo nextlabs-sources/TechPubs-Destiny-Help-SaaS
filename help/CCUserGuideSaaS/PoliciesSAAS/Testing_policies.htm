@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Testing policies</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\PolicyStudio\PoliciesSAAS.fm" />
+ <link rel="stylesheet" href="PoliciesSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.1.2.5_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Working with Policies > Constructing and testing policies" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_44158_Testing_policies"></a>Testing policies</p>
+ <p dir="ltr" class="FM_Body">After policies are saved, you can test them using the CloudAz console.Testing policies in the con&#173;sole simulates sending authorization requests and enables you to view responses without building PEPs (policy enforcement points) or setting up application interactions. This reduces testing time and enables you to:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Construct authorization requests by selecting attributes.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>View example request and response payloads in JSON and XML formats.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Verify that policies function as expected. For example, you can verify that PEPs pass all of the necessary attributes and actions in requests, and that PDPs (Policy Decision Points) provide the appropriate responses.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Select multiple policies for testing to ensure that policies function correctly in combination. For example, one policy might allow users with the attribute <span class="FM_Emphasis">Suppliers</span>&#160;to access a customer list. Another policy might deny access to <span class="FM_Emphasis">Suppliers</span>&#160;unless their territory matches the territory of the customer list. Testing both policies at once enables you to verify that the policies per&#173;form as expected when combined.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>To test policies, you must use an account with permission to view the Policy Tester, policies, and Policy Model components. </p>
+ <p dir="ltr" class="FM_NoteCont"><span class="FM_Emphasis"></span>Also, policies that are in the <span class="FM_Emphasis">Inactive</span> state, that is, policies that have previ&#173;ously been deployed but that are currently deactivated, cannot be tested until they are deployed again.</p>
+ <p dir="ltr" class="FM_HeadingPrerequisite">Before you begin</p>
+ <p dir="ltr" class="FM_Body">Before you begin, you must be familiar with the policies you want to test and the attributes spec&#173;ified in those policies. You need to select those attributes to generate authorization requests.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>On the left navigation bar, click <span class="FM_Bold">Policy Tester</span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>In the <span class="FM_italic">Select Policy</span> section, choose the policies to be tested:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_UIControl">All Policies</span>: All policies you have access to, provided they are in the <span class="FM_Emphasis">Inactive Draft</span>, <span class="FM_Emphasis">Deployed</span>, or <span class="FM_Emphasis">Deployed Draft </span>state. Policies that are in the <span class="FM_Emphasis">Inactive</span> state, that is, poli&#173;cies that have previously been deployed but that are currently deactivated, cannot be tested until they are deployed again. Select this option to test for conflicts among all policies.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_UIControl">Select Policies</span>: Only the policies specified in this section. After you choose <span class="FM_UIControl">Select Poli&#173;cies</span>, type the name of the policies you want to test to search for matching policies.</p>
+ <p dir="ltr" class="FM_Bulleted2">- <span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Include Sub-Policies</span>: If you choose Select Policies, choose whether to include sub-policies when searching for the policies you want to select.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span style="font-weight : bold; ">Saved Search Filter</span>: If you have searched for policies on the <span class="FM_Emphasis">Policy Management page</span>, and you have saved a search, you can select it to include all the policies in the search results.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>In the <span class="FM_Emphasis">Request</span>&#160;section, add the attributes you want to include in the test. For the first test, select attributes that match the policy.</p>
+ <p dir="ltr" class="FM_NumBodyCont">For example, <span class="FM_Emphasis">Allow Users in IT to View All Support Tickets</span>, a sample policy included in the QuickStart Guide, has the Subject attribute <span class="FM_Emphasis">IT Department</span>. </p>
+ <div align="center"><img alt="PolicyTesterSelectAttributes.PNG" style=" width:100%; max-width:656.159pt;" id="image2" src="PolicyTesterSelectAttributes.PNG" />
+ </div>
+ <p dir="ltr" class="FM_NumBodyCont">&nbsp;</p>
+ <p dir="ltr" class="FM_NumBodyCont">And it includes the action <span class="FM_italic">View</span>, which is defined by the resource type <span class="FM_italic">Support Tickets</span>.</p>
+ <div align="center"><img alt="PolicyTesterSelectAttributes2.PNG" style=" width:100%; max-width:656.159pt;" id="image3" src="PolicyTesterSelectAttributes2.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_NumBodyCont">To verify that the <span class="FM_Emphasis">Allow Users in IT to View All Support Tickets</span>&#160;policy works as expected, add the Subject attribute, <span class="FM_Emphasis">Department,</span>&#160;with the value <span class="FM_Emphasis">IT</span>.</p>
+ <div align="center"><img alt="PolicyTester1.PNG" style=" width:100%; max-width:455.903pt;" id="image4" src="PolicyTester1.PNG" />
+ </div>
+ <p dir="ltr" class="FM_NumBodyCont">&nbsp;</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>To view the JSON build request, click the JSON button under the <span class="FM_UIControl">Request</span>&#160;tab. </p>
+ <div align="center"><img alt="PolicyTester7.PNG" style=" width:100%; margin-left:69.750pt; margin-top:5.250pt; margin-right:105.000pt; margin-bottom:4.500pt; max-width:262.500pt;" id="image5" src="PolicyTester7.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>To view the XML build request, click the JSON button under the <span class="FM_UIControl">Request</span>&#160;tab. </p>
+ <div align="center"><img alt="PolicyTester8.PNG" style=" width:100%; max-width:415.164pt;" id="image6" src="PolicyTester8.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>To see the PDP response, click <span class="FM_UIControl">Test Request</span>.</p>
+ <div align="center"><img alt="PolicyTester2.PNG" style=" width:100%; max-width:439.824pt;" id="image7" src="PolicyTester2.PNG" />
+ </div>
+ <p dir="ltr" class="FM_NumBodyCont">&nbsp;</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>The <span class="FM_italic">Evaluation Time</span> is the amount of time the PDP took to make the deci&#173;sion. The <span class="FM_italic">Obligations</span> section shows obligations required by the policy.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>7<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>For another test, change the value of an attribute so that it does not match the policy. In the <span class="FM_Emphasis">Allow Users in IT to View All Support Tickets</span>&#160;example, change the value of the <span class="FM_Emphasis">Depart&#173;ment</span>&#160;attribute to something other than <span class="FM_italic">IT</span>, such as <span class="FM_italic">HR</span>.</p>
+ <div align="center"><img alt="PolicyTester5.PNG" style=" width:100%; max-width:538.079pt;" id="image8" src="PolicyTester5.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>8<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>To view the response, click <span class="FM_UIControl">Test Request</span>.</p>
+ <div align="center"><img alt="PolicyTester6.PNG" style=" width:100%; max-width:536.160pt;" id="image9" src="PolicyTester6.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>In production environments, NextLabs recommends that you deny access to resources when the response is <span class="FM_Emphasis">Not Applicable</span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>9<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>For information about how the policy was applied, click the Logs tab.</p>
+ <div align="center"><img alt="PolicyTester4.PNG" style=" width:100%; margin-left:48.750pt; margin-top:2.250pt; margin-right:51.750pt; margin-bottom:5.250pt; max-width:432.000pt;" id="image10" src="PolicyTester4.PNG" />
+ </div>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>10<span style="padding-left: 11pt;" class="FMAutoNumber_2"></span>To clear the policy selection and results, click <span class="FM_Bold">Reset</span>.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>Test results do not appear in the CloudAz Activity Log, and results are cleared when you refresh the browser.</p>
+</body>
+</html>

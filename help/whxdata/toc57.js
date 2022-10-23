@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc.js\"  name=\"CloudAz Concepts\" url=\"CCUserGuideSaaS/Part3WhatIsCloudAZ/CloudAz_Concepts.htm\"><book name=\"Overview of CloudAz\" url=\"CCUserGuideSaaS/WhatIsCloudAZSAAS/Overview_of_CloudAz.htm\" src=\"toc58.js\" /></data>";

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"book","name":"Introducing Reporter","key":"toc36","url":"CCUserGuideSaaS/IntroSaaS/Introducing_Reporter.htm"},{"type":"book","name":"Using the Reporter Dashboard","key":"toc38","url":"CCUserGuideSaaS/DashboardSaaS/Using_the_Reporter_Dashboard.htm"},{"type":"book","name":"Working with reports","key":"toc39","url":"CCUserGuideSaaS/ReportsSaaS/Working_with_reports.htm"},{"type":"book","name":"Working with monitors and alerts","key":"toc44","url":"CCUserGuideSaaS/MonitorsSaaS/Working_with_monitors_and_alerts.htm"},{"type":"book","name":"Using audit logs","key":"toc48"},{"type":"book","name":"Sample reports","key":"toc49","url":"CCUserGuideSaaS/ExamplesSaaS/Sample_reports.htm"},{"type":"book","name":"Report log views","key":"toc50","url":"CCUserGuideSaaS/CustomReportsSaaS/Report_log_views.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

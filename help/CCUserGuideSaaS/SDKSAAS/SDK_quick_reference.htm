@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>SDK quick reference</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\SDKSAAS.fm" />
+ <link rel="stylesheet" href="SDKSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "5.1.3";
+</script>
+ <meta name="topic-breadcrumbs" content="SDK & OpenAz Client Libraries > SDK and OpenAz Client Libraries" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1">SDK quick reference</p>
+ <p dir="ltr" class="FM_Body">This section provides a quick reference for the OpenAz PEP SDK. Topics include:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_87950_Methods">Methods</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_55515_Category_classes">Request category classes</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_57657_PEPResponse">PEPResponse</a></p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Methods"></a><a name="XREF_87950_Methods"></a>Methods</p>
+ <p dir="ltr" class="FM_Body">Use the following methods when making authorization requests.</p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 438.00pt;">Table 5.2: Methods used in authorization requests</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 78.000pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Method</span></p>
+</th>
+  <th style="width : 360.001pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Description and example</span></p>
+</th>
+</tr>
+  <tr style=" height : 17.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">newInstance</span></p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Used to create an instance of a category class, such as Subject.</p>
+</td>
+</tr>
+  <tr style=" height : 17.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Subject user = Subject.newInstance(<span class="FM_gray">&quot;chris.webber@hdesk.com&quot;</span>);<span style="font-family : 'Trebuchet MS'; font-size  : 10.0pt; "></span></p>
+</td>
+</tr>
+  <tr style=" height : 29.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">addAttribute</span></p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Used to add attributes to subject, resource, environment, and recipient cate&#173;gory objects.</p>
+</td>
+</tr>
+  <tr style=" height : 26.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Subject user = Subject.newInstance(<span class="FM_gray">&quot;chris.webber@hdesk.com&quot;</span>);</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;user.addAttribute(<span class="FM_gray">&quot;user_id&quot;</span>, &quot;<span class="FM_gray">chris.webber</span>&quot;)</p>
+</td>
+</tr>
+  <tr style=" height : 27.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> user = new Subject(&quot;<span class="FM_gray">chris.webber@hdesk.com</span>&quot;);</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;user.addAttribute(<span class="FM_gray">&quot;department&quot;</span>, <span class="FM_gray">&quot;IT&quot;</span>, <span class="FM_gray">&quot;Development&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 53.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">simpleDecide</span></p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Used to send requests to the server for testing and development. This method takes a user ID, an action, and a resource ID. However, you cannot pass user or resource attributes, discretionary policies, environment details, and so on using this method.</p>
+</td>
+</tr>
+  <tr style=" height : 25.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">PepResponse pepResponse = pepAgent.simpleDecide(<span class="FM_gray">&quot;Frank Underwood&quot;</span>, <span class="FM_gray">&quot;OPEN&quot;</span>, <span class="FM_gray">&quot;Document.docx&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 45.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">pepAgent.simpleDecide(<span class="FM_gray">&quot;Frank Underwood&quot;</span>, <span class="FM_gray">&quot;OPEN&quot;</span>, <span class="FM_gray">&quot;Document.docx&quot;</span>).then(<span class="FM_blue">function</span>(pepResponse) {</p>
+  <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>assert(pepResponse instance <span class="FM_blue">of</span> PEPResponse);</p>
+  <p dir="ltr" class="FM_Code">});</p>
+</td>
+</tr>
+  <tr style=" height : 101.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">decide</span></p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Used to send a single authorization request to the server, which expects a dynamic list of categories, and returns a promise that resolves to a single PEPResponse object. This method is more complex than <span class="FM_Code">simpleDecide()</span>&#160;because it requires the construction of user and resource and action objects, rather than IDs alone. With that complexity, however, comes flexibility and power. This method enables you to send information such as user or resource attributes, environment information, destination resource information, host information, and discretionary policies with the request.</p>
+</td>
+</tr>
+  <tr style=" height : 25.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">PepResponse pepResponse = pepAgent.decide(<span class="FM_gray">user</span>, <span class="FM_gray">action</span>, <span class="FM_gray">resource</span>, <span class="FM_gray">environment</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 76.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> promise = agent.decide(subject, resource, action, application);</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code">promise.then(<span class="FM_blue">function</span>(result) {</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_CodeComment">// result is an object of PEPResponse</p>
+  <p dir="ltr" class="FM_CodeComment">// TODO process the response</p>
+  <p dir="ltr" class="FM_Code">}</p>
+</td>
+</tr>
+  <tr style=" height : 147.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">bulkDecide()</span></p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Used to send multiple authorization requests to the server in a single call or payload. For example, a web page might have several restricted items. When a user visits the page, the PEP can evaluate the authorization request for all of those items in a single call. This might or might not be more efficient than <span class="FM_Code">decide()</span>, depending on the number of queries, the speed of the network, the cost of evaluating policies, and so on, but it is conceptually cleaner. For single authorization requests, however, use <span class="FM_Code">decide()</span>.</p>
+  <p dir="ltr" class="FM_Body">The server expects the first argument to be an array of objects of the multiple category (called associations), followed by the rest of the category objects. Returns a promise that resolves to an array of <span class="FM_Code">PEPResponse</span>&#160;objects following the order of the associations.</p>
+</td>
+</tr>
+  <tr style=" height : 65.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">List&lt;Resource&gt; resources = new ArrayList&lt;Resource&gt;();</p>
+  <p dir="ltr" class="FM_Code">resources.add(resource1);</p>
+  <p dir="ltr" class="FM_Code">resources.add(resource2);</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code">List&lt;PepResponse&gt; responses = pepAgent.bulkDecide(<span class="FM_gray">resources</span>, <span class="FM_gray">subject</span>, <span class="FM_gray">action</span>, <span class="FM_gray">host</span>, <span class="FM_gray">application</span>, <span class="FM_gray">recipient</span>, <span class="FM_gray">environment</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 105.00pt;">
+  <td style="width : 78.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td style="width : 360.001pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span>&#160;promise = agent.bulkDecide([resource,resource1], subject, action, application);</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code">promise.then(<span class="FM_blue">function</span>(result) {</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;result.forEach(<span class="FM_blue">function</span>(r, index) {</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// r is an object of PEPResponse</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// TODO process response</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;});</p>
+  <p dir="ltr" class="FM_Code">});</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Request_category_classes1"></a><a name="XREF_55515_Category_classes"></a>Request category classes</p>
+ <p dir="ltr" class="FM_Body">Request category classes represent components in an authorization request, such as the subject, action, and resource. Instances of such classes may be passed to the <span class="FM_Code">decide</span>&#160;and <span class="FM_Code">bulkDecide </span>methods of the <span class="FM_Code">PEPAgent</span>. The <span class="FM_Code">simpleDecide</span>&#160;method cannot be used to pass subject or resource attributes.</p>
+ <p dir="ltr" class="FM_Body">Request category classes include:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Subclasses of the <span class="FM_Code">org.apache.openaz.pepapi.CategoryContainer</span></p>
+ <p dir="ltr" class="FM_Bulleted1" style="margin-bottom : 1.000pt; font-family : 'Courier New'; font-size  : 9.0pt;">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">org.apache.openaz.pepapi.Subject</span></p>
+ <p dir="ltr" class="FM_Bulleted1" style="margin-bottom : 1.000pt; font-family : 'Courier New'; font-size  : 9.0pt;">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">org.apache.openaz.pepapi.Action</span></p>
+ <p dir="ltr" class="FM_Bulleted1" style="margin-bottom : 1.000pt; font-family : 'Courier New'; font-size  : 9.0pt;">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">org.apache.openaz.pepapi.Resource</span></p>
+ <p dir="ltr" class="FM_Bulleted1" style="margin-bottom : 1.000pt; font-family : 'Courier New'; font-size  : 9.0pt;">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">org.apache.openaz.pepapi.Environment<br /></span></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>NextLabs specific category classes include:</p>
+ <p dir="ltr" class="FM_Bulleted1" style="margin-bottom : 1.000pt; font-family : 'Courier New'; font-size  : 9.0pt;">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">com.nextlabs.openaz.pepapi.Application</span></p>
+ <p dir="ltr" class="FM_Bulleted1" style="margin-bottom : 1.000pt; font-family : 'Courier New'; font-size  : 9.0pt;">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">com.nextlabs.openaz.pepapi.Host</span></p>
+ <p dir="ltr" class="FM_Bulleted1" style="margin-bottom : 1.000pt; font-family : 'Courier New'; font-size  : 9.0pt;">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">com.nextlabs.openaz.pepapi.Recipient</span>&#160;</p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 435.00pt;">Table 5.3: Request category classes</caption>
+  <tr style=" height : 25.00pt;background : #ffffff;">
+  <th style="width : 84.000pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Category class <br />&amp; code example</span></p>
+</th>
+  <th style="width : 184.500pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Description</span></p>
+</th>
+  <th style="width : 69.000pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Data type/<br />valid input</span></p>
+</th>
+  <th style="width : 97.500pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Required/optional</span></p>
+</th>
+</tr>
+  <tr style=" height : 53.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Subject</span></p>
+</td>
+  <td style="width : 184.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">The individual performing the action. Typically, an a SID (Windows security identifier or UNIX ID) or an email address.</p>
+</td>
+  <td style="width : 69.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">String</p>
+</td>
+  <td style="width : 97.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Required</p>
+</td>
+</tr>
+  <tr style=" height : 26.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Subject user = Subject.newInstance(<span class="FM_gray">&quot;chris.webber@hdesk.com&quot;</span>);</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;user.addAttribute(<span class="FM_gray">&quot;user_id&quot;</span>, &quot;<span class="FM_gray">chris.webber</span>&quot;);</p>
+</td>
+</tr>
+  <tr style=" height : 36.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> Subject = nextlabsopenaz.Subject;</p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span> user = new Subject(&quot;<span class="FM_gray">chris.webber@hdesk.com</span>&quot;);</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;user.addAttribute(<span class="FM_gray">&quot;user_id&quot;</span>, <span class="FM_gray">&quot;chris.webber&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 53.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Action</span></p>
+</td>
+  <td style="width : 184.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body"><span class="FM_Body">The short name of the action, such as edit, view, or copy, for which access is requested. The short name must match that of the Action resource type.</span></p>
+</td>
+  <td style="width : 69.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body"><span class="FM_Body">String</span></p>
+</td>
+  <td style="width : 97.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body"><span class="FM_Body">Required</span></p>
+</td>
+</tr>
+  <tr style=" height : 17.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Action action = Action.newInstance(&quot;<span class="FM_gray">VIEW_TKTS</span>&quot;);</p>
+</td>
+</tr>
+  <tr style=" height : 27.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> Action = nextlabsopenaz.Action;</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> action = new Action(<span class="FM_gray">&quot;VIEW_TKTS&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 77.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Resource</span></p>
+</td>
+  <td style="width : 184.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">The document or other resource on which the action is being performed. The following attribute is required:<span class="FM_Code">&#160;ID_RESOURCE_RESOURCE_TYPE. </span>The value of this attribute must match the short name of the resource type.</p>
+</td>
+  <td style="width : 69.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">String</p>
+</td>
+  <td style="width : 97.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Required; </p>
+</td>
+</tr>
+  <tr style=" height : 35.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Resource resource = Resource.newInstance(<span class="FM_gray">&quot;Ticket:1103&quot;</span>);</p>
+  <p dir="ltr" class="FM_Code">resource.addAttribute(Constants.ID_RESOURCE_RESOURCE_TYPE.stringValue(), <span class="FM_gray">&quot;support_tickets&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 55.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> Resource = nextlabsopenaz.Resource;</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> resource = new Resource(<span class="FM_gray">&quot;Ticket:1103&quot;</span>);</p>
+  <p dir="ltr" class="FM_Code">resource.addAttribute(NextLabsXACML.ID_RESOURCE_RESOURCE_TYPE, <span class="FM_gray">&quot;support_tickets&quot;</span>)</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;resource.addAttribute(<span class="FM_gray">&quot;ticket_id&quot;</span>, <span class="FM_gray">&quot;1103&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 41.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Application</span></p>
+</td>
+  <td style="width : 184.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">The application used to access the resource and perform the actions.</p>
+</td>
+  <td style="width : 69.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">String</p>
+</td>
+  <td style="width : 97.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Required for JavaS&#173;cript only; not used in Java</p>
+</td>
+</tr>
+  <tr style=" height : 27.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> Application = nextlabsopenaz.Application;</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> application = new Application(<span class="FM_gray">&quot;Payroll App&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 41.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Environment</span></p>
+</td>
+  <td style="width : 184.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">The conditions, such as location or computer operating system, under which the action is performed.</p>
+</td>
+  <td style="width : 69.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">String</p>
+</td>
+  <td style="width : 97.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Optional</p>
+</td>
+</tr>
+  <tr style=" height : 26.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Environment environment = Environment.newInstance();</p>
+  <p dir="ltr" class="FM_Code">environment.addAttribute(<span class="FM_gray">&quot;authentication_type&quot;</span>, <span class="FM_gray">&quot;multifactor&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 34.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span><span class="FM_Code"> Environment = nextlabsopenaz.Environment;</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span><span class="FM_Code"> environment = new Environment();</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code">environment.addAttribute(</span><span class="FM_gray">&quot;authentication_type&quot;</span><span class="FM_Code">, </span><span class="FM_gray">&quot;multifactor&quot;</span><span class="FM_Code">);</span></p>
+</td>
+</tr>
+  <tr style=" height : 113.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Recipient</span></p>
+</td>
+  <td style="width : 184.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">A single email address with attributes or a list of email addresses; Used with email enforcers such as NextLabs Out&#173;look Enforcer. Attributes can be associ&#173;ated with a single recipient only. If your policies depend on attributes, and you need to specify multiple recipi&#173;ents, each recipient must be placed in a separate request.</p>
+</td>
+  <td style="width : 69.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">String; email address</p>
+</td>
+  <td style="width : 97.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Optional</p>
+</td>
+</tr>
+  <tr style=" height : 83.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Recipient recipient = Recipient.newInstance (<span class="FM_gray">&quot;frank.underwood@whitehouse.gov&quot;</span>,</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_gray">&quot;claire.underwood@whitehouse.gov&quot;</span>, <span class="FM_gray">&quot;doug.stamper@whitehouse.gov&quot;</span>);</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code">Recipient recip = Recipient.newInstance (<span class="FM_gray">&quot;frank.underwood@whitehouse.gov&quot;</span>);</p>
+  <p dir="ltr" class="FM_Code">recip.addAttribute(<span class="FM_gray">&quot;title&quot;</span>, <span class="FM_gray">&quot;President&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 36.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> Recipient = nextlabsopenaz.Recipient;</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> recipient = new Recipient(<span class="FM_gray">&quot;frank.underwood@whitehouse.gov&quot;</span>);</p>
+  <p dir="ltr" class="FM_Code">recipient.addAttribute(<span class="FM_gray">&quot;title&quot;</span>, <span class="FM_gray">&quot;President&quot;</span>);</p>
+</td>
+</tr>
+  <tr style=" height : 41.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Host</span></p>
+</td>
+  <td style="width : 184.500pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">The hostname or IP address of the machine on which the action is being performed.</p>
+</td>
+  <td style="width : 69.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">String or Integer</p>
+</td>
+  <td style="width : 97.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Optional</p>
+</td>
+</tr>
+  <tr style=" height : 17.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Host host = Host.newInstance(&quot;mymachine.mycompany.com&quot;);</p>
+</td>
+</tr>
+  <tr style=" height : 86.00pt;">
+  <td style="width : 84.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td colspan="3" style="width : 350.999pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// default localhost</p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue" style="font-family : 'Trebuchet MS'; font-weight : bold; ">var</span>&#160;host = <span class="FM_blue">new</span> Host();</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// using host name</p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span>&#160;host1 = <span class="FM_blue">new</span> Host(<span class="FM_gray">&quot;some_host&quot;</span>);</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;// using inet address</p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span>&#160;host2 = <span class="FM_blue">new</span> Host(<span class="FM_brown">0x7f000001</span>);</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_PEPResponse2"></a><a name="XREF_57657_PEPResponse"></a>PEPResponse</p>
+ <p dir="ltr" class="FM_Body">The Cloud PDP responds to authorization requests by returning the <span class="FM_Code">PEPResponse</span>&#160;object. This object includes the evaluation decision and any obligations that the PEP should attempt to per&#173;form when it enforces the decision.</p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 436.50pt;">Table 5.4: PEPResponse</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 105.000pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Response object</span></p>
+</th>
+  <th style="width : 331.501pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading"><span class="FM_Bold">Description</span></p>
+</th>
+</tr>
+  <tr style=" height : 79.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">allowed</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Returns a value representing the authorization decision:</p>
+  <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">true</span>: Returns the decision, Allow.</p>
+  <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">false</span>: Returns the decision, Deny.</p>
+  <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">indeterminate</span>&#160;or <span class="FM_Bold">invalid</span>: Returns the decision, <span class="FM_Code">Not Applicable</span>&#160;or <span class="FM_Code">PEPException.</span>&#160;See <a href="Exception_handling.htm#XREF_77509_Exception_handling">Exception handling</a>.</p>
+</td>
+</tr>
+  <tr style=" height : 29.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">getObligations</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Returns the obligations (instructions for performing additional tasks) required by the policy being enforced. </p>
+</td>
+</tr>
+  <tr style=" height : 29.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Returns the set of <span class="FM_Code">org.apache.openaz.pepapi.Obligations</span> associ&#173;ated with the current result indexed by <span class="FM_Code">ObligationId</span>.</p>
+</td>
+</tr>
+  <tr style=" height : 137.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Returns a map containing the obligations returned by the Cloud PDP:</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span>&#160;promise = agent.decide(subject, resource, action, application);</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code">promise.then(<span class="FM_blue">function</span>(result) {</p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;<span class="FM_blue">var</span> obligations = result.getObligations();</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;obligations.forEach(<span class="FM_blue">function</span>(obl, id) {</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;// obl is an object of Obligation</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;// TODO process obligation</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;});</p>
+  <p dir="ltr" class="FM_Code">}</p>
+</td>
+</tr>
+  <tr style=" height : 29.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">getWrappedResult</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Returns the raw object representing the response. This exposes the helper methods to access the evaluation response details.</p>
+</td>
+</tr>
+  <tr style=" height : 25.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">Decision decision = pepResponse.getWrappedResult().getDecision();</p>
+</td>
+</tr>
+  <tr style=" height : 17.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: double; border-bottom-width: 3px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> decision = result.getWrappedResult().Decision;</p>
+</td>
+</tr>
+  <tr style=" height : 41.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Obligation</span></p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Instructions for performing additional required tasks, which are sent by the PDP (Policy Decision Point) to the PEP (Policy Enforcement Point) along with the authorization decision.</p>
+</td>
+</tr>
+  <tr style=" height : 17.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">getId</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Returns the obligation ID.</p>
+</td>
+</tr>
+  <tr style=" height : 17.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code">String obligationId = obligation.getId();</p>
+</td>
+</tr>
+  <tr style=" height : 17.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> obligationId = obligation.getId ();</p>
+</td>
+</tr>
+  <tr style=" height : 53.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">getAttributeMap</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body">Returns a map of the obligation attribute name, object-value-array pairs, indexed by name, where name is the <span class="FM_Code">AttributeId</span>&#160;and the value is an array of one or more object values of the attribute. An array with a length greater than one indicates a multi-value attribute.</p>
+</td>
+</tr>
+  <tr style=" height : 476.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">Java example</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CodeComment">/* </p>
+  <p dir="ltr" class="FM_CodeComment"> * The following section prints all the obligations and their<br />&#160;* attributes if any obligations are available for the <br />&#160;* authorization request decision </p>
+  <p dir="ltr" class="FM_CodeComment"> */</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">if</span><span class="FM_Code">&#160;</span><span class="FM_bluedark">(!</span><span class="FM_Code">pepResponse.getObligations</span><span class="FM_bluedark">()</span><span class="FM_Code">.isEmpty</span><span class="FM_bluedark">()) {</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>System.out.println</span><span class="FM_bluedark">(</span><span class="FM_gray">&quot; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Obligations: &quot;</span><span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>Iterator</span><span class="FM_bluedark">&lt;</span><span class="FM_Code">Entry</span><span class="FM_bluedark">&lt;</span><span class="FM_Code">String, Obligation</span><span class="FM_bluedark">&gt;&gt;</span><span class="FM_Code">&#160;obligationEntryIter = pepResponse.getObligations</span><span class="FM_bluedark">()</span><span class="FM_Code">.entrySet</span><span class="FM_bluedark">()</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>.iterator</span><span class="FM_bluedark">();</span></p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_blue">while</span><span class="FM_Code">&#160;</span><span class="FM_bluedark">(</span><span class="FM_Code">obligationEntryIter.hasNext</span><span class="FM_bluedark">()) {</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>Entry</span><span class="FM_bluedark">&lt;</span><span class="FM_Code">String, Obligation</span><span class="FM_bluedark">&gt;</span><span class="FM_Code">&#160;obligationEntry = obligationEntryIter.next();</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>System.out.println</span><span class="FM_bluedark">(</span><span class="FM_gray">&quot; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{ &quot;</span><span class="FM_Code">&#160;+ obligationEntry.getKey</span><span class="FM_bluedark">()</span><span class="FM_Code">&#160;+ </span><span class="FM_gray">&quot; : [&quot;</span><span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>/*</p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span> * Print each obligation's attributes as key values</p>
+  <p dir="ltr" class="FM_CodeComment"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span> */</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>Iterator</span><span class="FM_bluedark">&lt;</span><span class="FM_Code">Entry</span><span class="FM_bluedark">&lt;</span><span class="FM_Code">String, Object</span><span class="FM_bluedark">[]&gt;&gt;</span><span class="FM_Code">&#160;attrMapIter = obligationEntry.getValue</span><span class="FM_bluedark">()</span><span class="FM_Code">.getAttributeMap</span><span class="FM_bluedark">()</span><span class="FM_Code">.entrySet</span><span class="FM_bluedark">()</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>.iterator</span><span class="FM_bluedark">();</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_blue">while</span><span class="FM_Code">&#160;</span><span class="FM_bluedark">(</span><span class="FM_Code">attrMapIter.hasNext</span><span class="FM_bluedark">()) {</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>Entry</span><span class="FM_bluedark">&lt;</span><span class="FM_Code">String, Object</span><span class="FM_bluedark">[]&gt;</span><span class="FM_Code">&#160;attrMapEntry = attrMapIter.next</span><span class="FM_bluedark">();</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>System.out.print</span><span class="FM_bluedark">(</span><span class="FM_gray">&quot; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Key: &quot;</span><span class="FM_Code">&#160;+ attrMapEntry.getKey</span><span class="FM_bluedark">()</span><span class="FM_Code">&#160;+ </span><span class="FM_gray">&quot;, values: &#160;&quot;</span><span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_blue">for</span><span class="FM_Code"> (</span><span class="FM_lavendar">int</span><span class="FM_Code">&#160;j = </span><span class="FM_Orange">0</span><span class="FM_Code">; j </span><span class="FM_bluedark">&lt;</span><span class="FM_Code"> attrMapEntry.getValue</span><span class="FM_bluedark">()</span><span class="FM_Code">.length; j</span><span class="FM_bluedark">++) {</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>System.out.print(</span><span class="FM_gray">&quot;\&quot;&quot;</span><span class="FM_Code">&#160;+ attrMapEntry.getValue</span><span class="FM_bluedark">()[</span><span class="FM_Code">j</span><span class="FM_bluedark">]</span><span class="FM_Code">&#160;+ </span><span class="FM_gray">&quot;\&quot;&quot;</span><span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_blue">if</span><span class="FM_Code">&#160;(j </span><span class="FM_bluedark">&lt; </span><span class="FM_Code">attrMapEntry.getValue</span><span class="FM_bluedark">()</span><span class="FM_Code">.length - </span><span class="FM_Orange">1</span><span class="FM_bluedark">) {</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>System.out.print</span><span class="FM_bluedark">(</span><span class="FM_gray">&quot;, &quot;</span><span class="FM_bluedark">)</span><span class="FM_Code">;</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_bluedark">}</span></p>
+  <p dir="ltr" class="FM_Code" style="color   : #000051;"><span class="FM_bluedark"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}</span></p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_blue">if</span><span class="FM_Code">&#160;</span><span class="FM_bluedark">(</span><span class="FM_Code">attrMapIter.hasNext</span><span class="FM_bluedark">()) {</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>System.out.println</span><span class="FM_bluedark">(</span><span class="FM_gray">&quot;,&quot;</span><span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_bluedark">}</span></p>
+  <p dir="ltr" class="FM_Code" style="color   : #000051;"><span class="FM_bluedark"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_blue">if</span><span class="FM_Code">&#160;</span><span class="FM_bluedark">(</span><span class="FM_Code">obligationEntryIter.hasNext</span><span class="FM_bluedark">()) {</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>System.out.println</span><span class="FM_bluedark">(</span><span class="FM_gray">&quot;, &quot;</span><span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code"><span class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></span><span class="FM_bluedark">}</span></p>
+  <p dir="ltr" class="FM_Code" style="color   : #000051;"><span class="FM_bluedark"> &#160;}</span></p>
+  <p dir="ltr" class="FM_Code" style="color   : #000051;">&nbsp;</p>
+  <p dir="ltr" class="FM_Code" style="color   : #000051;"><span class="FM_bluedark">}</span></p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+</td>
+</tr>
+  <tr style=" height : 223.00pt;">
+  <td style="width : 105.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellExampleRt">JavaScript example</p>
+</td>
+  <td style="width : 331.501pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Code"><span class="FM_blue">var</span> obligations = result.getObligations<span class="FM_bluedark">();</span></p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code"> obligations.forEach<span class="FM_bluedark">(</span><span class="FM_blue">function</span><span class="FM_bluedark">(</span>obligation, key) {</p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;<span class="FM_blue">var</span> attributes = obligation.getAttributeMap<span class="FM_bluedark">();</span></p>
+  <p dir="ltr" class="FM_CodeComment">&nbsp;</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;/*</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;* Print each obligation's attributes as key values</p>
+  <p dir="ltr" class="FM_CodeComment"> &#160;&#160;&#160;*/</p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;attributes.forEach<span class="FM_bluedark">(</span><span class="FM_blue">function</span><span class="FM_bluedark">(</span>values, name<span class="FM_bluedark">) {</span></p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;console.log<span class="FM_bluedark">(</span><span class="FM_gray">&quot; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;</span>&#160;+ name + <span class="FM_gray">&quot;: &quot;</span> + values<span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code" style="color   : #000051;"><span class="FM_bluedark"> &#160;&#160;});</span></p>
+  <p dir="ltr" class="FM_Code">&nbsp;</p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;<span class="FM_blue">var</span> ticketId = attributes.get<span class="FM_bluedark">(</span><span class="FM_gray">'ticket_id'</span><span class="FM_bluedark">)[</span><span class="FM_Orange">0</span><span class="FM_bluedark">];</span></p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;<span class="FM_blue">var</span> assignedTo = attributes.get<span class="FM_bluedark">(</span><span class="FM_gray">'assigned_to'</span><span class="FM_bluedark">)[</span><span class="FM_Orange">0</span><span class="FM_bluedark">];</span></p>
+  <p dir="ltr" class="FM_Code">&#160;&#160;&#160;<span class="FM_blue">var</span>&#160;processedMsg = <span class="FM_lavendar">String</span><span class="FM_bluedark">(</span>attributes.get<span class="FM_bluedark">(</span>'message'<span class="FM_bluedark">)[</span><span class="FM_Orange">0</span><span class="FM_bluedark">])</span>.replace<span class="FM_bluedark">(</span><span class="FM_gray">&quot;${ticket_id}&quot;</span>, ticketId<span class="FM_bluedark">)</span>.replace<span class="FM_bluedark">(</span><span class="FM_gray">&quot;${assigned_to}&quot;</span>, assignedTo<span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;console.log<span class="FM_bluedark">(</span><span class="FM_gray">&quot; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;updated message: &quot;</span>&#160;+ processedMsg<span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;console.log<span class="FM_bluedark">(</span><span class="FM_gray">&quot; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;</span><span class="FM_bluedark">);</span></p>
+  <p dir="ltr" class="FM_Code" style="color   : #000051;"><span class="FM_bluedark"> &#160;});</span></p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_Body">&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Constructing and testing policies</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\PolicyStudio\PoliciesSAAS.fm" />
+ <link rel="stylesheet" href="PoliciesSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.1.2";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Working with Policies" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <h1 dir="ltr"><a name="XREF_64726_3_Constructing"></a>Constructing and testing policies</h1>
+ <p dir="ltr" class="FM_Body">This section describes how to construct policies. Policies are rules that are designed to control access to resources in an organization. Policies consist of components combined with logical operators, variables, obligations, and time-based contexts. </p>
+ <p dir="ltr" class="FM_Heading1PartSection"><a name="TOC_About_constructing"></a><span style="font-family : 'Trebuchet MS'; font-weight : normal; font-size  : 10.0pt; color   : #0000ff; "></span><a name="XREF_18529_Creating_a"></a><a name="XREF_44690_Constructing"></a>About constructing policies</p>
+ <p dir="ltr" class="FM_Body">Policy designers construct policies to control access to resources in an organization. For example, a designer might construct the following policy: </p>
+ <p dir="ltr" class="FM_Body2">Allow Users in IT to Edit and Reassign Tickets in their Product Area</p>
+ <p dir="ltr" class="FM_Body">The components used in this policy include: </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Subject component: IT Department (User)</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Action components: Edit and Assign (Support Tickets)</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Resource component: Tickets in User’s Product Area (Support Tickets)</p>
+ <p dir="ltr" class="FM_Body">Policy designers use conditions to change a policy’s effect based on dynamic comparisons, evalu&#173;ations, or contextual factors. In addition, policies can include notification obligations, such as messages to end users or email notifications to administrators when policies are enforced any&#173;where in the network.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Adding_policies"></a><a name="XREF_74786_Adding_policies"></a>Adding policies</p>
+ <p dir="ltr" class="FM_HeadingPrerequisite">Before you begin</p>
+ <p dir="ltr" class="FM_Body">Configure a Policy Model and configure policy components. See <a href="../NewUISaaS/Policy_and_Policy_Model_overview.htm#XREF_18832_15_Introducing">Policy and Policy Model overview</a>.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Log in to CloudAz with an account that has permission to add policies.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>On the left navigation bar, click <span class="FM_UIControl">Policies.</span></p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Click <span class="FM_UIControl">Add Policy</span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Provide the policy information. This is used to identify the policy on the <span class="FM_Emphasis">Policies</span>&#160;list and in the CloudAz  &#160;system:<span style="font-family : 'Times New Roman'; font-size  : 12.0pt; "></span></p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 399.00pt;">Table 1.2.1: Policy information</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 66.750pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Option</p>
+</th>
+  <th style="width : 332.250pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+  <tr style=" height : 29.00pt;">
+  <td style="width : 66.750pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Name</p>
+</td>
+  <td style="width : 332.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody"><span style="font-size  : 6.0pt; "></span>The item display name. Multibyte characters, such as those used in Asian languages, are allowed, but names cannot exceed 128 characters and cannot include: ~ / * $ &amp; &#160;\ &#160;? </p>
+  <p dir="ltr" class="FM_AnchorFrame" style="font-size  : 6.0pt;">&#160;</p>
+</td>
+</tr>
+  <tr style=" height : 37.00pt;">
+  <td style="width : 66.750pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Description</p>
+</td>
+  <td style="width : 332.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody"><span style="font-size  : 6.0pt; "></span>A description of the item. This field is useful for explaining how the item is used and for documenting changes to the item. Descriptions can include multibyte characters, such as those used by Asian languages.</p>
+  <p dir="ltr" class="FM_AnchorFrame" style="font-size  : 6.0pt;">&#160;</p>
+</td>
+</tr>
+  <tr style=" height : 307.00pt;">
+  <td style="width : 66.750pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Tags</p>
+</td>
+  <td style="width : 332.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody"><span style="font-size  : 6.0pt; "></span>Labels that identify or classify or group items according to business needs. You can apply tags to items such as policies, components, and resource types.This classification has these main benefits:</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>It simplifies search operations.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>It simplifies the management of policies (delegated administration).</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>It enables you to create reports based on tags in the Reporter console.</p>
+  <p dir="ltr" class="FM_CellBody">For example, to allow only citizens of the USA to manage ABAC policies related to export control, you could add a tag to each policy that enforces export controls such as ITAR. You could then define a delegation policy that allows access to administrators whose citizenship is USA. Each item can have any number of tags. For example, if a policy restricts access to data in classified information, the following tags might be useful:</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Top Seccret</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Secret</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Confidential</p>
+  <p dir="ltr" class="FM_CellBody">Although there are many other attributes associated with policies—such as user name, resource attributes, action, and policy name—on which you can filter in Reporter, tags are often the most useful because you can add your own key words and values that make the items easier to identify and find.</p>
+  <p dir="ltr" class="FM_CellBody"><span class="FM_Bold">Important</span>: Before creating tags for policies, define the reporting requirements, and then identify the tags needed to support those requirements. Use a consistent naming convention and apply tags uniformly to ensure that policy activity reports that are filtered by tags return the results you expect. For example, if some policies governing export control data contain the tag, Export Control = ITAR, while some export control policies contain the tag, Classification = ITAR, and others do not contain any tags, filtering on one tag does not capture all the export control policy activity data. Similarly, define the delegation requirements, and then identify the tags needed to support those requirements. Use a consistent naming convention, and apply tags uniformly to ensure that data are filtered by tags to return the results you expect.</p>
+  <p dir="ltr" class="FM_CellBody"><span class="FM_Bold">Note</span>: Tags used in components are available only to components; component tags are not available to policies, and policy tags are not available to components. </p>
+  <p dir="ltr" class="FM_CellBody">Tags cannot include these characters: ~ / * $ &#160;&amp; &#160;\ &#160;? &#160;{ &#160;} </p>
+  <p dir="ltr" class="FM_AnchorFrame" style="font-size  : 6.0pt;">&#160;</p>
+  <p dir="ltr" class="FM_CellBody"><span class="FM_Bold">Note:</span>&#160;Tags used in policies are available only to policies; policy tags are not available to components, and component tags are not available to policies.</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_NumBody"><span style="font-family : 'Times New Roman'; font-size  : 12.0pt; "></span></p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Select the policy effect and subject components: </p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 397.50pt;">Table 1.2.2: Policy effect and subject components</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 162.000pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Option</p>
+</th>
+  <th style="width : 235.500pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+  <tr style=" height : 115.28pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Policy Effect</p>
+</td>
+  <td style="width : 235.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_Body" style="font-size  : 8.0pt;">The action taken when conditions in the policy are met.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Allow</span>: Permit the listed Subjects to perform the task speci&#173;fied in the policy. Allowing a set of Subjects to perform a task does not mean that others are blocked from performing that action. Allow policies can never result in Deny responses. Allow policies can only result in Allow or Not Applicable responses.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Deny</span>: Do not permit the listed Subjects to perform the task specified in the policy, but allow all others to do so. Deny policies can result in Deny, Allow, or Not Applicable responses.</p>
+  <p dir="ltr" class="FM_CellBody">&#160;</p>
+</td>
+</tr>
+  <tr style=" height : 160.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Subject Components (Add Condition)</p>
+</td>
+  <td style="width : 235.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The subjects (users) to be governed by the policy.</p>
+  <p dir="ltr" class="FM_CellBody">Conditions are expressions of predicates that refine the context in which policy actions are performed. Conditions can be selected only if attributes have been added for the subject type policy component. See <a href="../NewUISaaS/Managing_policy_components.htm#XREF_55096_Adding_policy">Adding and editing policy components</a>.</p>
+  <p dir="ltr" class="FM_CellBody">Using conditions, you can create policies that change their effect based on dynamic comparisons, evaluations, or contextual factors. For complex contextual factors, use Advanced Conditions, which are written directly in ACPL (Active Control Policy Language). Click the plus icon next to the condition that you want to set. See <a href="Using_Advanced_Conditions.htm#XREF_18668_Advanced_Conditions">Using Advanced Conditions</a>. </p>
+  <p dir="ltr" class="FM_CellBody"><span class="FM_Bold">Important</span>: If no subject components are specified, the policy applies to all subject components.</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Select resource components. These are the information resources, such as documents, to be governed by the policy. Do any of the following:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>To select from all existing resource components, click in the field, then select a resource component. </p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>To search for a resource component, begin typing in the field, then select a resource component. </p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>To add a resource component, type a name, select the check box next to the name, which is identified as <span class="FM_Emphasis">(NEW)</span>, then click <span class="FM_UIControl">Apply</span>. An empty resource component is added to the policy. The new resource component also appears on the <span class="FM_Emphasis">Resource Components</span>&#160;list. Edit the resource component to define its properties. See <a href="../NewUISaaS/Managing_policy_components.htm#XREF_55096_Adding_policy">Adding and editing policy components</a>.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>To add multiple resource components, click <span class="FM_UIControl">Add Condition</span>, then select or add a resource component. </p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>If you add multiple components in the same Subject component, they are eval&#173;uated with the OR logical operator. To perform an AND logical operation, add a &#160;condition. </p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>To remove a resource component, click the <span class="FM_UIControl">X</span>&#160;next to the resource component name. </p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>7<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Select action components. These are the actions to be governed by the policy. If you include more than one action, an OR operator is assumed. If no action components are specified, the policy applies to all action components.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>8<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span><span class="FM_Bold">Optional</span>: In the Advanced Conditions section, add any ACPL (Active Control Policy Lan&#173;guage) expressions you want to use in policy evaluation. This is useful for creating condi&#173;tions that cannot be defined using resource and user components. For example, if you have a secure application, you could write an ACPL expression that includes multifactor authen&#173;tication:</p>
+ <p dir="ltr" class="FM_Code2">environment.authentication_type = &quot;multifactor&quot;<br /></p>
+ <p dir="ltr" class="FM_NumBodyCont">For more information on Advanced Conditions, see <a href="Using_Advanced_Conditions.htm#XREF_18668_Advanced_Conditions">Using Advanced Conditions</a>.</p>
+
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>9<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Choose the policy effective duration. This is the period of time when the policy is to be enforced. Setting a duration is useful if you have a policy that you want to enforce only during a particular time period. For example, allowing users to access resources during working hours only, or for the duration of a specific project:<span style="font-family : 'Times New Roman'; font-size  : 12.0pt; "></span></p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter; " cellspacing="0">
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 162.000pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Option</p>
+</th>
+  <th style="width : 235.500pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Always</p>
+</td>
+  <td style="width : 235.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Enforce the policy continuously.</p>
+</td>
+</tr>
+  <tr style=" height : 138.00pt;">
+  <td style="width : 162.000pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Specific Days</p>
+</td>
+  <td style="width : 235.500pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Enforce the policy according to the specified schedule:</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Specify a date range to enforce the policy during a specified period.</p>
+  <p dir="ltr" class="FM_CellBodyBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Specify the days of the week on which the policy is to be enforced. For example, select SUN and SAT to enforce the policy on weekends only (Sunday and Saturday).</p>
+  <p dir="ltr" class="FM_CellBody">Time is evaluated according to the CloudAz Policy Management server’s time zone, which matches the service region specified in the CloudAz subscription.&#160;Trial subscriptions use Pacific time.</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_NumBody"><span style="font-family : 'Times New Roman'; font-size  : 12.0pt; "></span></p>
+ <p dir="ltr" class="FM_Note"><a name="IX_time_zones"></a><a name="IX_context_in_policies"></a><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>It is important to understand the difference between these time condition set&#173;tings. If a user does something to a resource and it is within this specified time period, the policy is enforced; if it is outside that period, the policy is not enforced. However, the policy is evaluated in either case. </p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>10<span style="padding-left: 11pt;" class="FMAutoNumber_2"></span>Select the obligations you want the CloudAz&#160;PDP (Policy Decision Point) to pass to the PEP (Policy Enforcement Point) when an authorization request matches a policy.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>11<span style="padding-left: 11pt;" class="FMAutoNumber_2"></span>Do one of the following:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Click <span class="FM_UIControl">Save</span>.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Click <span class="FM_UIControl">Save &amp; Deploy</span>. </p>
+ <p dir="ltr" class="FM_NumBodyCont">The policy is added to the Policy Master database.</p>
+ <p dir="ltr" class="FM_HeadingNextSteps">Next steps</p>
+ <p dir="ltr" class="FM_Body">If you chose <span class="FM_Emphasis">Save</span>, you must deploy the policy to distribute it to enforcers. Policies are enforced only after they are deployed. See <a href="../Deploying_SaaS/Deploying_and_managing_objects.htm#XREF_16596_Deploying_Objects">Deploying and managing objects</a>.</p>
+ </body>
+</html>

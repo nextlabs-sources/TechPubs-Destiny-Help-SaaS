@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Using the Java client library</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\SDKSAAS.fm" />
+ <link rel="stylesheet" href="SDKSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "5.1.1";
+</script>
+ <meta name="topic-breadcrumbs" content="SDK & OpenAz Client Libraries > SDK and OpenAz Client Libraries" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_43518_Using_the_Java"></a>Using the Java client library</p>
+ <p dir="ltr" class="FM_Body">This section explains how to use NextLabs OpenAz PEP Java client to construct and send authori&#173;zation requests to remote PDPs, including REST PDPs and Cloud PDPs.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Setting_up_the_Java_SDK"></a><a name="XREF_60199_Setting_up_the"></a>Setting up the Java SDK</p>
+ <p dir="ltr" class="FM_Body">If you are developing Java PEPs, add the required JAR libraries to your Java project to set up the Java SDK.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Set up the Java SDK with JDK 7 or higher. For instructions, go to <br /><span class="FM_Hyperlink"><a href="http://docs.oracle.com/javase/7/docs/webnotes/install/">http://docs.oracle.com/javase/7/docs/webnotes/install/</a></span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Download the sample Java application: <span class="FM_Hyperlink"><a href="https://s3-us-west-2.amazonaws.com/nxtlbsrelease/Platform_SAAS/openAZ-pep/Nextlabs-OpenAZ-PEP.zip">https://s3-us-west-2.amazonaws.com/nxtlbsre&#173;lease/Platform_SAAS/openAZ-pep/Nextlabs-OpenAZ-PEP.zip</a></span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Extract the files from the package.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>Files are extracted with the <span class="FM_Emphasis">Read-only </span>attribute set in their properties<span class="FM_Emphasis">. </span>To view or change file properties in Windows, right-click the file, then select <span class="FM_Emphasis">Proper&#173;ties</span>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Add <span class="FM_Code">nextlabs-openaz-pep.jar</span>&#160;and the required JAR libraries to your Java project. These libraries are located in the <span class="FM_Code">lib</span> folder.</p>
+ <p dir="ltr" class="FM_HeadingNextSteps">Next steps</p>
+ <p dir="ltr" class="FM_Body"><a href="#XREF_82927_Invoking_the_PDP">Invoking the PDP</a></p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Invoking_the_PDP"></a><a name="XREF_82927_Invoking_the_PDP"></a>Invoking the PDP</p>
+ <p dir="ltr" class="FM_Body">To invoke the PDP, you must configure the Java client SDK as described in this section. </p>
+ <p dir="ltr" class="FM_Heading3">Configuring the Java client SDK to invoke remote or CloudAz PDPs</p>
+ <p dir="ltr" class="FM_Body">For remote or CloudAz PDPs, authorization requests are sent through a <span class="FM_Code">PEPAgent</span>, which is cre&#173;ated and configured using a <span class="FM_Code">PEPAgentFactory</span>. The <span class="FM_Code">PEPAgentFactory</span> is configured with proper&#173;ties that can come from either a file or a Properties object. To use a file, create the file with the appropriate configuration for your system, then reference that file in the Java code. To use a Properties object, include the properties in the Java code directly.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>Embedded PDPs are not supported in this version of CloudAz.</p>
+
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Specify the <span class="FM_Code">PDPEngine</span>&#160;name to initialize the PDP. For example: </p>
+ <p dir="ltr" class="FM_CodeComment"># PDP Engine configurations</p>
+ <p dir="ltr" class="FM_CodeComment"># &#160;&#160;&#160;&#160;&#160;- Embedded PDP: &#160;&#160;&#160;&#160;&#160;com.nextlabs.openaz.pdp.EmbeddedPDPEngine</p>
+ <p dir="ltr" class="FM_CodeComment"># &#160;&#160;&#160;&#160;&#160;- REST/ CloudAz PDP: com.nextlabs.openaz.pdp.RestPDPEngine</p>
+ <p dir="ltr" class="FM_CodeComment">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_CodeComment"># PDPEngine class</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># When using REST/ CloudAz PDP, configure the properties below</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># The host name of the CloudAz server, for example: saas-jpc.cloudaz.com</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.host=&lt;CloudAz REST API host&gt;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># The port on which the CloudAz service is listening on the server</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.port=443</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># Whether the CloudAz service is over https (true or false)</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.https=false</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># The authentication settings to connect with the REST/CloudAz service</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># Two authentication types are available:</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;&#160;&#160;&#160;&#160;- No authentication required: NONE </p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;&#160;&#160;&#160;&#160;- Use with OAuth2 provided authentication service: OAuth2</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.auth_type=OAUTH2</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># OAuth2 Related configurations</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;Use only if nextlabs.cloudaz.auth_type is OAUTH2</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># The OAuth2 Authorization Grant Type </p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;The available grant type is </p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;&#160;&#160;&#160;&#160;&#160;- client_credentials (default)</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.grant_type=client_credentials</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># The OAuth2 server configurations</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;If the default OAuth2 service is provided by Control Center server,</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;configure the Control Center server host and port</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.server=&lt;control center host&gt;</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.port=&lt;control center port&gt;</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.https=true</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># The client ID required to identify the client connecting over OAuth2 </p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.client_id=&lt;CLIENT_ID&gt;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># The client secret for the OAuth2 client credentials grant</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.client_secret=&lt;CLIENT_SECRET&gt;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># The OAuth endpoint to get the token for the client credential grant</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;&#160;- CloudAz endpoint: /oauth/token </p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># &#160;&#160;- REST endpoint &#160;&#160;: /cas/token</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.oauth2.token_endpoint_path=/cas/token</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">&nbsp;</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;"># Ignore HTTPS self-signed certificate errors if using self-signed certificates</p>
+ <p dir="ltr" class="FM_Code" style="color   : #228a22;">#-----------------------------------------------------------------------------</p>
+ <p dir="ltr" class="FM_Code">nextlabs.cloudaz.ignore_https_certificate=true</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>To use a Properties object, include the properties in the Java PEP client code directly as follows: </p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>As a good practice, use a Credential Store Framework to securely store and retrieve the <span class="FM_Code">client_secret</span> key.</p>
+ <p dir="ltr" class="FM_Code">Properties xacmlProperties = <span class="FM_blue">new</span> Properties();</p>
+ <p dir="ltr" class="FM_CodeComment">// The name of the CloudAz/ REST PDP server host</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(Constants.PDP_REST_HOST, <span class="FM_gray">&quot;&lt;CloudAz REST API host&gt;&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">// The OAuth2 server configurations</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(Constants.PDP_REST_PORT, <span class="FM_gray">&quot;443&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(Constants.PDP_REST_HTTPS, <span class="FM_gray">&quot;true&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(Constants.PDP_REST_AUTH_TYPE, <span class="FM_gray">&quot;OAUTH2&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(Constans.PDP_REST_OAUTH2_TOKEN_GRANT_TYPE,</p>
+ <p dir="ltr" class="FM_Code"><span class="FM_gray">&quot;client_credentials&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">// The client ID required to identify the client connecting using OAuth2</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(Constants.PDP_REST_OAUTH2_CLIENT_ID, <span class="FM_gray">&quot;&lt;CLIENT_ID&gt;&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">// The client secret for the OAuth2 client credentials grant</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(Constants.PDP_REST_OAUTH2_CLIENT_SECRET, <span class="FM_gray">&quot;&lt;CLIENT_SECRET&gt;&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">// The OpenAz API PDP engine factory implementation</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(XACMLProperties.PROP_PDPENGINEFACTORY,</p>
+ <p dir="ltr" class="FM_Code"><span class="FM_gray">&quot;com.nextlabs.openaz.pdp.PDPEngineFactoryImpl&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">// The OpenAz API configuration</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(Constants.ENGINE_NAME,</p>
+ <p dir="ltr" class="FM_Code"><span class="FM_gray">&quot;com.nextlabs.openaz.pdp.RestPDPEngine&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">// Mapper classes used internally to map requests</p>
+ <p dir="ltr" class="FM_Code">xacmlProperties.setProperty(<span class="FM_gray">&quot;pep.mapper.classes&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code">&quot;com.nextlabs.openaz.pepapi.RecipientMapper,com.nextlabs.openaz.pepapi.Discretionary</p>
+ <p dir="ltr" class="FM_Code">PoliciesMapper,com.nextlabs.openaz.pepapi.HostMapper,com.nextlabs.openaz.pepapi.Appl</p>
+ <p dir="ltr" class="FM_Code">icationMapper&quot;);</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>To use a properties file, create the file with the appropriate configuration for your system, then reference that file in the Java code as follows:</p>
+ <p dir="ltr" class="FM_Code">import org.apache.openaz.pepapi.std.StdPepAgentFactory;</p>
+ <p dir="ltr" class="FM_Code">import org.apache.openaz.pepapi.PepAgent;</p>
+ <p dir="ltr" class="FM_Code">PepAgentFactory pepAgentFactory = new StdPepAgentFactory(&quot;/path/to/properties.file&quot;);</p>
+ <p dir="ltr" class="FM_Code">PepAgent pepAgent = pepAgentFactory.getPepAgent();</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Making_authorization"></a><a name="XREF_41442_Types_of_Requests"></a><a name="XREF_54249_Examples_of"></a>Making authorization requests using Java</p>
+ <p dir="ltr" class="FM_Body">PEPs (policy enforcement points) send authorization requests to PDPs (policy decision points) and receive authorization decisions in response. To make authorization requests using Java PEPs, use the NextLabs PEPAgent. </p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Initialize the PEPAgent and establish the PEPAgent secured connection with the PDP:</p>
+ <p dir="ltr" class="FM_CodeComment">// Using a properties file</p>
+ <p dir="ltr" class="FM_Code">PepAgentFactory pepAgentFactory = <span class="FM_blue">new</span> StdPepAgentFactory(<span class="FM_gray">&quot;/path/to/properties.file&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">PepAgent pepAgent = pepAgentFactory.getPepAgent();</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_CodeComment">// Using a properties object</p>
+ <p dir="ltr" class="FM_Code">PepAgentFactory pepAgentFactory = <span class="FM_blue">new</span> StdPepAgentFactory(xacmlProperties);</p>
+ <p dir="ltr" class="FM_Code">PepAgent pepAgent = pepAgentFactory.getPepAgent();</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Build the request:</p>
+ <p dir="ltr" class="FM_NumBodySub1">a<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Required) </span>Build the Subject object with a unique ID. Typically this is a SID (Windows security identifier or UNIX ID) or an email address. Additional attributes can be populated using <span class="FM_Code">addAttribute</span>.</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;Subject user = Subject.newInstance(<span class="FM_gray">&quot;chris.webber@hdesk.com&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;user.addAttribute(<span class="FM_gray">&quot;user_id&quot;</span>, &quot;<span class="FM_gray">chris.webber</span>&quot;);</p>
+ <p dir="ltr" class="FM_NumBodySub">b<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Required) </span>Build the Action object using the Action short name. The short name must match that of the Action resource type.</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;Action action = Action.newInstance(&quot;<span class="FM_gray">VIEW_TKTS</span>&quot;);</p>
+ <p dir="ltr" class="FM_NumBodySub">c<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Required) </span>Build a Resource object with a resource ID, which is typically the name of the resource, and populate all the available resource attributes. <span class="FM_Code">ID_RESOURCE_RESOURCE_TYPE</span>&#160;is a required attribute. The value of this attribute must match the short name of the resource type:</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;Resource resource = Resource.newInstance(<span class="FM_gray">&quot;Ticket:1103&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;resource.addAttribute(Constants.ID_RESOURCE_RESOURCE_TYPE.stringValue(), <span class="FM_gray">&quot;support_tickets&quot;</span>);</p>
+ <p dir="ltr" class="FM_NumBodySub" style="font-weight : bold;">d<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Required) </span><span class="FM_Body">Build an Application object:</span></p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;Application application = Application.newInstance(&quot;Outlook&quot;);</p>
+ <p dir="ltr" class="FM_NumBodySub">e<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Optional)</span> Build an Environment object with environment attributes:</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;Environment environment = Environment.newInstance();</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;environment.addAttribute(<span class="FM_gray">&quot;authentication_type&quot;</span>, <span class="FM_gray">&quot;multifactor&quot;</span>); &#160;&#160;&#160;</p>
+ <p dir="ltr" class="FM_NumBodySub">f<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">(Optional) </span>If you are enforcing policies on an application that sends email, such as Micro&#173;soft Outlook, build the Recipient object.The Recipient object can include a single email address or a list of email addresses. However, attributes can be associated with a single recipient only. If your policies depend on attributes, and you need to specify multiple recipients, each recipient must be placed in a separate request:</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;Recipient recipient = Recipient.newInstance (<span class="FM_gray">&quot;frank.underwood@whitehouse.gov&quot;</span>,</p>
+ <p dir="ltr" class="FM_Code"><span class="FM_gray">&quot;claire.underwood@whitehouse.gov&quot;</span>, <span class="FM_gray">&quot;doug.stamper@whitehouse.gov&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;Recipient recipient = Recipient.newInstance (<span class="FM_gray">&quot;frank.underwood@whitehouse.gov&quot;</span>);</p>
+ <p dir="ltr" class="FM_Code">recipient.addAttribute(<span class="FM_gray">&quot;title&quot;</span>, <span class="FM_gray">&quot;President&quot;</span>);</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Send the authorization request from the PEPAgent using the <span class="FM_Code">decide()</span> method:</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>The order of arguments (user, action, resource, environment, and recipient) does not matter. Arguments can be specified in any order. Also, only subject, action, and resource are required.</p>
+ <p dir="ltr" class="FM_CodeComment"> &#160;&#160;// Submit the authorization request</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;PepResponse pepResponse = pepAgent.decide(subject, action, resource, application, environment, recipient); </p>
+
+ </body>
+</html>

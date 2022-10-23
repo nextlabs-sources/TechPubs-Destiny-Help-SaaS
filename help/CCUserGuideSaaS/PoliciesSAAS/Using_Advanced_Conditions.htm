@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Using Advanced Conditions</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\PolicyStudio\PoliciesSAAS.fm" />
+ <link rel="stylesheet" href="PoliciesSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.1.2.2";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Working with Policies > Constructing and testing policies" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_18668_Advanced_Conditions"></a>Using Advanced Conditions</p>
+ <p dir="ltr" class="FM_Body">Advanced Conditions are ACPL (Active Control Policy Language) expressions that can be used to include parameters that cannot be conveyed by policy components, such as user and resource components. These conditions can be used to change a policy’s effect based on relationships between resource, subject, and host attributes that are dynamically returned on a policy query.</p>
+ <p dir="ltr" class="FM_Body">For instance, a condition might compare the attribute values returned for a resource (the Prod&#173;uct Line a document is associated with) with the attribute values returned for a subject (the Product Line a user is associated with). The syntax for this condition would be:</p>
+ <p dir="ltr" class="FM_Code"><span class="FM_onscreen">resource.&lt;resource type&gt;.&lt;attribute&gt; = subject.&lt;attribute&gt;<br /></span></p>
+ <p dir="ltr" class="FM_Body">The Advanced Condition would be:</p>
+ <p dir="ltr" class="FM_Code">resource.ProductLine = user.ProductLine<br /></p>
+ <p dir="ltr" class="FM_Body">In addition, policy designers can combine multiple attribute-to-attribute match conditions, as well as other matches (attribute-to-string, attribute-to-constant, attribute-to-integer). Matches can also be defined using different methods, listed in <a href="#XREF_73157_Table_3_1"><span class="FM_blue">Table&nbsp;1.2.3</span></a>. Advanced Conditions use Bool&#173;ean logic, so all Match Operators can be reversed to “Not.” Where multiple matches are com&#173;bined, they can be linked using a logical “AND” or “OR”. Finally, partial and full wildcards can be used to replace all or parts of strings. Examples with explanations are shown in <a href="#XREF_73157_Table_3_1"><span class="FM_blue">Table&nbsp;1.2.3</span></a>.</p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 442.50pt;">Table 1.2.3: Match operators for Advanced Conditions<a name="XREF_73157_Table_3_1"></a></caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 96.476pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Name</p>
+</th>
+  <th style="width : 96.476pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">ACPL Operator</p>
+</th>
+  <th style="width : 249.547pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+  <tr style=" height : 42.00pt;">
+  <td style="width : 96.476pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Equal or Multi-value equal (match any)</p>
+</td>
+  <td style="width : 96.476pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyCent">=</p>
+</td>
+  <td style="width : 249.547pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">When a single value is present for each attribute, A = B when A and B values match.</p>
+  <p dir="ltr" class="FM_CellBody">When multiple values are present for attributes, {A} = {B} when any value in set {A} matches any value in set {B}.</p>
+</td>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 96.476pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Multi-value unordered equal</p>
+</td>
+  <td style="width : 96.476pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyCent">equals_unordered</p>
+</td>
+  <td style="width : 249.547pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">When multiple values are present for each attribute, {A} <span class="FM_Emphasis">equals_unordered </span>{B} when set {A} and set {B} are identical, where order is not relevant.</p>
+</td>
+</tr>
+  <tr style=" height : 58.00pt;">
+  <td style="width : 96.476pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Set includes</p>
+</td>
+  <td style="width : 96.476pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyCent">includes</p>
+</td>
+  <td style="width : 249.547pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Where multiple values are present for attributes, {A} <span class="FM_Emphasis">includes </span>{B} when all values in set {B} are present in set {A}. This can also apply where {B} is an empty set.</p>
+  <p dir="ltr" class="FM_CellBody">Where multiple values are present for set {A} and a single value is present for B, set {A} includes {B} when the single value in {B} is present in set {A}.</p>
+</td>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 96.476pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Greater than/equal to, less than/equal to</p>
+</td>
+  <td style="width : 96.476pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyCent">&gt;, &gt;=, &lt;, &lt;=</p>
+</td>
+  <td style="width : 249.547pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">A matches B, where the value returned for attribute A is greater than; greater than or equal to; less than; or less than or equal to the value of B.</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Using_wildcards_in"></a>Using wildcards in Advanced Conditions</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_in_advanced_conditions_1"></a><a name="IX_in_advanced_conditions"></a>You can use wildcard characters in attribute values. Generally they are useful to compare URL strings, filenames, and other attributes with patterns. <a href="#XREF_14783_Wildcards_used_in"><span class="FM_blue">Table&nbsp;1.2.4</span></a> shows supported wildcards.</p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 298.50pt;">Table 1.2.4: <a name="XREF_14783_Wildcards_used_in"></a>Wildcards used in Advanced Conditions</caption>
+  <tr style=" height : 25.00pt;background : #ffffff;">
+  <th style="width : 71.250pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Wildcard character</p>
+</th>
+  <th style="width : 227.250pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">*</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches zero or more characters, not including the path separator “/”</p>
+</td>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">**</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches zero or more characters, including the path separator “/”</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">d</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches any single-digit numeral, 0-9</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">D</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches any numeral, one or more digits</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">a</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches any single letter, either upper- or lowercase</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">A</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches one or more letters, either upper- or lowercase</p>
+</td>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">c</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches any single alphanumeric character or special character, such as %, &amp;, _, etc., except for backslashes, which are reserved</p>
+</td>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">C</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches one or more alphanumeric characters or special characters, such as %, &amp;, _, etc., except for backslashes, which are reserved</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">s</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches a single space</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 71.250pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">s</p>
+</td>
+  <td style="width : 227.250pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">Matches one or more spaces</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_Body">With the exception of the standard<span class="FM_Code"> *</span> and<span class="FM_Code"> **</span>, all wildcards consist of a letter preceded by an escape character. Two escape characters are supported, a question mark and an exclamation point:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">?&lt;wildcard&gt;</span>&#160;means <span class="FM_Emphasis">Matches the wildcard</span>. This is useful for general purposes, such as match&#173;ing policies to existing resources.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">!&lt;wildcard&gt;</span>&#160;means <span class="FM_Emphasis">Does Not Match the wildcard</span>. Beyond general matching purposes, this is useful to ensure that new filenames conform to required conventions.</p>
+ <p dir="ltr" class="FM_Body">If the character following the<span class="FM_Code"> ?</span>&#160;or <span class="FM_Code">! </span>is not one of the wildcard characters listed above, it is assumed to represent itself. Thus <span class="FM_Code">?z</span>&#160;is just the letter <span class="FM_Code">z</span>. More usefully, <span class="FM_Code">??</span> is a literal question-mark and <span class="FM_Code">?! </span>is a literal exclamation point.</p>
+ <p dir="ltr" class="FM_Body">Different letters represent different kinds of characters, and each has two versions: lowercase stands for a single character of a certain type, and uppercase stands for one or more of those characters. This wildcard convention enables you to define wildcard-based conditions with a great deal of precision. For example:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">http://www.mycompany.com\*.html</span> matches any html file at the top level of http://www.mycompany.com</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">http://www.mycompany.com/**/*.html</span> matches any html file anywhere in the URL</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">**.txt</span> matches any resource ending in “.txt”</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">**/secret*</span> matches any resource with a name that starts with “secret”</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">**/*secret*</span> matches any resource with a name that contains the word “secret” anywhere.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">Q?drevenue.doc</span> matches any resource with a name that starts with “Q”, ends with “reve&#173;nue.doc”, and has exactly one single-digit number in between. For example, \\docu&#173;ments\accounting\Q2revenue.doc would match, while \\documents\accounting\Q4-98revenue.doc would not match.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">?c?c?c.*</span>&#160;matches any resource with a name containing exactly three characters of any kind, in either upper- or lowercase.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Example_condition_for"></a>Example condition for equal and multi-value equal </p>
+ <p dir="ltr" class="FM_Body">The following condition includes an attribute-to-attribute multi-value equal AND an attribute-to-string match. </p>
+ <p dir="ltr" class="FM_Code">(resource.fso.ProductLine = user.ProductLine) AND (resource.fso.ReviewStatus = &quot;Approved&quot;)</p>
+ <p dir="ltr" class="FM_Body">In this example, the user attribute ProductLine must match the resource attribute ProductLine, while multiple attributes are possible for both. As noted in <a href="#XREF_73157_Table_3_1"><span class="FM_blue">Table&nbsp;1.2.3</span></a>, for a multi-value match, the “=” operator evaluates to true when <span class="FM_Emphasis">any </span>of the values match. In other words, if a document belongs to ProductLine A, B, and C, and the user belongs to ProductLine C, D, and E, the condi&#173;tion is met. The attribute-to-string match specifies that the resource attribute ReviewStatus must match the string “Approved.” Because a logical AND links the two conditions, both must match for the entire condition to be true.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Example_condition_for1"></a>Example condition for multi-value equals_unordered operators</p>
+ <p dir="ltr" class="FM_Body">The “equals_unordered” operator should be used in cases where all attribute values must match between two multi-value sets, where the order of values is not relevant. A typical use case is for a policy that allows access only when a document is not export controlled, OR the user request&#173;ing access to the resource has ALL the proper export licenses associated with that resource. </p>
+ <p dir="ltr" class="FM_Code"><span class="FM_onscreen"><br />(resource.fso.ExportControl=&quot;NO&quot;) OR (resource.fso.ExportLicense equals_unordered user.ExportLicense)<br /></span></p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Example_condition_for2"></a>Example condition for the includes operator</p>
+ <p dir="ltr" class="FM_Body">The “includes” operator should be used in cases where set {A} should be included within set {B}. This is different from “equals_unordered,” as set {B} might have additional values not present in set {A}. This is also different from “=” as set {B} can be an empty set. </p>
+ <p dir="ltr" class="FM_Body">A possible use case for this operator could be where a user must have all the appropriate class (or security) attributes as a resource to be granted access to that resource. In other words, user set {A} must include resource set {B}, where the user has all the proper clearances associated with the resource. Notice that this use case is different than equal or multi-value equal, as set {B} can be empty. If the resource has no security settings associated with it, user set {A} can include the empty resource set {B}, and the user should be able to access the resource.</p>
+ <p dir="ltr" class="FM_Code"><br />resource.fso.DocSecurity includes user.SecurityAccess<br /></p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Example_condition_for3"></a>Example condition for greater than/less than</p>
+ <p dir="ltr" class="FM_Body">In addition to equal matches, you can also use greater/less than, and greater/less than or equal to operators in Advanced Condition. Some examples could include policies that match dynamic attributes to dates (“date last accessed” or “today’s date,” or the date a license or policy is still valid), or integers (number of times accessed). </p>
+ <p dir="ltr" class="FM_Code"><br />resource.fso.LicenseEndDate &gt;= current_time<br /></p>
+ </body>
+</html>

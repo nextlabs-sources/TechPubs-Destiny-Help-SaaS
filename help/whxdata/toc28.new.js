@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Viewing policy and component hierarchy","url":"CCUserGuideSaaS/PoliciesSAAS/Viewing_and_editing_policy_and_component_information.htm#TOC_Viewing_policy_andbc-1"},{"type":"item","name":"Viewing policy and component version history","url":"CCUserGuideSaaS/PoliciesSAAS/Viewing_and_editing_policy_and_component_information.htm#TOC_Viewing_policy_and1bc-2"},{"type":"item","name":"Viewing and editing policy and component properties","url":"CCUserGuideSaaS/PoliciesSAAS/Viewing_and_editing_policy_and_component_information.htm#TOC_Viewing_and_editing1bc-3"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

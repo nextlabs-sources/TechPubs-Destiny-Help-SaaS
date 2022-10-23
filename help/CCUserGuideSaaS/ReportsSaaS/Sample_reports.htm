@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Sample reports</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\ReportsSaaS.fm" />
+ <link rel="stylesheet" href="ReportsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.3.3";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports > Working with reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="IX_examples"></a><a name="XREF_62752_Sample_Reports"></a>Sample reports</p>
+ <p dir="ltr" class="FM_Body">This section presents examples of different report formats, all representing a small set of event data returned by the same report query. The query requests all events by all users on all resources for one week (August 3, 2014 to August 9, 2014). By comparing the examples, you can get a better understanding of the way the different formats can be used to highlight different aspects of the same data.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_36489_DetailsReports">Table</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_57732_GroupBy_Policy">Group by policy chart</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_83687_GroupByUser_Reports">Group by user chart</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_68794_GroupBy_Resource">Group by resource chart</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_98048_GroupByTime_Report">Group by time chart</a></p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Table"></a><a name="IX_table_1"></a><a name="XREF_36489_DetailsReports"></a>Table</p>
+ <p dir="ltr" class="FM_Body"><a href="#XREF_77477_Data_presented_in"><span class="FM_blue">Figure&nbsp;2.3-12</span></a> shows a small set of policy activity data displayed in a table.</p>
+ <div align="center"><img alt="SmplDetailsReport.jpg" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:4.500pt; margin-bottom:5.250pt; max-width:470.250pt;" id="image12" src="SmplDetailsReport.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-12: <a name="XREF_77477_Data_presented_in"></a>Data presented in a table</p>
+ <p dir="ltr" class="FM_Body">This report reflects the following:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Four policy enforcement events were logged—that is why there are four rows in the table.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>As the Date column shows, all four events occurred on the same day.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Each event was triggered by a different user, as shown by the four different values in the User column.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Each event represents a different policy, as shown by the four different values in the Policy column.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Only three resources were involved. The first two rows show enforcement of two different policies by two different users, but both were connected to the same RTF document. This means that document is covered by (at least) two policies concurrently—not an unusual situa&#173;tion.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The enforcements were triggered by three different user actions, as shown by the values in the Action column. The third and last instances were caused by different users doing the same thing—trying to change a document’s attributes.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In all four cases, the enforcement decision was Allow, as shown in the last column.</p>
+ <p dir="ltr" class="FM_Body">Keep these details in mind as you analyze the data in the following charts.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Group_by_policy_chart"></a><a name="IX_Group_by_Policy_chart"></a><a name="XREF_57732_GroupBy_Policy"></a>Group&nbsp;by policy chart</p>
+ <p dir="ltr" class="FM_Body">As discussed, four policies are reflected in the table above. When the report is re-run with <span class="FM_Bold" style="font-size  : 9.0pt; ">Bar Chart</span>&#160;selected in the <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Type </span>field, and <span class="FM_Bold" style="font-size  : 9.0pt; ">Group By Policy</span>&#160;selected in the <span class="FM_Bold" style="font-size  : 9.0pt; ">Show</span>&#160;field, Reporter generates a bar chart with four bars, one per policy. Each bar is the same height, indicating one enforcement event per policy, as shown in <a href="#XREF_99934_Group_By_Policy"><span class="FM_blue">Figure&nbsp;2.3-13</span></a>.</p>
+ <div align="center"><img alt="SmplResultsByPolicy.jpg" style=" width:100%; margin-left:5.250pt; margin-top:3.000pt; margin-right:4.500pt; margin-bottom:1.500pt; max-width:457.500pt;" id="image13" src="SmplResultsByPolicy.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-13: <a name="XREF_99934_Group_By_Policy"></a>Group By Policy chart</p>
+ <p dir="ltr" class="FM_Body">Grouping events by policy is useful for identifying policies that are being triggered with unex&#173;pected frequency, which may be an indication that they are improperly designed and cover users, resources or actions that they should not. It can also be an indication of concentrated efforts at unauthorized data access. To examine the latter possibility, it is often helpful to switch to the <span class="FM_Bold" style="font-size  : 9.0pt; ">Group by User</span>&#160;option, to focus on who is performing the activity. </p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Group_by_user_chart"></a><a name="IX_Group_by_User_chart"></a><a name="XREF_83687_GroupByUser_Reports"></a>Group&nbsp;by&nbsp;user chart</p>
+ <p dir="ltr" class="FM_Body">When the same data is grouped by user, and the bar chart is selected, the chart is generated, as shown in <a href="#XREF_72128_Group_By_User_chart"><span class="FM_blue">Figure&nbsp;2.3-14</span></a>. As noted previously, the four policies were each triggered by a different user, and so the graph shows four bars—each representing one user. Each is labeled with a user&#173;name. In this example, the bars are the same height, since each of the four users triggered a pol&#173;icy once.</p>
+ <div align="center"><img alt="SmplResultsByUser.jpg" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:4.500pt; margin-bottom:4.500pt; max-width:465.000pt;" id="image14" src="SmplResultsByUser.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-14: <a name="XREF_72128_Group_By_User_chart"></a>Group By User chart</p>
+ <p dir="ltr" class="FM_Body">In a typical live environment, there is little difference among users’ rates of triggering policies. If a user shows a significantly disproportionate rate of triggering policies, especially Deny poli&#173;cies, the situation merits closer investigation. <a href="#XREF_76747_Group_By_User"><span class="FM_blue">Figure&nbsp;2.3-15</span></a>&#160;shows an example of how such a case might look in a chart where data is grouped by user. </p>
+ <div align="center"><img alt="ResultsByUser.jpg" style=" width:100%; max-width:485.064pt;" id="image15" src="ResultsByUser.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-15: <a name="XREF_76747_Group_By_User"></a>Group by user chart—red flag</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Group_by_resource_chart"></a><a name="IX_Group_by_Resource_chart"></a><a name="XREF_68794_GroupBy_Resource"></a>Group&nbsp;by resource chart</p>
+ <p dir="ltr" class="FM_Body">When the same data is grouped by resource, the chart shows the extent of specified events—in this case, policies being triggered—per each individual resource covered by the report. In our case, of the four events, two involved the same RTF file (shown in blue) and the other two, one file each (red and orange). This means three resources total, as shown in <a href="#XREF_79692_Group_by_resource"><span class="FM_blue">Figure&nbsp;2.3-16</span></a>.</p>
+ <p dir="ltr" class="FM_Body">Because policies often cover large numbers of individual documents or other resources, grouping by resource is only helpful when the number of events has already been narrowed down to a smaller set by various report filters, such as policies or users. A pie charts is ideal here, because in the context of resource use, the <span style="font-style : italic; ">relative</span>&#160;access activity regarding some single file or other resource as compared to all others, is generally of more interest than any <span style="font-style : italic; ">absolute</span>&#160;number of instances of access.</p>
+ <div align="center"><img alt="SmplResultsByResource.jpg" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:4.500pt; margin-bottom:4.500pt; max-width:465.000pt;" id="image16" src="SmplResultsByResource.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide" style="margin-top  : 6.000pt;">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-16: <a name="XREF_83066_Group_By_Resource"></a><a name="XREF_79692_Group_by_resource"></a>Group by resource chart</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Group_by_time_chart"></a><a name="IX_Group_by_Day_chart"></a><a name="XREF_98048_GroupByTime_Report"></a>Group&nbsp;by&nbsp;time chart</p>
+ <p dir="ltr" class="FM_Body">The <span class="FM_Bold" style="font-size  : 9.0pt; ">Group by Month</span>&#160;and <span class="FM_Bold" style="font-size  : 9.0pt; ">Group by Day</span>&#160;options group all events by month and day, respectively. In our example, since all four events occurred on the same day, the chart shows only one bar, labeled 07 Aug 2014, as shown in <a href="#XREF_24408_Group_By_Day_chart"><span class="FM_blue">Figure&nbsp;2.3-17</span></a>. The height of the bar indicates that four inci&#173;dents occurred on that date. Because all the events occurred on the same day for a reporting period of one week, the chart appears the same whether the <span class="FM_Bold" style="font-size  : 9.0pt; ">Group by Month</span>&#160;or <span class="FM_Bold" style="font-size  : 9.0pt; ">Group by Day</span>&#160;option was selected. It makes sense to select the <span class="FM_Bold" style="font-size  : 9.0pt; ">Group by Month</span>&#160;option only if the report period you specify spans more than one month.</p>
+ <div align="center"><img alt="SmplResultsByTime.jpg" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:3.750pt; margin-bottom:3.000pt; max-width:465.000pt;" id="image17" src="SmplResultsByTime.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-17: <a name="XREF_24408_Group_By_Day_chart"></a>Group By Day chart</p>
+ <p dir="ltr" class="FM_Body">In a live environment, this format is particularly useful in identifying time-related enforcement spikes, which are similar to the user-related red flags. Spikes in policy enforcement at specific times, such as weekends or the end of a quarter (especially with regard to Deny policies) can indicate intentional efforts at unauthorized access to sensitive resources or to financial docu&#173;ments prepared at the end of each quarter.</p>
+ </body>
+</html>

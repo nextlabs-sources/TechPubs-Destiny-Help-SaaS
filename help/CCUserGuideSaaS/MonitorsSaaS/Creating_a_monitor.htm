@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Creating a monitor</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\MonitorsSaaS.fm" />
+ <link rel="stylesheet" href="MonitorsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.4.1";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports > Working with monitors and alerts" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="IX_creating"></a><a name="IX_monitors"></a><a name="XREF_27548_Creating_a_Monitor"></a>Creating a monitor</p>
+ <p dir="ltr" class="FM_Body">Creating a monitor is similar to creating a report. Both access policy activity data from the Activ&#173;ity Journal. You define the following properties for a monitor:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The criteria, or filters, that specify what policy activities to watch. As with a report, a moni&#173;tor can filter activity data by user, resource, user action, policy, application, and host. For example, you can create a monitor to watch all policy activities where downloads of docu&#173;ments classified as Confidential are denied.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The conditions that determine when an alert is raised. For example, you can create a monitor to raise an alert when the activity specified above occurs more than 10 times in one day, or when more than 10MB of confidential documents have been downloaded in one week.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The type of alert—an email notification, or an alert displayed in the <span class="FM_Bold" style="font-size  : 9.0pt; ">Alerts Overview</span>&#160;page, or both.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>A monitor tag. Although tags are optional, they are useful for organizing monitors and the alerts they generate. In the <span class="FM_Emphasis">Alerts</span> tab, you can filter and analyze alerts by tag.</p>
+ <p dir="ltr" class="FM_Body">To create a monitor, perform the following steps. Note that steps or properties are optional unless described as required.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>In the <span class="FM_Emphasis">Monitors</span>&#160;tab, click the <span class="FM_Bold" style="font-size  : 9.0pt; ">Add Monitor</span>&#160;button. The <span class="FM_Bold" style="font-size  : 9.0pt; ">Create Monitor</span>&#160;dialog appears, with the <span class="FM_Emphasis">General</span> tab open.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>In the <span class="FM_Emphasis">General</span> tab, define the general properties of the monitor.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Name_field_Create"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Name</span>, type a name for the monitor. This property is required.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Description_field"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Description</span>, provide a description of the monitor.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Duration_field"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Duration</span>, select a value from the drop-down list. Duration is the time period that the monitor considers when evaluating filters and other conditions that you specify for the monitor. This property is required, and the default is Today. See <a href="#XREF_69693_Specifying_the">Specifying the Duration</a>.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Group_By_property"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Group By</span>, select a grouping option from the drop-down list. This property specifies whether the condition specified in the next property, <span class="FM_Bold" style="font-size  : 9.0pt; ">Aggregators</span>, applies at the selected group level, or to all the policy activity records covered by the monitor (the default). </p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Aggregators_property"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Aggregators</span>, specify a file size or number of records threshold that the monitor must meet or exceed before raising an alert. This property is required. See <a href="#XREF_54966_Specifying_the">Specifying the file size or records criteria</a>.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Alert_property"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Alert</span>, select how you want to receive alerts raised by the monitor. By default, all alerts are listed in the <span class="FM_Emphasis">Alerts Overview</span>&#160;Tab. In addition, you can elect to receive an email alert. If you select the email option, enter an email address.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Level_property"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Level</span>, select a value from the drop-down list. You can use level to indicate the prior&#173;ity or seriousness of the alert generated by the monitor. In the <span class="FM_Emphasis">Alerts Overview</span>&#160;tab, you can sort alerts by level, so it is useful to assign a meaningful level to each monitor. By default, all alerts are set to L1.</p>
+ <p dir="ltr" class="FM_Bulleted1"><a name="IX_Message_property"></a>•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Message</span>, type a message that you want the alert to display. For example: </p>
+ <p dir="ltr" class="FM_Code2">Access to ITAR resources was denied more than 10 times today</p>
+ <p dir="ltr" class="FM_Bulleted1Indent">Depending on the option or options you selected for the <span class="FM_Bold" style="font-size  : 9.0pt; ">Alert</span>&#160;property, this message appears in the <span class="FM_Emphasis">Alerts Overview</span> tab, or in an email, or both.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Click the <span class="FM_Bold" style="font-size  : 9.0pt; ">Filters</span>&#160;tab to define the criteria that determine the policy activities to monitor. The filter options are the same as the ones you can specify in a report query. You can filter on the following: Action, User, Resource, Policy, and Other attributes.</p>
+ <p dir="ltr" class="FM_NumBodyCont">For details about defining filters, see <a href="../ReportsSaaS/Creating_a_report.htm#XREF_44634_Filtering_by_User">Filtering by user, resource, and policy</a>&#160;and <a><span class="FM_blue">Filtering by action</span></a>.</p>
+ <p dir="ltr" class="FM_NumBody"><a name="IX_tags"></a><a name="IX_creating_1"></a><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span><a name="XREF_54553_Create_Monitor"></a>Click the <span class="FM_Bold" style="font-size  : 9.0pt; ">Tags</span> tab to create one or more tags for the monitor.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Name</span>, type a name for the tag.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Value</span>, type a value for the tag.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Click the <span class="FM_Bold" style="font-size  : 9.0pt; ">+</span> button to add the tag to the monitor.</p>
+ <p dir="ltr" class="FM_NumBodyCont">See <a href="#XREF_26747_Defining_a_Tag">Defining a tag</a>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Click the <span class="FM_Bold" style="font-size  : 9.0pt; ">Access Control</span>&#160;tab to grant other users access to the monitor. Other users can only view the definition of the monitor; they cannot modify it.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>In <span class="FM_Bold" style="font-size  : 9.0pt; ">Share with</span>, select one of the following options:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold" style="font-size  : 9.0pt; ">Only me</span>: The monitor is private. No one else can see this monitor or the alerts it gener&#173;ates.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold" style="font-size  : 9.0pt; ">Public</span>: The monitor, and any alerts it generates, can be viewed by all users who have access to Reporter.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold" style="font-size  : 9.0pt; ">Users/Groups</span>: The monitor, and any alerts it generates, can be viewed by selected users or user groups. If you select this option, specify each user or group of users with whom to grant access to the monitor. In the text field that appears, type the first letter of the user’s first name or the group name. Select a name from the list that appears. Repeat the previous steps to add names as needed.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>7<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Click <span class="FM_Bold" style="font-size  : 9.0pt; ">Save</span>. The monitor is activated. It appears in the list of monitors in the <span class="FM_Emphasis">Monitors</span>&#160;tab, where you can edit, deactivate, or delete it.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Specifying_the_Duration"></a><a name="IX_specifying"></a><a name="XREF_69693_Specifying_the"></a>Specifying the Duration</p>
+ <p dir="ltr" class="FM_Body">The <span class="FM_Bold" style="font-size  : 9.0pt; ">Duration</span>&#160;property defines the time period that the monitor covers when evaluating filters and other conditions that you specify for the monitor. For example, to create a monitor that raises an alert when Policy01 denies access to documents classified as ITAR (International Traffic in Arms Regulations) more than 20 times <span class="FM_Emphasis">in a week</span>, you would select <span class="FM_Bold" style="font-size  : 9.0pt; ">Current Week</span> as the dura&#173;tion.</p>
+ <p dir="ltr" class="FM_Body">As long as the monitor remains active, it watches for policy activities that meet the filter condi&#173;tions each week, and raises an alert if the number of records (policy activities) threshold of 20 is exceeded for that week.</p>
+ <p dir="ltr" class="FM_Body">While it is typical to use monitors to track current policy activities and receive alerts when cer&#173;tain conditions occur, monitors can also be used to evaluate past activities. For example, a com&#173;parison of historical data with current data can reveal trends, such as whether an organization’s information controls are more or less effective from one period to the next. A monitor can eval&#173;uate past data up to 90 days prior, which is, by default, the amount of time data is stored in the Activity Journal.</p>
+ <p dir="ltr" class="FM_Body">By default, a monitor can only evaluate data that is logged <span class="FM_Emphasis">after</span>&#160;the monitor’s creation date and time. For example, if you create a monitor and specify Last Week as the duration, the monitor cannot access data from the previous week until a week later when a week’s data has accumu&#173;lated. If you want to evaluate past activities for a specific time period, plan ahead and create the monitor before that time. </p>
+ <p dir="ltr" class="FM_Body"><a name="IX_values"></a><a href="#XREF_24678_Table_2_1"><span class="FM_blue">Table&nbsp;2.4.1</span></a>&#160;describes the time periods you can select for <span class="FM_Bold" style="font-size  : 9.0pt; ">Duration</span>.</p>
+ <div width="100%" align="center">
+ <table dir="ltr" style="width: 90%; border-spacing: 0; padding-left: 4.00pt; padding-top: 4.00pt; padding-right: 4.00pt; padding-bottom: 3.00pt;float: aligncenter;margin-bottom: 24.00pt; " cellspacing="0">
+  <caption dir="ltr" class="FM_TableTitle" style=" width: 357.57pt;">Table 2.4.1: <a name="XREF_24678_Table_2_1"></a>Duration values</caption>
+  <tr style=" height : 16.00pt;background : #ffffff;">
+  <th style="width : 99.624pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Value</p>
+</th>
+  <th style="width : 257.946pt; background : #ffffff;border-top-style: solid; border-top-width: 1px; border-top-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+  <tr style=" height : 31.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Today</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data for the current day. Use Today for critical policies whose activities you want to monitor daily for unusual or unacceptable levels of enforcement.</p>
+</td>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Current Week</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data for the current week. A week is from Sunday to Saturday.</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Current Month</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data for the current month.</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Current Quarter</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data for the current quarter.</p>
+</td>
+</tr>
+  <tr style=" height : 15.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Yesterday</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data from the previous day.</p>
+</td>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Last Calendar Week</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data in the previous week (Sunday to Saturday).</p>
+</td>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Last Calendar Month</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data in the previous month (first day to last day in the month).</p>
+</td>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Last Calendar Quarter</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data in the previous quarter (first day to last day in the quarter).</p>
+</td>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Last 7 Days</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #bfbfbf; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data from the last 7 days. Each day the monitor is active, the window of 7 days moves up by one day.</p>
+</td>
+</tr>
+  <tr style=" height : 23.00pt;">
+  <td style="width : 99.624pt; border-right-style: solid; border-right-width: 1px; border-right-color: #bfbfbf; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBodyBold">Last 30 days</p>
+</td>
+  <td style="width : 257.946pt; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; vertical-align : top;padding-left: 6.00pt; padding-top: 3.00pt; padding-right: 6.00pt; padding-bottom: 3.00pt;">
+  <p dir="ltr" class="FM_CellBody">The monitor evaluates data from the last 30 days. Each day the monitor is active, the window of 30 days moves up by one day.</p>
+</td>
+</tr>
+ </table>
+ </div>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Specifying_the_file_size"></a><a name="XREF_54966_Specifying_the"></a>Specifying the file size or records criteria</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_Aggregators_property_1"></a>The <span class="FM_Bold" style="font-size  : 9.0pt; ">Aggregator</span>&#160;property requires at least one condition—either file size or number of records—to apply to the activity data that match the specified duration and filters. A monitor can include both conditions.</p>
+ <p dir="ltr" class="FM_Body"><span class="FM_Bold" style="font-size  : 9.0pt; ">Number of Records</span>&#160;is the number of policy activities that meet the duration and filters defined for the monitor.</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_Group_By_property_1"></a>The other condition you can specify involves file sizes. In the previous monitor examples, the aggregator conditions are applied across all the activity records that match the specified dura&#173;tion and filters. If, however, the monitor specifies a grouping option in the <span class="FM_Bold" style="font-size  : 9.0pt; ">Group By</span>&#160;property, an aggregator condition applies at the selected group level. Suppose you want to change the previ&#173;ous monitor to do the following: Raise an alert when Policy02 has allowed the downloading of ITAR documents totaling more than 10MB, <span class="FM_Emphasis">by any one user</span>, in a week. In <span class="FM_Bold" style="font-size  : 9.0pt; ">Group By</span>, you would select <span class="FM_Bold" style="font-size  : 9.0pt; ">Group by User</span>. The File Size condition would then apply to user groups, rather than to all activity records.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Defining_a_tag"></a><a name="IX_creating_2"></a><a name="XREF_26747_Defining_a_Tag"></a>Defining a tag</p>
+ <p dir="ltr" class="FM_Body">Assigning a tag is optional, but useful for organizing alerts raised by the monitor, as well as for gathering statistics, by tag, on those alerts. In the Alerts page, you can view alerts that are grouped and aggregated by monitor tags. See <a href="Analyzing_alerts.htm#XREF_62447_Alerts_by_Monitor">Alerts by monitor tag</a>.</p>
+ <p dir="ltr" class="FM_Body">When deciding if a monitor should be tagged, and what tag or tags to create, think about the ways you want to organize or categorize alerts. For example, you can create a tag that reflects the purpose of the monitor, that is, the type of policies, the application system, the resources, or the groups of users, being monitored. You can also create a tag that indicates the type of risk or risk level associated with the policy activities being monitored.</p>
+ <p dir="ltr" class="FM_Body">In the example above, two tags are defined for the monitor, which enables the alerts triggered by the monitor to be organized and analyzed in two ways. </p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The SAP tag is set to the value DMS. This indicates that the monitor watches for policies that enforce information controls on the DMS application module of an SAP system. There are prob&#173;ably other monitors that watch policies associated with other modules of an SAP system, such as PLM or EasyDMS. By tagging a monitor as SAP, you can obtain statistics on the number of alerts triggered for SAP in general, as well as for each SAP application module.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The ITAR Policies tag is set to the value Access Control. In addition to watching for policy enforcement on an SAP DMS system, the monitor also watches for policies that control access to ITAR data. Presumably there are other similar monitors that watch policies that control the storage, use, or distribution of ITAR data. By assigning an ITAR Policies tag, you can obtain sta&#173;tistics on the number of alerts triggered for ITAR policies in general, and for each type of con&#173;trol governing ITAR policies.</p>
+ </body>
+</html>

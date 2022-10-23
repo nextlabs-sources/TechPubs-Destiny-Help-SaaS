@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Using OAuth 2.0 to access Cloud PDP REST APIs</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\APIReferenceSAAS.fm" />
+ <link rel="stylesheet" href="APIReferenceSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "6.1.1";
+</script>
+ <meta name="topic-breadcrumbs" content="REST API > REST API Reference" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_15303_Using_OAuth_2_0_to"></a>Using OAuth 2.0 to access Cloud PDP REST APIs </p>
+ <p dir="ltr" class="FM_Body">The Cloud PDP protects XACML REST APIs using two-legged OAuth. A Servlet filter verifies that HTTP Headers have valid <span class="FM_Code">Authorization</span>&#160;values before allowing clients to call APIs. <span class="FM_Code">Authoriza&#173;tion</span>&#160;values use the OAuth 2.0 <span class="FM_Code">Bearer</span> token.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example</span></p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">Authorization : Bearer &lt;access_token&gt;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Body"><a href="#XREF_70801_How_authorization"><span class="FM_blue">Figure&nbsp;6-2</span></a> shows how the Cloud PDP processes authorization requests.</p>
+ <div align="center"><img alt="AuthorizationFlow2.png" style=" width:100%; margin-left:3.000pt; margin-top:3.750pt; margin-right:6.000pt; margin-bottom:6.000pt; max-width:387.750pt;" id="image1" src="AuthorizationFlow2.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 6-2: <a name="XREF_70801_How_authorization"></a>How authorization requests are processed</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Obtaining_an_access_token"></a>Obtaining an access token</p>
+ <p dir="ltr" class="FM_Body">To obtain an access token, make a call to the CloudAz PDP, which functions as the Authorization Server. </p>
+ <p dir="ltr" class="FM_Body">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_About_authorization"></a>About authorization grant types, requests, and responses</p>
+ <p dir="ltr" class="FM_Body">CloudAz supports the Client Credentials authorization grant type.</p>
+ <p dir="ltr" class="FM_Heading3">Request endpoint</p>
+ <p dir="ltr" class="FM_Body">The following endpoint is used to make an access token request:</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">https://&lt;CloudAz REST Host&gt;/oauth/token</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading3">Access token request</p>
+ <p dir="ltr" class="FM_Body">Clients make requests to token endpoints by adding the following properties using <span class="FM_Code">application/xwww-form-urlencoded </span>with a character encoding of UTF-8 in the HTTP request entity-body:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">grant_type </span>REQUIRED. The value MUST be set to <span class="FM_Code">client_credentials</span>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">client_id</span> REQUIRED. The API Client ID.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">client_secret</span> REQUIRED. The API Client Secret.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Code">expires_in</span>&#160;OPTIONAL. The token returned expires in the seconds specified. Users can request a token valid for a maximum of one year, which is 3600 * 24 * 365 seconds. If omitted, the default value, 3600, is used.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example</span></p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">POST /oauth/token HTTP/1.1</p>
+ <p dir="ltr" class="FM_Code">Host: server.example.com</p>
+ <p dir="ltr" class="FM_Code">Content-Type: application/x-www-form-urlencoded</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">grant_type=client_credentials&amp;client_id=apiclient&amp;client_secret=ABCDEFGABCDEFG</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading3">Access token response</p>
+ <p dir="ltr" class="FM_Body">If the access token request is valid and authorized, the authorization server issues an access token.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example</span></p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">HTTP/1.1 200 OK</p>
+ <p dir="ltr" class="FM_Code">{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;access_token&quot;:&quot;2YotnFZFEjr1zCsicMWpAA&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;token_type&quot;:&quot;Bearer&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;expires_in&quot;:3600,</p>
+ <p dir="ltr" class="FM_Code">}</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading3">Using an access token to access the XACML evaluation service</p>
+ <p dir="ltr" class="FM_Body">After obtaining an access token, clients can use that token to call the Cloud PDP XACML evalua&#173;tion API.</p>
+ <p dir="ltr" class="FM_Body" style="font-weight : bold;"><span class="FM_Bold">Example</span></p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">POST /dpc/authorization/pdp HTTP/1.1</p>
+ <p dir="ltr" class="FM_Code">Host: server.example.com</p>
+ <p dir="ltr" class="FM_Code">Authorization: Bearer 2YotnFZFEjr1zCsicMWpAA</p>
+ <p dir="ltr" class="FM_Code">... Ohter headers and payload</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ </body>
+</html>

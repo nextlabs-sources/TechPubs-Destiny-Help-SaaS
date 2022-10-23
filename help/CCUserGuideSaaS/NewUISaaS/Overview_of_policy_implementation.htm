@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Overview of policy implementation</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\PolicyStudio\NewUISaaS.fm" />
+ <link rel="stylesheet" href="NewUISaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Working with Policies > Policy and Policy Model overview" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="TOC_Overview_of_policy"></a><a name="XREF_38766_Overview_of_policy"></a>Overview of policy implementation</p>
+
+ <p dir="ltr" class="FM_Body">Implementing policies involves these tasks:</p>
+
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Creating a Policy Model</span>: The Policy Model determines the kind of subject types (users) and resource types (documents and other resources) that can be covered by policies. To create a Policy Model, you create resource types, and specify the attributes, actions, and obligations available to each resource type during policy creation. See <a href="Managing_Policy_Model_resource_types.htm#XREF_54765_Creating_a_Policy">Managing Policy Model resource types</a>.</p>
+
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Defining policy components</span>: Policy components represent categories or classes of entities, such as users, and actions, such as open or copy. These components can be thought of as the parts of speech used to construct policy statements. For example, “noun” policy components might include <span style="font-style : italic; ">All employees in the IT department, Support tickets,</span> or A<span style="font-style : italic; ">ny file with an XLS extension</span>, and “verb” components might include <span style="font-style : italic; ">Edit, Copy</span>, <span style="font-style : italic; ">Print</span>, or <span style="font-style : italic; ">Rename File</span>. See <a href="Managing_policy_components.htm#XREF_51774_Managing_policy">Managing policy components</a>.</p>
+
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Using components to construct policies:</span> Policies use components as building blocks to repre&#173;sent rules that control information access and use. For example, the components in the fol&#173;lowing policy, “Allow Users in IT to Edit and Reassign Tickets in their Product Area,” are “IT Department,” “Edit,” “Assign,” and “Tickets in User’s Product Area.” Policies are stored in a Policy Master database for distribution to the network components that enforce them. <span class="FM_Emphasis">Condi&#173;tions</span> are policy elements that change a policy’s effect based on dynamic comparisons, evalu&#173;ations, or contextual factors. Complex conditions can be written directly in ACPL (Active Control Policy Language), the language CloudAz&#160;uses internally to represent, store, and manage components and policies. Policies can also include obligations, such as dis&#173;playing notifications to end users and sending email messages to administrators when policies are enforced. See <a href="../PoliciesSAAS/Constructing_and_testing_policies.htm#XREF_64726_3_Constructing">Constructing and testing policies</a>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Deploying policies to the Policy Decision Points (PDPs):</span>&#160;Deploying policies means distributing policies to the appropriate CloudAz PDPs. Policies are enforced only after they are deployed. See <a href="../Deploying_SaaS/Deploying_and_managing_objects.htm#XREF_75943_5_Deploying">Deploying and managing objects</a>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Fine-tuning policies after they have been deployed</span>: After policies have been deployed, they can be monitored and updated as needed to ensure that they are performing as required. See <a href="../Deploying_SaaS/Managing_policies_and_components.htm#XREF_32332_Management_Tools">Managing policies and components</a>.</p>
+ </body>
+</html>

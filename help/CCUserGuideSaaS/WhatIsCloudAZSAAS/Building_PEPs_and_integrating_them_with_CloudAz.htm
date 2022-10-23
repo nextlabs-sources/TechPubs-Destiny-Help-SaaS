@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Building PEPs and integrating them with CloudAz</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\WhatIsCloudAZSAAS.fm" />
+ <link rel="stylesheet" href="WhatIsCloudAZSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "3.1.1";
+</script>
+ <meta name="topic-breadcrumbs" content="CloudAz Concepts > Overview of CloudAz" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_19008_Building_PEPs_and"></a>Building PEPs and integrating them with CloudAz</p>
+ <p dir="ltr" class="FM_Body">Authorization decisions are enforced, and resources are secured, by PEPs (Policy Enforcement Points). To build a PEP and integrate it with CloudAz, developers must:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_10123_Analyze_and">Analyze and understand the authorization needs and environment</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_95950_Build_a_runtime">Build a runtime integration by invoking the API</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_23788_Define_the">Define the metadata required to create ABAC policies</a></p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Analyze_and_understand"></a><a name="XREF_10123_Analyze_and"></a>Analyze and understand the authorization needs and environment</p>
+ <p dir="ltr" class="FM_Body">Before building a PEP or defining the metadata required to define policies, it’s important to ana&#173;lyze and understand the authorization use cases that the system requires.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Identify the objects that need to be secured and the circumstances under which they need to be secured. For example, if a content management system must be secured, determine which folders need to be secured, and identify the actions that need to be controlled, such as copy, download, and email.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>List all the attributes that the object provides. These attributes can be used in the ABAC policy.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Identify the interception point in the application where you can introduce the authoriza&#173;tion check. For example, if the authorization is for data in a web application, the intercep&#173;tion to perform the authorization check must occur before the data is queried. After the authorization check is performed, the application performs a query rewrite and runs the new query. See <a href="../IntegrationGuidesSAAS/Use_cases_integration_patterns.htm#XREF_82725_Integration">Integration patterns with CloudAz</a>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Identify various sources of attributes, or attribute providers, to be used in ABAC policies.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Understand where the Subject attributes, which are the attributes related to the user accessing the application, are retrieved. For example if the application is protected by SAML (Security Assertion Markup Language) authentication, user attributes are part of SAML assertions. Other examples of attribute resources include HR systems and custom user databases.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Identify how the application uniquely represents the user. In other words, identify the attributes that identify a given user.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>7<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Identify any other user or environment attributes to be used in the policy. These attributes might include the time of the day or the authentication mechanism of the user.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>8<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Prepare the development environment to build a PEP in the language of your choice.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Build_a_runtime"></a><a name="XREF_95950_Build_a_runtime"></a>Build a runtime integration by invoking the API</p>
+ <p dir="ltr" class="FM_Body">Developers can build a runtime integration by invoking the API.</p>
+ <p dir="ltr" class="FM_HeadingPrerequisite">Before you begin</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Conduct a needs analysis to identify the authorization requirements and environment. See <a href="#XREF_10123_Analyze_and">Analyze and understand the authorization needs and environment</a>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Sign up for the CloudAz service, activate your account, and use the QuickStart guide to learn the basics of the service. To access the QuickStart guide, click <span class="FM_UIControl">Getting Started </span>under the Help icon at the upper right of the CloudAz console, then click the QuickStart link.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Download the CloudAz client SDK for the programming language you want to use from <span class="FM_Hyperlink"><a href="https://s3-us-west-2.amazonaws.com/nxtlbsrelease/Platform_SAAS/openAZ-pep/Nextlabs-OpenAZ-PEP.zip">https://s3-us-west-2.amazonaws.com/nxtlbsrelease/Platform_SAAS/openAZ-pep/Next&#173;labs-OpenAZ-PEP.zip</a></span>.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>If there is no client SDK for the language of your choice, use the REST APIs directly. See <a href="../APIReferenceSAAS/REST_API_Reference.htm#XREF_63088_REST_API_service">REST API Reference</a>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Implement the code that invokes the authorization API: Pass all the attributes required for the policy evaluation, including the subject, resource, and environment attributes. Use the attribute short names when invoking the authorization API.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Process the response to enforce the authorization decision in the application.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Process obligations. For example, if the PDP returns an obligation to notify the user, add code to your application to display the notification.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Define_the_metadata"></a><a name="XREF_23788_Define_the"></a>Define the metadata required to create ABAC policies</p>
+ <p dir="ltr" class="FM_Body">Use the CloudAz console to define the metadata required to create ABAC policies.</p>
+ <p dir="ltr" class="FM_HeadingPrerequisite">Before you begin</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Conduct a needs analysis to identify the authorization requirements and environment. See <a href="#XREF_10123_Analyze_and">Analyze and understand the authorization needs and environment</a>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Sign up for the CloudAz service, activate your account, and use the QuickStart guide to learn the basics of the service. To access the QuickStart guide, click <span class="FM_UIControl">Getting Started </span>under the Help icon at the upper right of the CloudAz console, then click the QuickStart link.</p>
+ <p dir="ltr" class="FM_HeadingProcedure">Procedure</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>Log in to CloudAz.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Add the subject attributes identified in the needs analysis:</p>
+ <p dir="ltr" class="FM_NumBodySub1">a<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span>On the left navigation bar, click <span class="FM_Bold">Policy Model</span>.</p>
+ <p dir="ltr" class="FM_NumBodySub">b<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span>On the <span class="FM_Emphasis">Policy Models</span> page, double-click the User Policy Model.</p>
+ <p dir="ltr" class="FM_NumBodySub">c<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>In the <span class="FM_Emphasis">Attributes</span> section, add the user attributes to be used in policies.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>Developers use the attribute short names when invoking the authorization API.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Add the subject components to be used in policies:</p>
+ <p dir="ltr" class="FM_NumBodySub">d<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span>&#160;On the left navigation bar, click <span class="FM_UIControl">Components &gt; Subject</span>.</p>
+ <p dir="ltr" class="FM_NumBodySub">e<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span>Click <span class="FM_UIControl">Add Component</span>, then provide the subject properties. See <a href="../NewUISaaS/Managing_policy_components.htm#XREF_55096_Adding_policy">Adding and editing policy components</a>. </p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>Developers use the attribute short names when invoking the authorization API.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Create a resource type that represents the object being secured:</p>
+ <p dir="ltr" class="FM_NumBodySub1">a<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span>On the left navigation bar, click <span class="FM_UIControl">Policy Model</span>.</p>
+ <p dir="ltr" class="FM_NumBodySub">b<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span>Click <span class="FM_UIControl">Add Resource Type</span>, then provide the Resource Type properties. See <a href="../NewUISaaS/Managing_Policy_Model_resource_types.htm#XREF_88549_Adding_resource">Adding and editing resource types</a>.</p>
+ <p dir="ltr" class="FM_Note"><span class="FM_Bold">Note:<span style="padding-left: 19pt;" class="FMAutoNumber_1"></span> </span>Developers use the attribute short names when invoking the authorization API.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Create ABAC policies using the Policy Model and components. See <a href="../PoliciesSAAS/Constructing_and_testing_policies.htm#XREF_74786_Adding_policies">Adding policies</a>.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>6<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Deploy the components and policies. See:</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="../Deploying_SaaS/Deploying_components.htm#XREF_41135_Deploying">Deploying components</a></p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="../Deploying_SaaS/Deploying_policies.htm#XREF_24917_Deploying_policies">Deploying policies</a></p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>7<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Run the application to test your enforcement results.</p>
+</body>
+</html>

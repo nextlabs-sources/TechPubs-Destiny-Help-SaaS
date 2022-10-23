@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Working with reports</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\ReportsSaaS.fm" />
+ <link rel="stylesheet" href="ReportsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.3";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <h1 dir="ltr"><a name="XREF_96101_3_Using_Reports"></a>Working with reports</h1>
+ <p dir="ltr" class="FM_Body">This section describes how to use Reporter to define, save, and run reports about data, resource access and use, and policy enforcement throughout your enterprise. Reporter is the console used to monitor and report on policy compliance, gather statistics about document usage, and investi&#173;gate any suspected incidents of information mishandling. Reporter is used by administrators, IT staff, managers, executives, auditors, and other authorized personnel.</p>
+ <p dir="ltr" class="FM_Heading1PartSection"><a name="TOC_Reporting_functionality"></a><span style="font-family : 'Trebuchet MS'; font-weight : normal; font-size  : 10.0pt; color   : #0000ff; "></span><a name="XREF_39556_Overview"></a><a name="XREF_81084_Reporting"></a>Reporting functionality and permissions</p>
+ <p dir="ltr" class="FM_Body">You define and run reports in the <span class="FM_Emphasis">Reports</span> console.</p>
+ <p dir="ltr" class="FM_Body">&#160;The functionality available to you depends on the rules established in the <span class="FM_Emphasis">Delegated Administra&#173;tion</span>&#160;section of the console. See <a href="../DelegatedAdministrationSaaS/Delegated_administration_policies.htm#XREF_93026_1_4_Delegated">Delegated administration policies</a>.</p>
+
+ <p dir="ltr" class="FM_Body">The <span class="FM_Emphasis">Reports</span>&#160;tab has two panes. The pane on the left displays the <span style="font-weight : bold; ">Saved Reports</span>—the list of all saved reports available to you. This includes all reports you create and save (if you have permis&#173;sion to create reports), all reports saved by other users and shared with you, and the sample reports used to generate data that is displayed in the <span class="FM_Emphasis">Dashboard</span> tab.</p>
+ <p dir="ltr" class="FM_Body">When you click on any item in <span class="FM_Bold">Saved Reports</span>, the details of that report display in <span style="font-weight : bold; ">Report Details</span>, on the right. This is also where you work when you create a report. In <span class="FM_Bold">Report Details</span>, you define the following:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The time period of the policy activity data to cover in the report</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The criteria, or filters, that identify the policy activity data to include in the report</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>The output format of the report</p>
+ <p dir="ltr" class="FM_Body">The default settings in <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Details</span>&#160;appear when you click the <span class="FM_Emphasis">Reports</span>&#160;tab or when you click <span class="FM_Bold" style="font-size  : 9.0pt; ">New</span>&#160;in the <span class="FM_Bold" style="font-size  : 9.0pt; ">Saved Reports</span>&#160;pane. By default, the time period of the report is the current day, all policy activity data at the user level is included, and the data is presented in table format.</p>
+ <p dir="ltr" class="FM_Body">After defining a new report or editing an existing report, click <span class="FM_Bold" style="font-size  : 9.0pt; ">Run</span>&#160;at the bottom of the <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Details</span>&#160;pane to view results, as shown in <a href="#XREF_99974_The_My_Reports_Tab"><span class="FM_blue">Figure&nbsp;2.3-1</span></a>.</p>
+ <div align="center"><img alt="ReportsTab.PNG" style=" width:100%; margin-left:27.750pt; margin-top:5.250pt; margin-right:29.250pt; margin-bottom:2.250pt; max-width:427.500pt;" id="image0" src="ReportsTab.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-1: <a name="XREF_99974_The_My_Reports_Tab"></a>The Reports tab</p>
+ <p dir="ltr" class="FM_Body"><a href="#XREF_76504_Report_Results_bar"><span class="FM_blue">Figure&nbsp;2.3-2</span></a>&#160;shows an example of a generated report. In the example, the output format is a bar chart. The chart appears at the bottom of the <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Details</span> pane. Depending on the output for&#173;mat you select in <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Type</span>&#160;and the browser you are using, the generated report appears either in the <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Details</span> pane or in a separate browser tab.</p>
+ <div align="center"><img alt="BarChart.png" style=" width:100%; max-width:411.168pt;" id="image1" src="BarChart.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-2: <a name="XREF_76504_Report_Results_bar"></a>Report Results (bar chart) at the bottom of Report Details</p>
+ </body>
+</html>

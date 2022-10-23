@@ -1,0 +1,4429 @@
+﻿/*Created with Adobe RoboHelp 2015.*/
+p.FM_Callout {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 4.000pt;
+	margin-bottom: 8.000pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Callout {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 4.000pt;
+	margin-bottom: 8.000pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Bulleted1 {
+	margin-left: 39.024pt;
+	margin-right: 0.360pt;
+	text-align: left;
+	text-indent: -12.168pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Bulleted1 {
+	margin-left: 39.024pt;
+	margin-right: 0.360pt;
+	text-align: left;
+	text-indent: -12.168pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Body2 {
+	margin-left: 27.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Body2 {
+	margin-left: 27.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NoteImportant {
+	margin-left: 82.800pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -54.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NoteImportant {
+	margin-left: 82.800pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -54.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_MappingTableTitle {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 2.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14.0pt;
+	color: #000000;
+	background-color:none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_MappingTableTitle {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 2.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_InvisXref {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #ffffff;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_InvisXref {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #ffffff;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_AppFigure {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_AppFigure {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_OnScreen {
+	margin-left: 28.800pt;
+	margin-right: 1.008pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 1.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_OnScreen {
+	margin-left: 28.800pt;
+	margin-right: 1.008pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 1.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumBodyCont {
+	margin-left: 27.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NumBodyCont {
+	margin-left: 27.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Note {
+	margin-left: 80.352pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -51.552pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Note {
+	margin-left: 80.352pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -51.552pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_HeadingMiniTOC {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 13.000pt;
+	margin-bottom: 4.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	visibility: hidden;
+	text-decoration: none;
+}
+caption.FM_HeadingMiniTOC {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 13.000pt;
+	margin-bottom: 4.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_FigureWide {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_FigureWide {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Code {
+	margin-left: 28.800pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 1.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_BodyIndent {
+	margin-left: 25.920pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 6.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_BodyIndent {
+	margin-left: 25.920pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 6.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_AppTerms {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: right;
+	text-indent: 90.000pt;
+	margin-top: 13.000pt;
+	margin-bottom: 3.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_AppTerms {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: right;
+	text-indent: 90.000pt;
+	margin-top: 13.000pt;
+	margin-bottom: 3.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_AnchorFrame {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 11.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_AnchorFrame {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 11.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_FooterLft {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_FooterLft {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Footer {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Footer {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Figure {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Figure {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_AppTableTitle {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_AppTableTitle {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color:none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_AnchorFrameWide {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 4.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 11.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_AnchorFrameWide {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 4.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 11.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Synax {
+	margin-left: 27.288pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -10.152pt;
+	margin-top: 5.000pt;
+	margin-bottom: 9.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Synax {
+	margin-left: 27.288pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -10.152pt;
+	margin-top: 5.000pt;
+	margin-bottom: 9.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumNoteBody1 {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -15pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NumNoteBody1 {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -15pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumNoteBody {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -15pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NumNoteBody {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -15pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Numbered1 {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -15pt;
+	margin-top: 0.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Numbered1 {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -15pt;
+	margin-top: 0.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Numbered {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -20pt;
+	margin-top: 0.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Numbered {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -20pt;
+	margin-top: 0.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NoteBullet {
+	margin-left: 93.384pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -13.104pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NoteBullet {
+	margin-left: 93.384pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -13.104pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_HeadingPrerequisite {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 13.000pt;
+	margin-bottom: 4.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_HeadingPrerequisite {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 13.000pt;
+	margin-bottom: 4.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_CellBodyBullet {
+	margin-left: 11pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -11pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_CellBodyBullet {
+	margin-left: 11pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -11pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_BulletedWide {
+	margin-left: 48.900pt;
+	margin-right: 3.000pt;
+	text-align: left;
+	text-indent: -11.400pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_BulletedWide {
+	margin-left: 48.900pt;
+	margin-right: 3.000pt;
+	text-align: left;
+	text-indent: -11.400pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Warning {
+	margin-left: 82.800pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -54.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Warning {
+	margin-left: 82.800pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -54.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumBodySub {
+	margin-left: 35.856pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -9.936pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NumBodySub {
+	margin-left: 35.856pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -9.936pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_ChapterTitleTOC {
+	margin-left: 117.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -117.000pt;
+	margin-top: 22.000pt;
+	margin-bottom: 9.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 14.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_ChapterTitleTOC {
+	margin-left: 117.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -117.000pt;
+	margin-top: 22.000pt;
+	margin-bottom: 9.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 14.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NoteImportantCont {
+	margin-left: 82.800pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NoteImportantCont {
+	margin-left: 82.800pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Heading2MTOC {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Heading2MTOC {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Heading1MTOC {
+	margin-left: 18.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -18.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #0000ff;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Heading1MTOC {
+	margin-left: 18.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -18.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #0000ff;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumBody1 {
+	margin-right: 0.000pt;
+	text-align: left;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-indent: -30pt;
+	margin-left: 30pt;
+	text-decoration: none;
+}
+caption.FM_NumBody1 {
+	margin-left: 27.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -27.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NoteCont {
+	margin-left: 80.352pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NoteCont {
+	margin-left: 80.352pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_HeadingNextSteps {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 13.000pt;
+	margin-bottom: 4.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_HeadingNextSteps {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 13.000pt;
+	margin-bottom: 4.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Header {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Header {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Bulleted1Indent {
+	margin-left: 36.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Bulleted1Indent {
+	margin-left: 36.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumBodySubCont {
+	margin-left: 36.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NumBodySubCont {
+	margin-left: 36.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumBodySub1 {
+	margin-left: 35.856pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -9.936pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NumBodySub1 {
+	margin-left: 35.856pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -9.936pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NoteNum1 {
+	margin-left: 90.936pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -7.416pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NoteNum1 {
+	margin-left: 90.936pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -7.416pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_CellBodyCent {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_CellBodyCent {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_TableTitle {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_TableTitle {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumBody {
+	margin-right: 0.000pt;
+	text-align: left;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-indent: -30pt;
+	margin-left: 30pt;
+	text-decoration: none;
+}
+caption.FM_NumBody {
+	margin-left: 27.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -27.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_HeaderRt {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: right;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_HeaderRt {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: right;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_DCN {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 5.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_DCN {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 5.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_CellBodyStrad {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_CellBodyStrad {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_HeadingProcedure {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 13.000pt;
+	margin-bottom: 4.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_HeadingProcedure {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 13.000pt;
+	margin-bottom: 4.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_CellBodyHang {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_CellBodyHang {
+	margin-left: 14.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumberedCont {
+	margin-left: 50.400pt;
+	margin-right: 3.600pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 5.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NumberedCont {
+	margin-left: 50.400pt;
+	margin-right: 3.600pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 5.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_MappingTableCell {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 2.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_MappingTableCell {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 2.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_GlossDef {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 108.000pt;
+	margin-top: 13.000pt;
+	margin-bottom: 3.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_GlossDef {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 108.000pt;
+	margin-top: 13.000pt;
+	margin-bottom: 3.000pt;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Code2 {
+	margin-left: 39.024pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 1.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_CellBodyRt {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: right;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_CellBodyRt {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: right;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Lettered {
+	margin-left: 50.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 0.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Lettered {
+	margin-left: 50.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 0.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_FooterRt {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_FooterRt {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_CellBodyCentBold {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_CellBodyCentBold {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: center;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_BulletedLong {
+	margin-left: 32.400pt;
+	margin-right: 18.000pt;
+	text-align: left;
+	text-indent: -10.080pt;
+	margin-top: 0.000pt;
+	margin-bottom: 4.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_BulletedLong {
+	margin-left: 32.400pt;
+	margin-right: 18.000pt;
+	text-align: left;
+	text-indent: -10.080pt;
+	margin-top: 0.000pt;
+	margin-bottom: 4.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Bulleted {
+	margin-left: 12.744pt;
+	margin-right: 0.360pt;
+	text-align: left;
+	text-indent: -12.744pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	list-style: circle;
+	text-decoration: none;
+}
+caption.FM_Bulleted {
+	margin-left: 12.744pt;
+	margin-right: 0.360pt;
+	text-align: left;
+	text-indent: -12.744pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_OnScreen2 {
+	margin-left: 43.200pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 1.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_OnScreen2 {
+	margin-left: 43.200pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 1.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Lettered1 {
+	margin-left: 50.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 0.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Lettered1 {
+	margin-left: 50.400pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -14.400pt;
+	margin-top: 0.000pt;
+	margin-bottom: 5.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NumNote1 {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -11pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NumNote1 {
+	margin-left: 70pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -11pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_CellBodyBold {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_CellBodyBold {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Bulleted2 {
+	margin-left: 54.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -10.440pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	list-style: circle;
+	text-decoration: none;
+}
+caption.FM_Bulleted2 {
+	margin-left: 54.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -10.440pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_NoteNumSub {
+	margin-left: 90.936pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -10.656pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_NoteNumSub {
+	margin-left: 90.936pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -10.656pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_codex {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 13.680pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 7.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_codex {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 13.680pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 7.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Bulleted3 {
+	margin-left: 80.280pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -12.684pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	list-style: circle;
+	text-decoration: none;
+}
+caption.FM_Bulleted3 {
+	margin-left: 80.280pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -12.684pt;
+	margin-top: 0.000pt;
+	margin-bottom: 2.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.FM_Body {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+caption.FM_Body {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 6.000pt;
+	margin-bottom: 10.000pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	background-color: none;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+OL {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+UL {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+span.FM_blue {
+	color: #0000ff;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_UIControl {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_Callout {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.FM_Variable {
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_ThirdParty {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_Hyperlink {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #0000ff;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_Emphasis {
+	font-style: italic;
+}
+span.FM_Code {
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_ChapNo {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24.0pt;
+	color: #ffffff;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_filename {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_CellBody {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_wingding {
+	font-family: Wingdings;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_Edit {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #ff0000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_BulletIntro {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_StepNumber {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.FM_italic {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_BulletSymbol {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.FM_screencode {
+}
+span.FM_ImportantEmphasis {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_GlosssaryAndIndexLinks {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #ffffff;
+	letter-spacing: 1.17em;
+	text-decoration: none;
+}
+span.FM_AppNo {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24.0pt;
+	color: #ffffff;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_BulletBrandColor {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #0b3999;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_Bold {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_Result {
+	font-style: italic;
+}
+span.FM_reverse {
+	color: #ffffff;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_onscreen {
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_UserInput {
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_PageNumber {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 9.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.FM_EquationVariables {
+	font-style: italic;
+}
+span.FM_EquationNumber {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.FM_Body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.BodyLevel1 {
+	margin-left: 18.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 8.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.BodyLevel2 {
+	margin-left: 36.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 8.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.BodyLevel3 {
+	margin-left: 54.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 8.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+h1 {
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 0.00em;
+	margin-left: 0pt;
+	margin-top: 0;
+	font-size: 11pt;
+	text-decoration: none;
+}
+h2 {
+	margin-right: 36.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 0.00em;
+	margin-left: 0pt;
+	font-size: 10pt;
+	margin-top: 0;
+	text-decoration: none;
+}
+h3 {
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 0.00em;
+	margin-left: 0pt;
+	font-size: 10pt;
+	margin-top: 0;
+	text-decoration: none;
+}
+h4 {
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 0.00em;
+	margin-left: 0pt;
+	margin-top: 0pt;
+	font-size: 9pt;
+	text-decoration: none;
+}
+p.Title {
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: Arial;
+	font-style: normal;
+	color: #000000;
+	letter-spacing: 0.00em;
+	margin-top: 0pt;
+	margin-left: 0pt;
+	font-size: 10pt;
+	margin-bottom: 10pt;
+	text-decoration: none;
+}
+div.title {
+	font-family: Arial;
+	margin-top: 0pt;
+	margin-left: 0pt;
+	font-size: 10pt;
+	margin-bottom: 0pt;
+}
+div.title span {
+	font-size: 10pt;
+}
+p.AuthorBook {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 292.000pt;
+	word-spacing: 0.250em;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.CellBody {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 4.000pt;
+	word-spacing: 0.250em;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+}
+p.CellHeading {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 9.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.Extract {
+	margin-left: 18.000pt;
+	margin-right: 18.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 7.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.Footnote {
+	margin-left: 12.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: -12.000pt;
+	margin-top: 3.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.PublisherBook {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 0.000pt;
+	word-spacing: 0.250em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+p.TitleBook {
+	margin-left: 0.000pt;
+	margin-right: 0.000pt;
+	text-align: left;
+	text-indent: 0.000pt;
+	margin-top: 0.000pt;
+	margin-bottom: 60.000pt;
+	word-spacing: 0.250em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	color: #000000;
+	letter-spacing: -0.04em;
+	font-size: 10pt;
+	text-decoration: none;
+}
+H5 {
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 9pt;
+	margin-top: 0pt;
+}
+H6 {
+	font-weight: bold;
+	font-size: 8.0pt;
+	font-family: Arial;
+}
+span.PageNumber {
+	font-weight: bold;
+}
+span.EquationVariables {
+	font-style: italic;
+}
+span.Emphasis {
+	font-style: italic;
+	font-style: italic;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+span.Callout {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.BulletSymbol {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.FirstLetterTitle {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 42.0pt;
+	color: #000000;
+	letter-spacing: -0.04em;
+}
+span.EquationNumber {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.ChapterNumber {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.04em;
+}
+span.StepNumber {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.WebJump {
+}
+span.Superscript {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.Underline {
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.Bold {
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+span.BlueBold {
+	font-weight: bold;
+	color: #2e97dc;
+}
+span.White {
+	color: #ffffff;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.Symbol {
+	font-family: Symbol;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+	letter-spacing: 0.00em;
+	text-decoration: none;
+}
+span.GreyBold {
+	font-family: Arial;
+	font-weight: bold;
+	color: #3f3f3f;
+}
+span.Subscript {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	letter-spacing: 0.00em;
+}
+table.CellBorder {
+	padding: 0px;
+	border-top: Solid 1px #000000;
+	border-left: Solid 1px #000000;
+	x-border-spacing: 0px;
+}
+table.CellBorder td {
+	border-right: Solid 1px #000000;
+	border-bottom: Solid 1px #000000;
+}
+table.Colorful1 {
+	padding: 0px;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	x-border-spacing: 0px;
+	x-1st-row: 1;
+	x-1st-row-name: row1;
+	x-1st-col: 1;
+	x-1st-col-name: col1;
+}
+table.Colorful1 tr.row1 td {
+	background-color: #800000;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	color: #ffffff;
+}
+table.Colorful1 td.col1 {
+	background-color: #c0c0c0;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.Colorful1 td {
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.Colorful2 {
+	padding: 0px;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	x-border-spacing: 0px;
+	x-1st-row: 1;
+	x-1st-row-name: row1;
+	x-1st-col: 1;
+	x-1st-col-name: col1;
+}
+table.Colorful2 tr.row1 td {
+	background-color: #000080;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+table.Colorful2 td.col1 {
+	background-color: #0000ff;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	padding-right: 10px;
+	font-weight: bold;
+	padding-left: 10px;
+	color: #ffffff;
+}
+table.Colorful2 td {
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+table.Colorful3 {
+	padding: 0px;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #ffffff;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	x-border-spacing: 0px;
+	x-1st-row: 1;
+	x-1st-row-name: row1;
+}
+table.Colorful3 tr.row1 td {
+	background-color: #000080;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+table.Colorful3 td {
+	background-color: #c0c0c0;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+table.Colorful4 {
+	padding: 0px;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	x-border-spacing: 0px;
+	x-1st-row: 1;
+	x-1st-row-name: row1;
+	x-1st-col: 1;
+	x-1st-col-name: col1;
+}
+table.Colorful4 tr.row1 td {
+	background-color: #008000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+table.Colorful4 td.col1 {
+	background-color: #ffff00;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	padding-right: 10px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+table.Colorful4 td {
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+table.LastColumn {
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-last-col: 1;
+	x-last-col-name: last;
+	text-align: Right;
+	font-size: 10pt;
+}
+table.LastColumn tr.t1Row td {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.LastColumn tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.LastColumn td.last {
+	background-color: #c0c0c0;
+	font-family: Arial;
+	text-align: Right;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-size: 10pt;
+}
+table.lastcolumn tr.t1row td.last {
+	background-color: #c0c0c0;
+	font-family: Arial;
+	text-align: Right;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-size: 10pt;
+}
+table.lastcolumn tr.t2row td.last {
+	background-color: #c0c0c0;
+	font-family: Arial;
+	text-align: Right;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-size: 10pt;
+}
+table.LastRow {
+	padding: 0px;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	x-border-spacing: 0px;
+	x-last-row: 1;
+	x-last-row-name: last;
+	text-align: Right;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.LastRow td {
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.LastRow tr.last td {
+	text-align: Right;
+	font-family: Arial;
+	font-size: 10pt;
+	background-color: #c0c0c0;
+}
+table.BottomRowRightColumn {
+	padding: 0px;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	x-last-row: 1;
+	x-last-row-name: last;
+	text-align: Right;
+	font-family: Arial;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-last-col: 1;
+	x-last-col-name: last;
+}
+table.BottomRowRightColumn td {
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.BottomRowRightColumn tr.last td {
+	text-align: Right;
+	font-family: Arial;
+	font-size: 10pt;
+	background-color: #c0c0c0;
+}
+table.BottomRowRightColumn tr.t1Row td {
+	text-align: Right;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.BottomRowRightColumn tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.BottomRowRightColumn td.last {
+	text-align: Right;
+	background-color: #c0c0c0;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.BottomRowRightColumn tr.t1row td.last {
+	text-align: Right;
+	background-color: #c0c0c0;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.BottomRowRightColumn tr.t2row td.last {
+	text-align: Right;
+	background-color: #c0c0c0;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.LeftColumn {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-1st-col: 1;
+	x-1st-col-name: t1st;
+}
+table.LeftColumn tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.LeftColumn tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.LeftColumn td.t1st {
+	background-color: #cccccc;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+table.leftcolumn tr.t1row td.t1st {
+	background-color: #cccccc;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+table.leftcolumn tr.t2row td.t1st {
+	background-color: #cccccc;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+table.LeftColumnAlternatingColumns {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-1st-col: 1;
+	x-1st-col-name: t1st;
+	x-col-pat-1: 1;
+	x-col-pat-1-name: t1Col;
+	x-col-pat-count: 2;
+	x-col-pat-2: 1;
+	x-col-pat-2-name: t2Col;
+}
+table.LeftColumnAlternatingColumns tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.LeftColumnAlternatingColumns tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.LeftColumnAlternatingColumns td.t1st {
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #cccccc;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.leftcolumnalternatingcolumns tr.t1row td.t1st {
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #cccccc;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.leftcolumnalternatingcolumns tr.t2row td.t1st {
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #cccccc;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.LeftColumnAlternatingColumns td.t1Col {
+	background-color: #ccffcc;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.LeftColumnAlternatingColumns td.t2Col {
+}
+table.LeftColumnRepeatingColumns {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-1st-col: 1;
+	x-1st-col-name: t1st;
+	x-col-pat-1: 1;
+	x-col-pat-1-name: t1Col;
+	x-col-pat-2: 1;
+	x-col-pat-2-name: t2Col;
+	x-col-pat-count: 3;
+	x-col-pat-3: 1;
+	x-col-pat-3-name: t3Col;
+}
+table.LeftColumnRepeatingColumns tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.LeftColumnRepeatingColumns tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.LeftColumnRepeatingColumns td.t1st {
+	background-color: #808080;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+table.leftcolumnrepeatingcolumns tr.t1row td.t1st {
+	background-color: #808080;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+table.leftcolumnrepeatingcolumns tr.t2row td.t1st {
+	background-color: #808080;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+table.LeftColumnRepeatingColumns td.t1Col {
+	background-color: #cccccc;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.LeftColumnRepeatingColumns td.t2Col {
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.LeftColumnRepeatingColumns td.t3Col {
+	background-color: #ccffcc;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.Line1 {
+	padding: 0px;
+	border-bottom-style: Solid;
+	border-bottom-width: 3px;
+	border-bottom-color: #008000;
+	border-top-style: Solid;
+	border-top-width: 3px;
+	border-top-color: #008000;
+	x-border-spacing: 0px;
+	x-1st-row: 1;
+	x-1st-row-name: row1;
+}
+table.Line1 tr.row1 td {
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #008000;
+}
+table.PaddedCells {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-border-spacing: 2px;
+}
+table.PaddedCells tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.PaddedCells tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.PaddedCells td {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+table.Retro7 {
+	x-border-spacing: 15px;
+	x-row-pat-count: 1;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+}
+table.Retro7 tr.t1Row td {
+	background-color: #c0c0c0;
+	border-top-style: Groove;
+	border-bottom-style: Groove;
+	border-left-width: 1px;
+	border-top-color: #00ff00;
+	border-top-width: 4px;
+	border-right-width: 1px;
+	border-bottom-color: #00ff00;
+	border-bottom-width: 4px;
+}
+table.Retro7 td {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+table.ShadedAlternatingColumns {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-col-pat-1: 1;
+	x-col-pat-1-name: t1Col;
+	x-col-pat-count: 2;
+	x-col-pat-2: 1;
+	x-col-pat-2-name: t2Col;
+}
+table.ShadedAlternatingColumns tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.ShadedAlternatingColumns tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.ShadedAlternatingColumns td.t1Col {
+	background-color: #ccffcc;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.ShadedAlternatingColumns td.t2Col {
+	background-color: #cccccc;
+	font-family: Arial;
+	font-size: 10pt;
+}
+table.ShadedAlternatingRows {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+}
+table.ShadedAlternatingRows tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	background-color: #ccffcc;
+}
+table.ShadedAlternatingRows tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	background-color: #cccccc;
+}
+table.SimpleBorder {
+	padding: 0px;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	x-border-spacing: 0px;
+}
+table.SimpleBorder td {
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRow {
+	x-1st-row: 1;
+	x-1st-row-name: t1st;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+table.TopRow tr.t1st td {
+	font-family: Arial;
+	font-size: 10pt;
+	background-color: #c0c0c0;
+	font-weight: bold;
+	text-align: Left;
+	border-left-style: None;
+	border-right-style: None;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+}
+table.TopRow tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRow tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowRepeatingRows {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-1st-row: 1;
+	x-1st-row-name: t1st;
+	x-row-pat-count: 3;
+	x-row-pat-3: 1;
+	x-row-pat-3-name: t3Row;
+}
+table.TopRowRepeatingRows tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	background-color: #ccffcc;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowRepeatingRows tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	background-color: #cccccc;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowRepeatingRows tr.t1st td {
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: Center;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	background-color: #808080;
+}
+table.TopRowRepeatingRows tr.t3Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowAlternatingRows {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-1st-row: 1;
+	x-1st-row-name: t1st;
+}
+table.TopRowAlternatingRows tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	background-color: #ccffcc;
+}
+table.TopRowAlternatingRows tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowAlternatingRows tr.t1st td {
+	text-align: Center;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #c0c0c0;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowLeftColumn {
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	x-border-spacing: 0px;
+	x-row-pat-1: 1;
+	x-row-pat-1-name: t1Row;
+	x-row-pat-count: 2;
+	x-row-pat-2: 1;
+	x-row-pat-2-name: t2Row;
+	x-1st-row: 1;
+	x-1st-row-name: t1st;
+	x-1st-col: 1;
+	x-1st-col-name: t1st;
+}
+table.TopRowLeftColumn tr.t1Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowLeftColumn tr.t2Row td {
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowLeftColumn tr.t1st td {
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #808080;
+	text-align: Center;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+table.TopRowLeftColumn td.t1st {
+	text-align: Center;
+	background-color: #808080;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+table.toprowleftcolumn tr.t1row td.t1st {
+	text-align: Center;
+	background-color: #808080;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+table.toprowleftcolumn tr.t2row td.t1st {
+	text-align: Center;
+	background-color: #808080;
+	font-family: Arial;
+	font-size: 10pt;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	font-weight: bold;
+}
+p.FM_Heading1 {
+	font-family: Arial;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-top: 0pt;
+}
+p.FM_Heading1PartSection{
+	font-family: Arial;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-top: 0pt;
+}
+p.FM_Heading2 {
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+	margin-top: 12pt;
+}
+p.FM_Heading2Preface {
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+	margin-top: 12pt;
+}
+p.FM_Heading3NoToc {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	margin-top: 0pt;
+}
+p.FM_Title {
+	font-family: Arial;
+	margin-left: 0in;
+	text-indent: 0px;
+	font-size: 12pt;
+	margin-top: 0;
+}
+p.FM_TitleNoNum {
+	font-family: Arial;
+	margin-left: 0in;
+	text-indent: 0px;
+	font-size: 12pt;
+	margin-top: 0;
+}
+p.FM_AppTitle {
+	margin-top: 0;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12pt;
+}
+a {
+	color: #0000ff;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	display: inline;
+	text-decoration: underline;
+}
+a.breadcrumbs {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	display: inline;
+}
+a.dropspot {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	display: inline;
+}
+a.expandspot {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	display: inline;
+}
+a.glossterm {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	display: inline;
+	font-size: 11pt;
+	font-weight: bold;
+}
+p.FM_GlossaryTitle {
+	margin-top: 0pt;
+	font-family: Arial;
+	font-size: 12pt;
+	font-weight: bold;
+}
+p.FM_Heading1Glossary {
+	margin-top: 0pt;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12pt;
+}
+p.FM_Heading1Preface {
+	margin-top: 0pt;
+	font-family: Arial;
+	font-size: 12pt;
+}
+p.Heading1MTOC {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 11pt;
+	margin-left: 18pt;
+	margin-top: 8pt;
+}
+p.HeadingMiniTOC {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 11pt;
+	margin-top: 8pt;
+	margin-left: 0;
+}
+p.FM_Code {
+	font-family: "Courier New";
+	background-color: #ededed;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+p.FM_Code2 {
+	font-family: "Courier New";
+	background-color: #ededed;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+p.FM_CodeComment {
+	font-family: "Courier New";
+	color: green;
+	background-color: #ededed;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+p.FM_Code2Comment {
+	font-family: "Courier New";
+	color:green;
+	background-color: #ededed;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+p.FM_Heading3 {
+	margin-top: 6pt;
+	font-family: Arial;
+	font-size: 11pt;
+}
+p.FM_Heading4 {
+	margin-top: 6pt;
+	font-family: Arial;
+	font-size: 11pt;
+}

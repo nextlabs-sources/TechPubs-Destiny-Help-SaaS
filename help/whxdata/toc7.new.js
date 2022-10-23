@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Analyze and understand the authorization needs and environment","url":"CCUserGuideSaaS/WhatIsCloudAZSAAS/Building_PEPs_and_integrating_them_with_CloudAz.htm#TOC_Analyze_and_understandbc-1"},{"type":"item","name":"Build a runtime integration by invoking the API","url":"CCUserGuideSaaS/WhatIsCloudAZSAAS/Building_PEPs_and_integrating_them_with_CloudAz.htm#TOC_Build_a_runtimebc-2"},{"type":"item","name":"Define the metadata required to create ABAC policies","url":"CCUserGuideSaaS/WhatIsCloudAZSAAS/Building_PEPs_and_integrating_them_with_CloudAz.htm#TOC_Define_the_metadatabc-3"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

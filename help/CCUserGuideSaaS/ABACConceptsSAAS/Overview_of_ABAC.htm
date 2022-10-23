@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Overview of ABAC</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\ABACConceptsSAAS.fm" />
+ <link rel="stylesheet" href="ABACConceptsSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "2.1";
+</script>
+ <meta name="topic-breadcrumbs" content="ABAC Concepts" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <h1 dir="ltr"><a name="XREF_49354_Overview_of_ABAC"></a>Overview of ABAC</h1>
+ <p dir="ltr" class="FM_Body">This section describes ABAC (Attribute Based Access Control) and explains how ABAC differs from other access control systems such as RBAC (Role Based Access Control) and ACL (Access Control Lists).</p>
+ <p dir="ltr" class="FM_Heading1PartSection"><a name="TOC_Introduction_to_ABAC"></a><span style="font-family : 'Trebuchet MS'; font-weight : normal; font-size  : 10.0pt; color   : #0000ff; "></span><a name="XREF_54861_Introduction_to"></a>Introduction to ABAC</p>
+ <p dir="ltr" class="FM_Body">ABAC (Attribute Based Access Control) is a logical access control methodology that uses attri&#173;butes, or properties, of users, resources, and the environment to determine whether to allow or deny access to assets. Because they are based on attributes, ABAC policies continue to correctly control access to assets even when users change departments, projects, locations, or security clearance levels, and when documents and other resources are reclassified or modified.</p>
+ <p dir="ltr" class="FM_Body">Examples of attributes include:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Department</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Citizenship</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Credit score</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Territory assignment</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Purchase order amount</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Information about health records</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Time of day</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Authentication level</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Device status</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Location</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Context or environment</p>
+ <p dir="ltr" class="FM_Body">Attributes can be imported from various enterprise information systems such as Active Directory servers, HR (Human Resources) systems, and any existing attribute store.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_How_ABAC_policies_are"></a>How ABAC policies are evaluated and maintained</p>
+ <p dir="ltr" class="FM_Body">ABAC policies are dynamically evaluated at runtime. When a subject requests access, the ABAC engine makes an access control decision based on the assigned attributes of the requester, the assigned attributes of the object, the environment conditions, and a set of policies that are spec&#173;ified in terms of those attributes and conditions. </p>
+ <p dir="ltr" class="FM_Body">ABAC policies primarily have four main components:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">The resource</span>: The logical entity to be secured from unauthorized access.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">The subject</span>: An entity, usually a human, requesting access to the resource.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">The action</span>: The operation the subject is trying to perform on the resource. For example, view, edit, or approve.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">The policy effect</span>: The action to be take when the conditions match or do not match. The pol&#173;icy effect is either <span class="FM_Emphasis">allow</span>&#160;(sometimes called <span class="FM_Emphasis">permit</span>) or <span class="FM_Emphasis">deny</span>.</p>
+ <p dir="ltr" class="FM_Body">Policies require no direct reference to potentially numerous users and objects, and users and objects can be provisioned without reference to policies.</p>
+ <p dir="ltr" class="FM_Body">Additionally, if policy designers need to change policies to meet changing regulatory require&#173;ments, they can do so easily without going through lengthy development, test, and quality assur&#173;ance cycles. The ABAC work flow is illustrated in <a href="#XREF_45928_ABAC_overview"><span class="FM_blue">Figure&nbsp;2-1</span></a>.</p>
+ <div align="center"><img alt="ABACOverview.png" style=" width:100%; margin-left:133.500pt; margin-top:4.500pt; margin-right:134.250pt; margin-bottom:4.500pt; max-width:432.000pt;" id="image0" src="ABACOverview.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2-1: <a name="XREF_45928_ABAC_overview"></a>ABAC overview</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Basic_ABAC_architecture"></a>Basic ABAC architecture</p>
+ <p dir="ltr" class="FM_Body">There are multiple frameworks that can be used to build an ABAC system. One of these uses XACML (eXtensible Access Control Markup Language). XACML supports a distributed architecture with various key components that are required to author, evaluate, and enforce policies. </p>
+ <p dir="ltr" class="FM_Body">The components and their roles in this framework are:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policy Administration Point (PAP)</span>: The component that enables users to author and manage policies. PAP can also provide additional features such as reporting and activity monitoring to support audit capabilities.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policy Decision Point (PDP)</span>: The component that evaluates applicable policies and renders an authorization decision.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policy Enforcement Point (PEP)</span>: The component that performs access control by sending decision requests to the PDP and enforcing authorization decisions.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policy Information Point (PIP)</span>: The component that is the source of user, resource, and envi&#173;ronment attributes. A PEP or PDP interacts with this component to obtain attributes. In an enterprise deployment, a typical PIP would be an LDAP server, HR database, or other data repository with license keys. </p>
+ <p dir="ltr" class="FM_Body">These components are illustrated in <a href="#XREF_80063_How_ABAC_policies"><span class="FM_blue">Figure&nbsp;2-2</span></a>. For more information about XACML, go to <br /><span class="FM_Hyperlink"><a href="https://www.oasis-open.org/committees/xacml/">https://www.oasis-open.org/committees/xacml/</a></span>.</p>
+ <div align="center"><img alt="ABACReferenceArchitecture.png" style=" width:100%; margin-left:57.000pt; margin-top:0.750pt; margin-right:54.000pt; margin-bottom:3.000pt; max-width:433.500pt;" id="image1" src="ABACReferenceArchitecture.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2-2: <a name="XREF_80063_How_ABAC_policies"></a>How ABAC policies are implemented</p>
+ <p dir="ltr" class="FM_Heading1Preface"><a name="TOC_Comparing_ABAC_RBAC_and"></a>Comparing ABAC, RBAC, and ACL models</p>
+ <p dir="ltr" class="FM_Body">The key difference between ABAC and its predecessor access control models, including Role Based Access Control (RBAC) and Access Control Lists (ACL), is the ability to express complex business rules as logical expressions using attributes. This ability makes ABAC a dynamic, con&#173;text-aware, and highly scalable solution for access control.</p>
+ <p dir="ltr" class="FM_Body">By contrast, RBAC and ACL are static models that do not automatically adapt to changes in user status or data classification, and they do not handle environment-related conditions such as multi-factor authentication. Further, they provide no central visibility or control, and maintain&#173;ing them can require considerable administrative resources.</p>
+ <p dir="ltr" class="FM_Body">ABAC implementations typically require only a small set of policies to be created and maintained based on business requirements, whereas RBAC and ACL are more administratively intensive to maintain. Further, because roles and permissions must be applied manually, RBAC and ACL mod&#173;els are more prone to error than ABAC models.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_About_RBAC_models"></a>About RBAC models</p>
+ <p dir="ltr" class="FM_Body">RBAC (Role Based Access Control) models control access to resources using roles. Typically, roles correspond to functional responsibilities in organizations. For example, roles in an IT department might include Network Administrators, Security Analysts, and Helpdesk or Support Technicians. In a Human Resources department, roles might include Recruiters, Compensation Analysts, and Ben&#173;efits Managers. To use RBAC, these roles need to be created, along with their permissions, and properly assigned to users in the enterprise. Further, each role might need to be created for each region or customer territory, resulting in role explosion as shown in <span style="font-style : italic; "></span><a href="#XREF_39272_Figure_2_3"><span style="font-style : italic; "></span><span class="FM_blue">Figure&nbsp;2-3</span><span style="font-style : italic; "></span></a><span style="font-style : italic; ">.</span></p>
+ <div align="center"><img alt="RoleExplosion1.png" style=" width:100%; margin-left:69.000pt; margin-top:4.500pt; margin-right:68.250pt; margin-bottom:4.500pt; max-width:435.000pt;" id="image2" src="RoleExplosion1.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2-3:  Role explosion<a name="XREF_39272_Figure_2_3"></a></p>
+ <p dir="ltr" class="FM_Body">Consider a large organization with global operations and a business need to limit access to resources based on region and functional responsibility. To use RBAC to protect resources, the organization would need to create roles for employees in every region, assign the correct permis&#173;sions to those roles, and assign the appropriate roles to users. The organization could easily require thousands of roles to cover each region and operational area. Further, maintaining those roles, and ensuring that user roles are updated when functional responsibilities or resource access requirements change, requires significant administrative resources.</p>
+ <p dir="ltr" class="FM_Body">For more information about RBAC, see <span class="FM_Hyperlink"><a href="http://csrc.nist.gov/groups/SNS/rbac/">http://csrc.nist.gov/groups/SNS/rbac/</a></span>.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_About_ACL_models"></a>About ACL models</p>
+ <p dir="ltr" class="FM_Body">ACL (Access Control List) is the traditional access control model used for file systems, firewalls, databases, routers, and content management systems. ACLs specify the permissions that are either granted or denied to users and groups of users. For example, an ACL might grant a file owner, such as a System Administrator, the ability to read, write, and execute actions on a file. For analysts and technicians, the ACL might grant read-only permissions, and it might prevent users outside the IT department from having any access to the file. </p>
+ <p dir="ltr" class="FM_Body">Like RBAC, ACL is a static model. ACLs must be continually updated when functional responsibili&#173;ties and resource access requirements change. Further, each file and directory has ACLs, and because ACLs have no central management, remembering permission settings and keeping per&#173;missions up-to-date requires significant administrative vigilance.</p>
+ <p dir="ltr" class="FM_Body">For more information about ACLs, see <span class="FM_Hyperlink"><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx">https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx</a></span>.</p>
+ <p dir="ltr" class="FM_Heading1Preface"><a name="TOC_Comparing_ABAC_RBAC_and1"></a><a name="XREF_69316_Sample_ABAC_policy"></a>Comparing ABAC, RBAC, and ACL implementations</p>
+ <p dir="ltr" class="FM_Body">This section compares how ABAC, RBAC, and ACL models can be used to enforce a business rule.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_Business_rule"></a><a name="XREF_87380_Business_rule"></a>Business rule</p>
+ <p dir="ltr" class="FM_Body">Each access control model must enforce the following rule:</p>
+ <p dir="ltr" class="FM_Body2">Allow US citizens to view and edit Secret and Top Secret documents if the user’s security clearance is higher than or equal to the sensitivity classification of the document.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_ABAC_implementation"></a>ABAC implementation</p>
+ <p dir="ltr" class="FM_Body">This section assumes that the documents covered by the rule have the appropriate security Clas&#173;sification Level applied.</p>
+ <p dir="ltr" class="FM_Body">To enforce the <a href="#XREF_87380_Business_rule">Business rule</a>&#160;using ABAC in CloudAz, a policy designer writes a policy that allows View and Edit access to documents if the users’ Citizenship attribute equals USA and their Secu&#173;rity Clearance attribute is higher than or equal to the document’s Classification Level attribute. </p>
+ <p dir="ltr" class="FM_Body">When document Classification Levels and user Security Clearances change, CloudAz continues to enforce the policy dynamically at run time and provides the appropriate level of access without requiring modification to the policy or its components.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_RBAC_implementation"></a><a name="XREF_44314_RBAC_implementation"></a>RBAC implementation</p>
+ <p dir="ltr" class="FM_Body">To enforce the <a href="#XREF_87380_Business_rule">Business rule</a> using RBAC:</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>In a role management system, create the required roles. For example: Citizenship and security for each country where the rule needs to be enforced. For example, USA: Top Secret, Secret, Confidential and so on. If you have 5 levels of security and 10 countries, you would need 50 roles.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Assign roles to users using information from a Human Resources system.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>For each role, add the appropriate permissions for viewing and editing documents.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Update document permissions whenever new documents are added.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>5<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Update role assignments whenever user Citizenship or Security Clearance changes. Keeping these assignments up to date requires ongoing administrative diligence, which is less effi&#173;cient than ABAC.</p>
+ <p dir="ltr" class="FM_Heading2Preface"><a name="TOC_ACL_implementation"></a><a name="XREF_81352_Pseudo_request"></a><a name="XREF_41299_ACL_implementation"></a>ACL implementation</p>
+ <p dir="ltr" class="FM_Body">To enforce the <a href="#XREF_87380_Business_rule">Business rule</a> using ACLs:</p>
+ <p dir="ltr" class="FM_NumBody1"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>1 <span style="padding-left: 13pt;" class="FMAutoNumber_2"></span>For each document that matches the business rule, define ACL permissions in the docu&#173;ment properties. This requires that you know the Citizenship and Security Clearance level of each user or group of users and the classification level of each document. <a href="#XREF_78853_Access_Control"><span class="FM_blue">Figure&nbsp;2-4</span></a>&#160;shows an example of the ACL permissions that need to be defined for files.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>2<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Add exceptions to the business rule to document properties as needed.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>3<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Update ACL permissions whenever users are added and whenever user citizenship or secu&#173;rity classifications change.</p>
+ <p dir="ltr" class="FM_NumBody"><span style="padding-left: 5pt;" class="FMAutoNumber_1"></span>4<span style="padding-left: 16pt;" class="FMAutoNumber_2"></span>Update ACL permissions whenever documents are added, and whenever document classifi&#173;cations change.</p>
+ <div align="center"><img alt="ACLExample.png" style=" width:100%; margin-left:5.250pt; margin-top:3.000pt; margin-right:1.500pt; margin-bottom:5.250pt; max-width:434.250pt;" id="image3" src="ACLExample.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2-4: <a name="XREF_78853_Access_Control"></a>Access Control List example</p>
+ <p dir="ltr" class="FM_Heading1Preface"><a name="TOC_ABAC_benefits"></a><a name="XREF_32951_ABAC_benefits"></a>ABAC benefits</p>
+ <p dir="ltr" class="FM_Body">ABAC has these benefits:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Centralized policy management</p>
+ <p dir="ltr" class="FM_Bulleted1" style="font-weight : bold;">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Centralized visibility and control</span>: All data and application access policies can be cre&#173;ated and managed in one platform. This makes it possible to audit information related to user activity and data access, which enables applications using ABAC to achieve a high level of regulatory compliance.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Externalize authorization policies from application logic</span>: ABAC has a simple API-based integration that hides the computational complexity of authorization from the applica&#173;tion where security is enforced. In other words, policies are external and separated from application logic, and changes in regulatory requirements, business requirements, and security policies have no impact on applications. Further, because authorization policies are not embedded as code in the application logic, they can be managed outside of applications. This enables policy designers to centrally author, review, and update authorization policies whenever requirements or market conditions change. This elimi&#173;nates the requirement to review code with auditors, and provides central visibility and control over access across applications.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Separate policy lifecycle from application lifecycle</span>: The ABAC policy lifecycle is inde&#173;pendent of the software lifecycle. As a result, policies can be changed and implemented immediately in response to changing requirements or market conditions. If the authori&#173;zation logic were embedded in the application code, application developers would need to modify the application code, go through lengthy development and test cycles, and eventually find a window of time where the application could be taken down and upgraded with the modified application logic. With policies managed externally from the application, changes can be made effective immediately in the production environ&#173;ment if required, without any application downtime or lengthy development and test cycles. To verify that policy changes are correct before they are implemented in produc&#173;tion systems, short test cycles can be conducted in development environments, avoiding the need for application downtime. This enables organizations to get applications to market and react to changing conditions much faster, providing dramatic cost and time savings, improving time to market, and even providing an edge over competitors.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Policies can span multiple applications</span>: Because policies are managed outside the applications, the same authorization policy can be enforced in multiple applications. In other words, a single set of policies can be enforced consistently across applications, providing central visibility and control over access. For example, you can define a single policy to secure a document that moves between various applications such as email, content management, or business process applications, and enforce the same policy in all applications.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Dynamic authorization</span>: Authorization policies are dynamically evaluated at run time to determine whether user actions should be allowed or denied. Policies are based on user attri&#173;butes, such as citizenship, security clearance, department, and roles; resource attributes, such as data classifications, content, and transaction details; and environment attributes, such as time of day, location, authentication scheme, and device type. Administrators do not need to maintain and keep track of role and permission assignments when users move between departments, projects, or locations, or when their security clearance level changes.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Dynamic context</span>: Authorization policies can specify that documents can be accessed only during specified hours or from specified locations.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Improved compliance and business agility</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Compliance with regulatory requirements</span>: ABAC policies are centrally managed, and they provide visibility and control across many applications and data. This makes it pos&#173;sible to audit information related to user activity and data access, which enables appli&#173;cations using ABAC to achieve a high level of regulatory compliance.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Business agility</span>: Authorization policies are managed externally from the protected application so they can be modified without requiring code changes or application downtime. This enables organizations to react quickly to changing business or regulatory requirements, which greatly increases agility and flexibility.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Reduced operational costs</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Reduced software maintenance costs: </span>In a classic authorization model, authorization checks are built in to application logic. When requirements or market conditions change, application code has to be modified according to the software development lifecycle, increasing overhead and maintenance costs. In an ABAC system, the cost of maintenance is limited to changing and testing the policy itself.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Administration costs</span>: Using a central policy repository and central audit repository for multiple applications reduces the administrative cost of maintaining multiple access control and reporting systems.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Secure sensitive applications, services, and data </p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Control over user access</span>: ABAC enables organizations to control who can perform a given set of actions under a given set of conditions. Use cases include who can access applications, the circumstances under which applications can be accessed, the parts of an application a given user can access, the business transactions a user is allowed to submit, the data users can see, and the actions users can perform with that data.</p>
+ <p dir="ltr" class="FM_Bulleted1">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Control over applications and systems</span>: ABAC can be used to protect single-page web applications, micro-services, mobile apps, and any other type of application or system. Applications integrate with the ABAC system using standards-based REST APIs or SDKs for a variety of programming languages.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Rich Policy Model</span>: ABAC policies are based on rules, logical expressions, and attributes that read like natural language statements and can be authored by business users without help from IT. This provides great flexibility in expressing complex business requirements in simple and easy to understand authorization policies.</p>
+ <p dir="ltr" class="FM_Heading1Preface"><a name="TOC_Additional_resources"></a><a name="XREF_11386_Additional"></a>Additional resources</p>
+ <p dir="ltr" class="FM_Body">For more information about ABAC concepts, see the National Institute of Standards and Technol&#173;ogy (NIST) websites:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>NIST overview of ABAC:<span class="FM_Hyperlink">&#160;<br /><a href="http://csrc.nist.gov/projects/abac/">http://csrc.nist.gov/projects/abac/</a></span></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>NIST guide to implementing ABAC:<br /><span class="FM_Hyperlink"><a href="http://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.sp.800-162.pdf">http://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.sp.800-162.pdf</a></span></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>NCCOE building blocks for ABAC:<br /><span class="FM_Hyperlink"><a href="https://nccoe.nist.gov/projects/building_blocks/attribute_based_access_control">https://nccoe.nist.gov/projects/building_blocks/attribute_based_access_control</a></span></p>
+</body>
+</html>

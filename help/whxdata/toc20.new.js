@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"book","name":"Policy and Policy Model overview","key":"toc21","url":"CCUserGuideSaaS/NewUISaaS/Policy_and_Policy_Model_overview.htm"},{"type":"book","name":"Constructing and testing policies","key":"toc24","url":"CCUserGuideSaaS/PoliciesSAAS/Constructing_and_testing_policies.htm"},{"type":"book","name":"Exporting and importing policies","key":"toc30","url":"CCUserGuideSaaS/ImportingExportingSaas/Exporting_and_importing_policies.htm"},{"type":"book","name":"Deploying and managing objects","key":"toc31","url":"CCUserGuideSaaS/Deploying_SaaS/Deploying_and_managing_objects.htm"},{"type":"book","name":"Delegated administration policies","key":"toc33","url":"CCUserGuideSaaS/DelegatedAdministrationSaaS/Delegated_administration_policies.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Analyzing alerts</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\MonitorsSaaS.fm" />
+ <link rel="stylesheet" href="MonitorsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.4.3";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports > Working with monitors and alerts" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="IX_analyzing"></a><a name="XREF_58550_Analyzing_Alerts"></a>Analyzing alerts</p>
+ <p dir="ltr" class="FM_Body">In addition to displaying the complete list of alerts, Reporter provides the option of viewing and analyzing alerts in the following ways:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_62447_Alerts_by_Monitor">Alerts by monitor tag</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_99327_Alerts_by_Monitors">Alerts by monitors</a></p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_66604_Alerts_by_Time">Alerts by time</a></p>
+ <p dir="ltr" class="FM_Body">Alerts are grouped by tag, monitor, or time, aggregated, and presented in charts. To view alerts in one of these formats, in the <span class="FM_Emphasis">Alerts Overview</span>&#160;tab, select an option from the menu on the left, as shown in <a href="#XREF_18198_Alerts_menu"><span class="FM_blue">Figure&nbsp;2.4-4</span></a>.</p>
+ <div align="center"><img alt="AlertsMenu.PNG" style=" width:100%; margin-left:3.000pt; margin-top:5.250pt; margin-right:2.250pt; margin-bottom:1.500pt; max-width:116.250pt;" id="image3" src="AlertsMenu.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.4-4: <a name="XREF_18198_Alerts_menu"></a>Alerts menu</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Alerts_by_monitor_tag"></a><a name="IX_by_tag"></a><a name="XREF_62447_Alerts_by_Monitor"></a>Alerts by monitor tag</p>
+ <p dir="ltr" class="FM_Body">When you select the option to view alerts by monitor tag, Reporter groups alerts by tag name, and presents the data in a treemap, as shown in <a href="#XREF_33292_Alerts_by_Monitor"><span class="FM_blue">Figure&nbsp;2.4-5</span></a>. Each rectangle in a treemap rep&#173;resents a tag, and the rectangle sizes let you compare at a glance the number of alerts associ&#173;ated with each tag.</p>
+ <div align="center"><img alt="AlertsByTag.png" style=" width:100%; margin-left:19.500pt; margin-top:1.500pt; margin-right:14.250pt; margin-bottom:0.750pt; max-width:334.500pt;" id="image4" src="AlertsByTag.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.4-5: <a name="XREF_33292_Alerts_by_Monitor"></a>Alerts by Monitor Tag treemap</p>
+ <p dir="ltr" class="FM_Body">To see the distribution of alerts by tag <span class="FM_Emphasis">value</span>&#160;for a particular tag, click the rectangle representing the tag. <a href="#XREF_47550_Clicking_a_tag_to"><span class="FM_blue">Figure&nbsp;2.4-6</span></a>&#160;shows the distribution of alerts, by tag value, for the ITAR Policies tag. </p>
+ <p dir="ltr" class="FM_Body">To go back to the top-level treemap, click the <span class="FM_UIControl">Monitor Tags.ITAR Policies</span>&#160;title bar. To display the list of alerts associated with a tag value, click the corresponding rectangle.</p>
+ <div align="center"><img alt="MonitorsSaaS00002.jpg" style=" width:100%; max-width:489.060pt;" id="image5" src="MonitorsSaaS00002.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.4-6: <a name="XREF_47550_Clicking_a_tag_to"></a>Clicking a tag to view the distribution of alerts by tag value</p>
+ <p dir="ltr" class="FM_Body">By default, the treemap shows alerts for the current day. To change the time period, in <span class="FM_Bold" style="font-size  : 9.0pt; ">Date mode</span>, select the value you want. See <a href="Viewing_alerts.htm#XREF_73725_Filtering_by">Filtering by specific dates or times</a>&#160;and <a href="Viewing_alerts.htm#XREF_26581_Filtering_by">Filtering by relative dates</a>.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Alerts_by_monitors"></a><a name="IX_by_monitors"></a><a name="XREF_99327_Alerts_by_Monitors"></a>Alerts by monitors</p>
+ <p dir="ltr" class="FM_Body">When you select the option to view alerts by monitor, Reporter groups alerts by monitor name, and presents the data in a bar chart, as shown in <a href="#XREF_80032_Alerts_by_Monitor"><span class="FM_blue">Figure&nbsp;2.4-7</span></a>. The labels in the x-axis show the monitor names. </p>
+ <p dir="ltr" class="FM_Body">By default, the chart shows the number of alerts for each monitor, for the current day. To change the time period, in <span class="FM_Bold" style="font-size  : 9.0pt; ">Date mode</span>, select the value you want. See <a href="Viewing_alerts.htm#XREF_73725_Filtering_by">Filtering by specific dates or times</a>&#160;and <a href="Viewing_alerts.htm#XREF_26581_Filtering_by">Filtering by relative dates</a>.</p>
+ <p dir="ltr" class="FM_Body">To display the list of alerts associated with a monitor, click the corresponding bar.</p>
+ <div align="center"><img alt="AlertsByMonitor.png" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:5.250pt; margin-bottom:4.500pt; max-width:286.500pt;" id="image6" src="AlertsByMonitor.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.4-7: <a name="XREF_80032_Alerts_by_Monitor"></a>Alerts by Monitor chart</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Alerts_by_time"></a><a name="IX_by_time"></a><a name="XREF_66604_Alerts_by_Time"></a>Alerts by time</p>
+ <p dir="ltr" class="FM_Body">When you select the option to view alerts by time, Reporter groups alerts by the time period that you specify, and presents the data in a bar chart; if you don’t change the default settings, the time period is the current day. To change the time period, in <span class="FM_Bold" style="font-size  : 9.0pt; ">Date mode</span>, select either Fixed Dates or Relative. See <a href="Viewing_alerts.htm#XREF_73725_Filtering_by">Filtering by specific dates or times</a>&#160;and <a href="Viewing_alerts.htm#XREF_26581_Filtering_by">Filtering by relative dates</a>.</p>
+ <p dir="ltr" class="FM_Body"><a href="#XREF_31988_Two_charts_one"><span class="FM_blue">Figure&nbsp;2.4-8</span></a>&#160;shows two chart examples. The chart on the left shows the number of alerts for the current day (the default), and the chart on the right shows the number of alerts per day for the current week. In the second chart, <span class="FM_Bold" style="font-size  : 9.0pt; ">Date mode</span>&#160;is set to <span class="FM_Bold" style="font-size  : 9.0pt; ">Relative</span>, and <span class="FM_Bold" style="font-size  : 9.0pt; ">Date Selection</span>&#160;is set to <span class="FM_Bold" style="font-size  : 9.0pt; ">Current Week</span>.The labels in the x-axis show the dates. Click a bar in the chart to view the alerts for that day.</p>
+ <div align="center"><img alt="MonitorsSaaS00005.jpg" style=" width:100%; max-width:489.280pt;" id="image7" src="MonitorsSaaS00005.jpg" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.4-8: <a name="XREF_31988_Two_charts_one"></a>Two charts, one displaying alerts for the current day, the second for the current week</p>
+ <p dir="ltr" class="FM_Body">In the examples above, alerts are grouped by day. If <span class="FM_Bold" style="font-size  : 9.0pt; ">Date Selection</span>&#160;is set to Current Quarter or Last Quarter, alerts are grouped by month.</p>
+</body>
+</html>

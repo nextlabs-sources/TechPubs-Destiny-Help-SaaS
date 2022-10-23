@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Running a report</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\ReportsSaaS.fm" />
+ <link rel="stylesheet" href="ReportsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.3.1_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports > Working with reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="IX_running"></a><a name="XREF_62148_Running_a_Report"></a>Running a report</p>
+ <p dir="ltr" class="FM_Body">You can run any report selected from <span class="FM_Bold" style="font-size  : 9.0pt; ">Saved Reports</span>, or a new report you define in <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Details</span>. Simply click the <span class="FM_Bold" style="font-size  : 9.0pt; ">Run</span>&#160;button at the bottom of <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Details</span>.</p>
+ <p dir="ltr" class="FM_Body">When you run a report, Reporter compares the information currently in the Activity Journal to the report criteria, selects the matching information (if any), calculates the totals, and displays the results in the format you selected.</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_table"></a>If you selected a chart as the output format, the chart appears at the bottom of the <span class="FM_Bold" style="font-size  : 9.0pt; ">Report Details</span>&#160;pane. Scroll down to view the chart. If the output format is a table, it might appear in a separate tab in the browser window, depending on the browser you are using. <a href="#XREF_85680_Report_results_in"><span class="FM_blue">Figure&nbsp;2.3-6</span></a> shows an exam&#173;ple of policy activity data displayed in a table.</p>
+ <div align="center"><img alt="TableOutput.png" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:4.500pt; margin-bottom:5.250pt; max-width:441.750pt;" id="image6" src="TableOutput.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-6: <a name="XREF_85680_Report_results_in"></a>Report results in table format</p>
+ <p dir="ltr" class="FM_Body">If no data matches the specified criteria, a message appears, as shown in <a href="#XREF_83074_No_data_message"><span class="FM_blue">Figure&nbsp;2.3-7</span></a>.</p>
+ <div align="center"><img alt="NoData.png" style=" width:100%; margin-left:5.250pt; margin-top:5.250pt; margin-right:6.000pt; margin-bottom:3.000pt; max-width:441.000pt;" id="image7" src="NoData.png" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrameWide">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-7: <a name="XREF_83074_No_data_message"></a>No data message</p>
+ <p dir="ltr" class="FM_Body">Return to the report query to check the specified criteria, and modify the query as needed. Check the time period. As discussed in <a href="Creating_a_report.htm#XREF_65163_Activity_Journal">Activity Journal archive considerations</a>, if the specified time period is too far in the past, the data is likely to have been archived. Remember, too—the greater the number of filters, the narrower the scope of data returned. If there are conditions specified in multiple fields, such as <span class="FM_Bold" style="font-size  : 9.0pt; ">User Criteria</span>, <span class="FM_Bold" style="font-size  : 9.0pt; ">Policy Criteria</span>, and <span class="FM_Bold" style="font-size  : 9.0pt; ">Resource Criteria</span>, all the con&#173;ditions must be true for the data to match.</p>
+ <p dir="ltr" class="FM_Body">Conversely, if the report returns more data than you expect, check the filters in the query. For example, verify that the filters have been added to the query. <a href="#XREF_97101_Filter_examples"><span class="FM_blue">Figure&nbsp;2.3-8</span></a>&#160;shows an example of a resource filter that has been defined (values are entered in the <span class="FM_Bold" style="font-size  : 9.0pt; ">Resource Criteria</span>&#160;fields), but that has not been added to the query. You must click the <span class="FM_Bold" style="font-size  : 9.0pt; ">+</span>&#160;button to add a filter. When a filter has been added, it appears below the field, as indicated by the policy filter that appears below <span class="FM_Bold" style="font-size  : 9.0pt; ">Policy Criteria</span>.</p>
+ <div align="center"><img alt="ResourceNameCriteria.PNG" style=" width:100%; max-width:363.900pt;" id="image8" src="ResourceNameCriteria.PNG" />
+ </div>
+ <p dir="ltr" class="FM_AnchorFrame">&nbsp;</p>
+ <p dir="ltr" class="FM_FigureWide">Figure 2.3-8: <a name="XREF_97101_Filter_examples"></a>Filter examples, one added and one not</p>
+ </body>
+</html>

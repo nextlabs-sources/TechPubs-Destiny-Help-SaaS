@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Exporting and importing policies</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\PolicyStudio\ImportingExportingSaas.fm" />
+ <link rel="stylesheet" href="ImportingExportingSaas.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.1.3";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Working with Policies" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <h1 dir="ltr"><a name="XREF_67281_14_Routine"></a>Exporting and importing policies<a name="XREF_63700_Routine_Management"></a></h1>
+ <p dir="ltr" class="FM_Body">This section explains how to export and import policies among CloudAz instances. In addition, this section describes how CloudAz manages policy versions and states.</p>
+ <p dir="ltr" class="FM_Heading1PartSection"><a name="TOC_About_exporting_and"></a><span style="font-family : 'Trebuchet MS'; font-weight : normal; font-size  : 10.0pt; color   : #0000ff; "></span><a name="XREF_51005_Managing_Control"></a><a name="XREF_85625_Importing_and"></a><a name="XREF_90445_Importing_and"></a>About exporting and importing policies and other items</p>
+ <p dir="ltr" class="FM_Body">Exporting and importing policies enables you to share policy objects defined in one instance of &#160;with other instances of CloudAz. This is helpful in collaborative environments where policy construction responsibilities are distributed among several policy designers. It is also useful for transferring policies and components from isolated test environments to live pro&#173;duction environments.</p>
+ <p dir="ltr" class="FM_Body">Policies, and any components used in policies, are exported as BIN files, which can be imported into other  instances.</p>
+ <p dir="ltr" class="FM_NoteImportant"><span class="FM_ImportantEmphasis">Important:<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span> </span>The following items cannot be exported or imported:</p>
+ <p dir="ltr" class="FM_NoteBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Individual components, such as subject, resource, and action components. Components can be exported and imported only if they are included in poli&#173;cies.</p>
+ <p dir="ltr" class="FM_NoteBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Policy model components, such as resource types. These can be exported and imported only if they are included in policies.</p>
+ <p dir="ltr" class="FM_NoteBullet">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span>Delegation policies. Delegation policies cannot be imported or exported and must be created in each instance of CloudAz separately as needed. </p>
+ </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Report anomalies</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\Reporter\ReportsSaaS.fm" />
+ <link rel="stylesheet" href="ReportsSaaS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "7.2.3.4";
+</script>
+ <meta name="topic-breadcrumbs" content="Product Guide > Managing Reports > Working with reports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="XREF_69578_Report_Anomalies"></a>Report anomalies</p>
+ <p dir="ltr" class="FM_Body">Reports can show unexpected results at times, which may seem to reflect incorrect behavior of policies, but in fact are a result of some of the ways Windows works internally, or of inherent sta&#173;tistical issues.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Implied_actions"></a><a name="IX_anomalies_in_report_data"></a><a name="IX_anomalies_in"></a><a name="IX_implied_actions"></a><a name="XREF_82345_Special_Cases"></a>Implied actions</p>
+ <p dir="ltr" class="FM_Body">When Windows Explorer handles file operations, it sometimes performs several actions sequen&#173;tially in a way that is not visible to users. For example, when you run Copy on a file, Explorer first opens the file, then reads the content, then writes a copy to the new location. Similarly, when you print a file, Explorer must first open the file, then send it to the print server. In fact, most of the actions you deal with in policies also involve Open in this way, as what might be called an <span style="font-style : italic; ">implied action</span>.</p>
+ <p dir="ltr" class="FM_Body">Because Open is a very common implied action, you may see some reporting anomalies whenever you deploy several policies, one of which involves a Deny Open or Allow Only Open effect. For example, suppose you have a Deny Open policy deployed, then deploy a second policy with a Deny Print effect, test it for a while, and run a report on the test activity. The test behavior might seem correct—printing is blocked, as intended—but the report does not show any instances where Print actions were denied; instead it shows many cases of Open actions being blocked. This can seem like an error in the policy or in the report, but it actually reflects the fact that, because the actions implicitly triggered the Deny Open policy, they were blocked by that rather than by the Deny Print policy.</p>
+ <p dir="ltr" class="FM_Body">Note that if you encounter this kind of seeming anomaly regarding actions in your reports, it is likely that some kind of implied action (involving Open, specifically) is the cause.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Preview_activity"></a>Preview activity</p>
+ <p dir="ltr" class="FM_Body"><a name="IX_and_reporting_anomalies"></a>When you preview document-type components, the system performs a Read action on the underlying documents to display information about them in Preview pane. This may lead to unexpected reporting results if, for example, you have deployed policies that prohibit users from reading these document resources. Even though the policy is correctly blocking this activity by users, your report might show instances of Read actions—those performed in the course of Preview. This can be confusing at times, since there is no way Reporter can distinguish between actions performed internally by the system and actions per&#173;formed by users. </p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="index">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Administrator user">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="changing password">
+      <param name="Name" value="Changing the superuser password">
+      <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Changing_the_superuser_password.htm#IX_changing_password">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="passwords">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="changing for Administrator account">
+      <param name="Name" value="Changing the superuser password">
+      <param name="Local" value="CCUserGuideSaaS/DelegatedAdministrationSaaS/Changing_the_superuser_password.htm#IX_changing_for">
+    </object>
+    </ul>
+</ul>
+</html>

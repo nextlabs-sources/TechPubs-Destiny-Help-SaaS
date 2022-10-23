@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Types of requests and examples of request data</title>
+
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+ <meta name="Originator" content="ImportMif" />
+ <meta name="OriginalFile" content="s:\techpubs\productdocs\ControlCenter\CC_8_6_2\FrameMakerSourceFiles\CC_OPN_OPL_And_CloudAzHelp\UsingControlCenter\APIReferenceSAAS.fm" />
+ <link rel="stylesheet" href="APIReferenceSAAS.css" type="text/css" />
+
+ <link rel="stylesheet" href="../../RHStyleMapping.css" type="text/css" />
+ <link rel="StyleSheet" href="../../RHStyleMapping.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "6.1.2";
+</script>
+ <meta name="topic-breadcrumbs" content="REST API > REST API Reference" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+ <p dir="ltr" class="FM_Heading1"><a name="IX_Request_examples"></a><a name="XREF_54249_Examples_of"></a>Types of requests and examples of request data</p>
+ <p dir="ltr" class="FM_Body">PEPs can send the following types of policy evaluation requests to CloudAz:</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Single policy evaluation query in a single request</span>: Evaluate an action that a user has per&#173;formed on a document resource. See <a href="#XREF_52925_Single_query">Single-query request (JSON): Example 1</a>&#160;and <a href="#XREF_47644_Single_query">Single-query request (XML): Example 2</a>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">Multiple policy evaluation queries in a single request</span>: Evaluate actions that users have per&#173;formed on <span class="FM_Emphasis">multiple</span>&#160;document resources. See <a href="#XREF_17328_Multi_query">Multi-query request (XML): Example 3</a>.</p>
+ <p dir="ltr" class="FM_Bulleted">•<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><span class="FM_Bold">SAML requests</span>: Exchange authentication and authorization data between identity providers and service providers. The following example shows a SAML request. See <a href="#XREF_12716_Example_5">SAML request: Example 4</a>.</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Single_query_request"></a><a name="XREF_52925_Single_query"></a>Single-query request (JSON): Example 1</p>
+ <p dir="ltr" class="FM_Heading4">Sample request payload: Example 1</p>
+ <p dir="ltr" class="FM_Body">This request data contains an action (<span style="font-family : 'Courier New'; font-size  : 8.0pt; ">EDIT_TKTS</span>) that a subject (<span style="font-family : 'Courier New'; font-size  : 8.0pt; ">chris.webber</span>) has performed in an application (<span class="FM_Code">Helpdesk</span>). </p>
+ <p dir="ltr" class="FM_Code"><a name="HT_span"></a>&nbsp;</p>
+ <p dir="ltr" class="FM_Code">{</p>
+ <p dir="ltr" class="FM_Code">&quot;Request&quot;: {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;ReturnPolicyIdList&quot;: &quot;true&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Category&quot;: [{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;CategoryId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:subject-category:access-subject&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Attribute&quot;: [{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:subject:subject-id&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;chris.webber@hdesk.com&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}, {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:subject:assigned_prod_area&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;Exchange Email&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}, {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:subject:department&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;IT&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}]</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}, {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;CategoryId&quot;: &quot;urn:oasis:names:tc:xacml:3.0:attribute-category:resource&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Attribute&quot;: [{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;DataType&quot;: &quot;http://www.w3.org/2001/XMLSchema#anyURI&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:resource:resource-id&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;Ticket:1103&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}, {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;DataType&quot;: &quot;http://www.w3.org/2001/XMLSchema#anyURI&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:nextlabs:names:evalsvc:1.0:resource:resource-type&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;support_tickets&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}, {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;DataType&quot;: &quot;http://www.w3.org/2001/XMLSchema#anyURI&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:resource:prod_name&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;Exchange Email&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}]</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}, {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;CategoryId&quot;: &quot;urn:oasis:names:tc:xacml:3.0:attribute-category:action&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Attribute&quot;: [{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;DataType&quot;: &quot;http://www.w3.org/2001/XMLSchema#string&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:action:action-id&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;EDIT_TKTS&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}]</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}, {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;CategoryId&quot;: &quot;urn:nextlabs:names:evalsvc:1.0:attribute-category:application&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Attribute&quot;: [{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;DataType&quot;: &quot;http://www.w3.org/2001/XMLSchema#string&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:nextlabs:names:evalsvc:1.0:application:application-id&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;Helpdesk&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}]</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}, {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;CategoryId&quot;: &quot;urn:oasis:names:tc:xacml:3.0:attribute-category:environment&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Attribute&quot;: [{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;DataType&quot;: &quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;AttributeId&quot;: &quot;urn:oasis:names:tc:xacml:1.0:environment:authentication_type&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;multifactor&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;IncludeInResult&quot;: &quot;false&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}]</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}]</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}</p>
+ <p dir="ltr" class="FM_Code">}</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+
+ <p dir="ltr" class="FM_Heading4">Sample response payload: Example 1</p>
+ <p dir="ltr" class="FM_Body">The response allows the action. </p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Response&quot;: {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Result&quot;: [{</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Decision&quot;: &quot;Permit&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Status&quot;: {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;StatusMessage&quot;: &quot;success&quot;,</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;StatusCode&quot;: {</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Value&quot;: &quot;urn:oasis:names:tc:xacml:1.0:status:ok&quot;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>},</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&quot;Obligations&quot;: []</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}]</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>}</p>
+ <p dir="ltr" class="FM_Code">}</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Single_query_request_XML"></a><a name="XREF_47644_Single_query"></a>Single-query request (XML): Example 2</p>
+ <p dir="ltr" class="FM_Heading4">Sample request payload: Example 2</p>
+ <p dir="ltr" class="FM_Body">This request data contains an action (<span class="FM_Code">VIEW_TKTS</span>) that a subject (<span class="FM_Code">Chris Webber)</span>&#160;has performed on a document resource (<span style="font-family : 'Courier New'; font-size  : 8.0pt; ">Ticket:1103</span>). </p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;Request xmlns=&quot;urn:oasis:names:tc:xacml:3.0:core:schema:wd-17&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;urn:oasis:names:tc:xacml:3.0:core:schema:wd-17 http://docs.oasis-open.org/xacml/3.0/xacml-core-v3-schema-wd-17.xsd&quot; ReturnPolicyIdList=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes Category=&quot;urn:oasis:names:tc:xacml:1.0:subject-category:access-subject&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute IncludeInResult=&quot;false&quot; AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:subject-id&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;chris.webber@hdesk.com&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute IncludeInResult=&quot;false&quot; AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:department&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;IT&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes Category=&quot;urn:oasis:names:tc:xacml:3.0:attribute-category:resource&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute IncludeInResult=&quot;false&quot; AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:resource:resource-id&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#String&quot;&gt;Ticket:1103&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute IncludeInResult=&quot;false&quot; AttributeId=&quot;urn:nextlabs:names:evalsvc:1.0:resource:resource-type&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#String&quot;&gt;support_tickets&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes Category=&quot;urn:oasis:names:tc:xacml:3.0:attribute-category:action&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute IncludeInResult=&quot;false&quot; AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:action:action-id&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;VIEW_TKTS&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes Category=&quot;urn:nextlabs:names:evalsvc:1.0:attribute-category:application&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute IncludeInResult=&quot;false&quot; AttributeId=&quot;urn:nextlabs:names:evalsvc:1.0:application:application-id&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#String&quot;&gt;MSExcel&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes Category=&quot;urn:oasis:names:tc:xacml:3.0:attribute-category:environment&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;authentication_type&quot; Issuer=&quot;&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;multifactor&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;/Request&gt;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading4">Sample response payload: Example 2</p>
+ <p dir="ltr" class="FM_Body">The response allows the action.</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;Response xmlns=&quot;urn:oasis:names:tc:xacml:3.0:core:schema:wd-17&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&lt;Result&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;Decision&gt;Permit&lt;/Decision&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;Status&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;StatusCode Value=&quot;urn:oasis:names:tc:xacml:1.0:status:ok&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;StatusMessage&gt;success&lt;/StatusMessage&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/Status&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;Obligations/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&lt;/Result&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;/Response&gt;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_Multi_query_request_XML"></a><a name="XREF_17328_Multi_query"></a>Multi-query request (XML): Example 3</p>
+ <p dir="ltr" class="FM_Heading4">Sample request payload: Example 3</p>
+ <p dir="ltr" class="FM_Body">This request contains two subjects (<span class="FM_Code">chris.webber@hdesk.com</span>&#160;and <span class="FM_Code">amy.tan@hdesk.com</span>) who have performed two different actions (<span class="FM_Code">EDIT_TKTS</span>&#160;and <span class="FM_Code">ASSIGN_TKTS</span>) respectively on the support tickets resource (<span class="FM_Code">Ticket:1103</span>), using the <span class="FM_Code">Helpdesk</span> application.</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;Request xmlns=&quot;urn:oasis:names:tc:xacml:3.0:core:schema:wd-17&quot; ReturnPolicyIdList=&quot;false&quot; CombinedDecision=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes xml:id=&quot;subject1&quot; Category=&quot;urn:oasis:names:tc:xacml:1.0:subject-category:access-subject&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:subject-id&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;chris.webber@hdesk.com&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:department&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;IT&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:assigned_prod_area&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Exchange Email&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes xml:id=&quot;subject2&quot; Category=&quot;urn:oasis:names:tc:xacml:1.0:subject-category:access-subject&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:subject-id&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;amy.tan@hdesk.com&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:assigned_prod_area&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Exchange Email&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:department&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;IT&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes xml:id=&quot;action1&quot; Category=&quot;urn:oasis:names:tc:xacml:3.0:attribute-category:action&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:action:action-id&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;EDIT_TKTS&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes xml:id=&quot;action2&quot; Category=&quot;urn:oasis:names:tc:xacml:3.0:attribute-category:action&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:action:action-id&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;ASSIGN_TKTS&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&lt;Attributes xml:id=&quot;application1&quot; Category=&quot;urn:nextlabs:names:evalsvc:1.0:attribute-category:application&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:nextlabs:names:evalsvc:1.0:application:application-id&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Helpdesk&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Attributes xml:id=&quot;resource1&quot; &#160;Category=&quot;urn:oasis:names:tc:xacml:3.0:attribute-category:resource&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:resource:resource-id&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Ticket:1103&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:nextlabs:names:evalsvc:1.0:resource:resource-type&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;support_tickets&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span> &#160;&lt;Attribute AttributeId=&quot;urn:nextlabs:names:evalsvc:1.0:resource:resource-dimension&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;from&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&lt;Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:resource:prod_name&quot; IncludeInResult=&quot;false&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Exchange Email&lt;/AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Attributes&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&lt;Attributes xml:id=&quot;environment1&quot; Category=&quot;urn:oasis:names:tc:xacml:3.0:attribute-category:environment&quot;&gt;  </p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&lt;Attribute IncludeInResult=&quot;false&quot; AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:environment:authentication_type&quot; &gt; </p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&lt;AttributeValue DataType=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;multifactor&lt;/AttributeValue&gt; </p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&lt;/Attribute&gt; </p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>&lt;/Attributes&gt; </p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;MultiRequests&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&lt;RequestReference&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributesReference ReferenceId=&quot;subject1&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributesReference ReferenceId=&quot;resource1&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributesReference ReferenceId=&quot;action1&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributesReference ReferenceId=&quot;application1&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span> &#160;&#160;&lt;AttributesReference ReferenceId=&quot;environment1&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&lt;/RequestReference&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&lt;RequestReference&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributesReference ReferenceId=&quot;subject2&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributesReference ReferenceId=&quot;resource1&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributesReference ReferenceId=&quot;action2&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;AttributesReference ReferenceId=&quot;application1&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"><span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span> &#160;&#160;&lt;AttributesReference ReferenceId=&quot;environment1&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&lt;/RequestReference&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&lt;/MultiRequests&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;/Request&gt;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Heading4">Sample response payload: Example 3</p>
+ <p dir="ltr" class="FM_Body">The response allows the action.</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;Response xmlns=&quot;urn:oasis:names:tc:xacml:3.0:core:schema:wd-17&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Result&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;Decision&gt;Permit&lt;/Decision&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;Status&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;StatusCode Value=&quot;urn:oasis:names:tc:xacml:1.0:status:ok&quot; /&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;StatusMessage&gt;success&lt;/StatusMessage&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Status&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;Obligations /&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Result&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;Result&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;Decision&gt;Permit&lt;/Decision&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;Status&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;StatusCode Value=&quot;urn:oasis:names:tc:xacml:1.0:status:ok&quot; /&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;StatusMessage&gt;success&lt;/StatusMessage&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;/Status&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&lt;Obligations /&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/Result&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;/Response&gt;</p>
+ <p dir="ltr" class="FM_Code"><a name="XREF_83259_Request_that"></a>&nbsp;</p>
+ <p dir="ltr" class="FM_Heading2"><a name="TOC_SAML_request_Example_4"></a><a name="XREF_12716_Example_5"></a>SAML request: Example 4</p>
+ <p dir="ltr" class="FM_Body">SAML is used to exchange authentication and authorization data between identity providers and service providers. The following example shows a SAML request.</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ <p dir="ltr" class="FM_Code">&lt;xacml-samlp:XACMLAuthzDecisionQueryType InputContextOnly=&quot;true&quot; IssueInstant=&quot;2011-10-31T06:44:57.766Z&quot; ReturnContext=&quot;false&quot; Version=&quot;2.0&quot; xmlns:xacml-samlp=&quot;urn:oasis:names:tc:xacml:2.0:profile:saml2.0:v2:schema:protocol&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&lt;saml:Issuer SPProvidedID=&quot;SPPProvierId&quot; xmlns:saml=&quot;urn:oasis:names:tc:SAML:2.0:assertion&quot;&gt;https://identity.carbon.wso2.org&lt;/saml:Issuer&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;xacml-context:Request xmlns:xacml-context=&quot;urn:oasis:names:tc:xacml:2.0:context:schema:os&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Subject SubjectCategory=&quot;urn:oasis:names:tc:xacml:1.0:subject-category:access-subject&quot; xmlns:xacml-context=&quot;urn:oasis:names:tc:xacml:2.0:context:schema:os&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:subject:subject-id&quot; DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:AttributeValue&gt;chris.webber@hdesk.com&lt;/xacml-context:AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/xacml-context:Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Attribute AttributeId=&quot;department&quot; DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:AttributeValue&gt;IT&lt;/xacml-context:AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/xacml-context:Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;/xacml-context:Subject&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Resource xmlns:xacml-context=&quot;urn:oasis:names:tc:xacml:2.0:context:schema:os&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:resource:resource-id&quot; DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:AttributeValue&gt;Ticket:1103&lt;/xacml-context:AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/xacml-context:Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Attribute AttributeId=&quot;urn:nextlabs:names:evalsvc:1.0:resource:resource-type&quot; DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:AttributeValue&gt;support_tickets&lt;/xacml-context:AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/xacml-context:Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;/xacml-context:Resource&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Action xmlns:xacml-context=&quot;urn:oasis:names:tc:xacml:2.0:context:schema:os&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Attribute AttributeId=&quot;urn:oasis:names:tc:xacml:1.0:action:action-id&quot; DataType=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:AttributeValue&gt;VIEW_TKTS&lt;/xacml-context:AttributeValue&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/xacml-context:Attribute&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;/xacml-context:Action&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&#160;&#160;&#160;&#160;&lt;xacml-context:Environment xmlns:xacml-context=&quot;urn:oasis:names:tc:xacml:2.0:context:schema:os&quot;/&gt;</p>
+ <p dir="ltr" class="FM_Code"> &#160;&#160;&lt;/xacml-context:Request&gt;</p>
+ <p dir="ltr" class="FM_Code">&lt;/xacml-samlp:XACMLAuthzDecisionQueryType&gt;</p>
+ <p dir="ltr" class="FM_Code">&nbsp;</p>
+ </body>
+</html>

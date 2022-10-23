@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glossary version="1.0">
+	<glossentry>
+		<glossterm>ABAC</glossterm>
+		<glossdef>Attribute based access control. ABAC uses attributes, or properties, such as information about the user or the environment, in authorization requests for access to assets. Access is allowed or denied based on policies. For more information, go to: https://nccoe.nist.gov/projects/building_blocks/attribute_based_access_control.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Action components</glossterm>
+		<glossdef>Components used to define actions in policies. Action components serve as the verbs in policies: read, copy, print, cut and paste, attach to email, and so on. After they are defined, action com­ponents are available as the logical verbs in ACPL, the language in which policies are expressed. Action components are defined in the Components section of the console.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Active Control Policy Language (ACPL)</glossterm>
+		<glossdef>The language used internally to represent, store, and manage components and policies. Referred to as ACPL ("ACK-pull") it is also used to express advanced conditions in component and policy properties. See Using Advanced Conditions.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Activity Journal</glossterm>
+		<glossdef>One of the four data stores used by CloudAz. The Activity Journal stores information sent by all enforcers about how subjects access and use information, and also on policy enforcement. When you use the Reporter console to generate reports, you are querying data from the Activity Jour­nal. The Activity Journal can be maintained either on the internal database supplied with Clou­dAz, or on an external Oracle, PostgreSQL, or Microsoft SQL database.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>alerts</glossterm>
+		<glossdef>Notifications that are sent to administrators when specified policy enforcement activities occur. Together with monitors, alerts can provide continuous coverage of key policy enforcements in an enterprise, as well as a notification system that warns administrators when action is required.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Auditor</glossterm>
+		<glossdef>A logical component of Policy Enforcer software, responsible for capturing document access and use by policy subjects, as well as all policy enforcement events, and writing them to the Activity Journal database.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>basic actions</glossterm>
+		<glossdef>One of the set of irreducible actions, such as open, delete, copy content, or email, that are available for combining into Activity Journal in policy bundle. Each action component can consist of one or more basic actions.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>bundle</glossterm>
+		<glossdef>See policy bundle.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Business Analyst</glossterm>
+		<glossdef>One of the predefined roles available in the Administrator console. See roles.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>cancel</glossterm>
+		<glossdef>One of the actions you can take to change the deployment status of policies and components. You can cancel an object if it has been submitted and scheduled for deployment, but not if it has already been deployed. Deployed objects must be deactivated before they can be canceled.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>component bin</glossterm>
+		<glossdef>The pane in the lower left area of the policy bundle window, which displays all currently defined componentss. Users create new policies by dragging components from the bin up into the main editing pane.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>components</glossterm>
+		<glossdef>The building blocks of policies. Components represent classes or categories of entities in the physical network environment.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Computer component</glossterm>
+		<glossdef>One of the five basic types of components you can define in policy bundle to represent classes of entities in the physical environment—in this case, computers.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Control Center</glossterm>
+		<glossdef>The enterprise-wide platform where policies are constructed, stored, and managed, and where audit data is gathered and managed, also known as CloudAz. CloudAz comprises three major pieces—the management server, the Report Server, and ICENet server—plus several data stores, which are generally stored in a dedicated, external database.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>deactivate</glossterm>
+		<glossdef>The act of changing a policy or component from a deployed state to an inactive state. Deacti­vated objects can be reactivated later or deleted as needed. Objects that have been deployed must be deactivated before they can be deleted.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Delegated Administration</glossterm>
+		<glossdef>A method of managing user access to the CloudAz consoles. Delegated Administration enables administrators to manage user access to the CloudAz consoles as well as policies, and policy objects, by creating rules based on user attributes and conditions. Using rules and attributes mir­rors the way policies are used to control access to resources and eliminates the need to create and apply roles to users or groups of users.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>delete</glossterm>
+		<glossdef>See deactivate.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>deployed</glossterm>
+		<glossdef>One of the possible states of a policy or component. When an object is deployed, it is distributed to all relevant enforcers in the system. It then is used to govern the way components access and use resources.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>heartbeats</glossterm>
+		<glossdef>Regular messages sent along the communications channel between Cloud PDPs and the CloudAz server. Cloud PDPs send regular heartbeats to the CloudAz server to indicate that they are run­ning normally. When a heartbeat occurs, the Cloud PDP receives any pending policy deployments or configuration updates from CloudAz.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>ICENet</glossterm>
+		<glossdef>A protocol used for communication between policy enforcers and the CloudAz Control Center. All such communication passes through the ICENet server on the set of software servers and other modules that constitute the heart of the CloudAz platform. The main components of the CloudAz are the Policy Management Server and Policy Master data store, the Management Server and Information Network Directory, the Intelligence Server and Activity Journal, one or more ICENet Servers, and the Reporter console. Each enforcer is equipped with an ICENet client.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>ICENet client</glossterm>
+		<glossdef>The component that handles remote communication with the ICENet server.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>ICENet server</glossterm>
+		<glossdef>The CloudAz component that manages communication between all policy enforcers and the set of software servers and other modules that constitute the heart of the CloudAz platform. The main components of the CloudAz are the Policy Management Server and Policy Master data store, the Management Server and Information Network Directory, the Intelligence Server and Activity Journal, one or more ICENet servers, and the Reporter console server.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>MachineList File</glossterm>
+		<glossdef>A manually created file that lists all PCs and servers in a given domain. Administrators can use the file to enroll file shares using the Resource Path Discovery utility.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>management database</glossterm>
+		<glossdef>One of the three databases used by CloudAz. The management database stores data about autho­rized users.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>management server</glossterm>
+		<glossdef>The CloudAz component that centralizes management of all system components.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>modify</glossterm>
+		<glossdef>A control in the policy bundle interface, that enables administrators to change policies that have been submitted or deployed. When policies are modified, their state is changed to Draft, and they must be resubmitted to be deployed. TBD: Are policies in the Draft state deactivated</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>monitors</glossterm>
+		<glossdef>Predefined criteria that identify the policy enforcement activities to be tracked. Together with alerts, monitors can provide continuous coverage of key policy enforcements in an enterprise, as well as a notification system that warns administrators when action is required.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>My Reports</glossterm>
+		<glossdef>One of two tabs on the main screen of the Reporter console. This tab displays details about all reports created and owned by the user currently logged into the application. The other tab, shared reports, shows all report created and owned by all other authorized users, to which the currently logged in user has read access only. TBD: Verify: I don’t see this in the new Reporter console.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>object components</glossterm>
+		<glossdef>One of the two general categories of components; the other is Activity Journal. Object compo­nents provide the subjects and objects in policies, and fall into these categories: Users, Applica­tions, Computers, Documents, and Portal Content. It is helpful to group these five together conceptually because you define and use them in a similar way, which is very different from how you build and use Activity Journal. TBD: Verify whether Object components are still relevant in the new UI.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>object grid</glossterm>
+		<glossdef>In Policy Manager, the upper right pane, which displays the policies and their child components belonging to any folder selected in the policy tree. When you select any policy in this grid, the details of its definition are displayed in the details pane.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>obligations</glossterm>
+		<glossdef>Instructions sent by the PDP (Policy Decision Point) to the PEP (Policy Enforcement Point) along with the authorization decision. For example, an obligation might instruct the PEP to notify the user why they are not allowed to perform a certain operation, and the message itself might be included in the obligation. In other cases, obligations might instruct the PEP to record the allowed user action in an audit database; encrypt a value before allowing the user to store that value; or inject a security filter in a SQL query to restrict the rows being returned, before allow­ing the user to run the query against a given database table.The actions CloudAz takes, in addi­tion to policy enforcement actions, such as allowing or denying user actions, when enforcing policies. There are three types of obligations: make a log entry in the Activity Journal, display a notification to the subject, and send an email notification to a specified recipient. Policies can include one or more of each of these obligation types. Log entries are required for all On Deny enforcements.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>PAP</glossterm>
+		<glossdef>See Policy Administration Point.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>PDP</glossterm>
+		<glossdef>See Policy Decision Point.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>PEP</glossterm>
+		<glossdef>See Policy Enforcement Point.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>PIP</glossterm>
+		<glossdef>See Policy Information Point.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>policy</glossterm>
+		<glossdef>A rule defined in policy bundle to control information use in an organization. A rule designed to control information use in an organization. Policies consist of components combined with logical operators, variables such as obligations, and time-based contexts.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Policy Administration Point</glossterm>
+		<glossdef>The CloudAz server.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>policy bundle</glossterm>
+		<glossdef>The set of policies and required component definitions that are defined and active for each enforcer running in the system. Each enforcer has only one bundle stored locally at any one time, and it contains all the information it requires for all policies currently deployed to it. Every heartbeat interval, each enforcer contacts the CloudAz inquiring if there are any new or updated policies that should be deployed to that enforcer; if there are, the CloudAz sends a new bundle that overwrites the one currently deployed there.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>policy component</glossterm>
+		<glossdef>See components.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Policy Decision Point (PDP)</glossterm>
+		<glossdef>The entity that evaluates applicable policies and computes authorization decisions. CloudAz comes with a preconfigured set of PDPs (Policy Decision Points), which supports standards-based interaction REST APIs to make authorization requests. The PDPs evaluate deployed authorization policies at runtime against incoming requests, and return authorization decisions to PEPs (Policy Enforcement Points).</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Policy Enforcement Point (PEP)</glossterm>
+		<glossdef>The software component that performs access control by making authorization requests to PDPs (Policy Decision Points) and enforcing decisions.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Policy Information Point (PIP)</glossterm>
+		<glossdef>The component that is the source of user, resource, and environment attributes. A PEP (Policy Enforcement Point) or PDP (Policy Decision Point) interacts with the PIP to obtain attributes. In an enterprise deployment, a typical PIP would be an LDAP server, HR database, or other data repository with license keys.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>policy modeling</glossterm>
+		<glossdef>The process of defining the metadata to represent actors (Subjects) requesting authorization for a given set of objects (Resources).</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>policy object</glossterm>
+		<glossdef>A generic term sometimes used to refer to policies and policy components.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>report query</glossterm>
+		<glossdef>The group of filter settings available in the Reporter console that control how report content is extracted from the Activity Journal.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Report Server</glossterm>
+		<glossdef>A major component of CloudAz that is responsible for storing, managing, and serving data on end-user activity and policy enforcement. This information is stored in the Activity Journal database. The Report Server is the back end of the Reporter console.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>report settings</glossterm>
+		<glossdef>The group of settings available in the Reporter console that control how reports are formatted.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>Reporter console</glossterm>
+		<glossdef>One of the user interfaces in CloudAz. The Reporter console is a web-based application used to create reports as well as monitor and track user activity. It is the front end of the Report Server.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>reports</glossterm>
+		<glossdef>The result of a query run on information stored in the Activity Journal, showing details related to information access and use and policy enforcement in the network. Reports can be displayed in detail (grid) format or as bar charts.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>resource components</glossterm>
+		<glossdef>Components that can be included in policy definitions. Resources, such as documents or servers, are the grammatical object of actions in the ACPL language.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>resource types</glossterm>
+		<glossdef>The policy model templates that include information about attributes, actions, and obligations available to components and policies.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>shared reports</glossterm>
+		<glossdef>Reports that are available to multiple users. When reports are saved, they can be marked as shared. Shared reports appear on a separate tab in the Reporter console. See Saving reports.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>states</glossterm>
+		<glossdef>The current status of a policy or a component. There are seven possible states: Editing, Submit­ted for Deployment, Pending Deployment, Deployed, Deactivated, and Deleted. An object’s state determines the actions that can be performed on it.</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>system details</glossterm>
+		<glossdef>The Dashboard widget that displays details about the configuration of the system. It shows how many Cloud PDPs are currently active, and how many Audit records are currently stored. It also provides subscription details.</glossdef>
+	</glossentry>
+</glossary>

@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><glossary>  <chunkinfo url=\"gdata3.js\" first=\"ABAC\" last=\"PIP\" num=\"35\" />  <chunkinfo url=\"gdata4.js\" first=\"policy\" last=\"system details\" num=\"19\" />  </glossary>";

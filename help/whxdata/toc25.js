@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc24.js\"  name=\"About constructing policies\" url=\"CCUserGuideSaaS/PoliciesSAAS/Constructing_and_testing_policies.htm#TOC_About_constructingbc-1\"><item name=\"Adding policies\" url=\"CCUserGuideSaaS/PoliciesSAAS/Constructing_and_testing_policies.htm#TOC_Adding_policiesbc-2\" /></data>";

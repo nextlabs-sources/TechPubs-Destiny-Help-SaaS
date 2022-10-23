@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"About deploying and managing objects","url":"CCUserGuideSaaS/Deploying_SaaS/Deploying_and_managing_objects.htm#TOC_About_deploying_andbc-1"},{"type":"item","name":"Deploying components","url":"CCUserGuideSaaS/Deploying_SaaS/Deploying_components.htm"},{"type":"item","name":"Deploying policies","url":"CCUserGuideSaaS/Deploying_SaaS/Deploying_policies.htm"},{"type":"book","name":"Managing policies and components","key":"toc32","url":"CCUserGuideSaaS/Deploying_SaaS/Managing_policies_and_components.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();
